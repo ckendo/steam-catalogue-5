@@ -1,0 +1,1289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Roboto Slab Light by Christian Robertson, by free licence from http://www.fontsquirrel.com/fonts/roboto-slab */
+@font-face{ 
+    font-family: 'RobotoSlabLight';
+    src: url('roboto-slab-light/RobotoSlab-Light-webfont.eot');
+    src: url('roboto-slab-light/RobotoSlab-Light-webfont.eot?iefix') format('eot'),
+         url('roboto-slab-light/RobotoSlab-Light-webfont.woff') format('woff'),
+         url('roboto-slab-light/RobotoSlab-Light-webfont.ttf') format('truetype'),
+         url('roboto-slab-light/RobotoSlab-Light-webfont.svg#webfont') format('svg');
+}
+
+/* Roboto Slab Regular by Christian Robertson, by free licence from http://www.fontsquirrel.com/fonts/roboto-slab */
+@font-face{ 
+    font-family: 'RobotoSlabRegular';
+    src: url('roboto-slab-regular/RobotoSlab-Regular-webfont.eot');
+    src: url('roboto-slab-regular/RobotoSlab-Regular-webfont.eot?iefix') format('eot'),
+         url('roboto-slab-regular/RobotoSlab-Regular-webfont.woff') format('woff'),
+         url('roboto-slab-regular/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+         url('roboto-slab-regular/RobotoSlab-Regular-webfont.svg#webfont') format('svg');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*REAL STYLES BELOW*/
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: 'RobotoSlabLight';
+    font-size: 16px;
+    letter-spacing: .025em;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+section {
+    /*background-color: white;*/
+    /*height: 100vh;*/
+    min-height: 720px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    padding: 80px 80px 80px 80px;
+    height: 100%;
+    width: 100%;
+}
+p {
+    line-height: 130%;
+    padding-bottom: 15px;
+    max-width: 400px;
+}
+dd {
+    float: left;
+    font-size: 18px;
+    padding: 0 0 10px 10px;
+    font-weight: normal !important;
+    line-height: 130%;
+    max-width: 80%;
+}
+dd span {
+    font-size: 18px;
+    font-style: italic;
+}
+dt {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 130%;
+}
+
+.pagination {
+    width: 50%;
+    font-size: 13px;
+    padding-top: 60px;
+    font-style: italic;
+}
+
+.hide{
+    display:none;
+}
+.chunk {
+    height: 90%;
+    /*overflow: hidden;*/
+    
+    width: 50%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+    padding-left: 50px;
+}
+.page_numbers {
+    float: right;
+}
+.left_hand {
+    padding-right: 5vw;
+}
+a {
+    color: black;
+    transition: color .2s;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: rgb(0, 0, 255);
+    transition: color .2s;
+}
+.caption {
+    font-style: italic;
+    font-size: 13px;
+    max-width: 450px;
+    margin-top: -15px;
+}
+.bigCaption {
+    position: relative;
+    bottom: 100%;
+    font-size: 5vw;
+    line-height: 5vw;
+    color: #fdffe1;
+    font-style: italic;
+    max-width: 80%;
+    padding: 40px;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, .5);
+}
+h1 {
+    font-size: 9vw;
+    line-height: 120%;
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 4.5vw;
+    line-height: 120%;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    break-after: always;
+    column-break-after: always;
+    -webkit-column-break-after: always;
+    -moz-column-break-after: always;
+    -o-column-break-after: always;
+}
+h3 {
+    line-height: 120%;
+    font-size: 2.5vw;
+    padding-bottom: 30px;
+
+}
+h3 a {
+    color: #fdffe1 !important;
+}
+h4 {
+    font-weight: bold;
+    font-size: 2.5vw;
+    line-height: 130%;
+}
+li {
+    font-size: 2.5vw;
+    line-height: 130%;
+}
+ol {
+    break-after: always;
+    column-break-after: always;
+    -webkit-column-break-after: always;
+    -moz-column-break-after: always;
+    -o-column-break-after: always;
+}
+.break_after {
+    height: 10px;
+    break-after: always;
+    column-break-after: always;
+    -webkit-column-break-after: always;
+    -moz-column-break-after: always;
+    -o-column-break-after: always;
+}
+#cover {
+    background-color: #555;
+    background-image: url('img/colorbars.jpg');
+    background-size: 100% 100%;
+    /*background-blend-mode: screen;*/
+}
+#cover article {
+    padding-bottom: 0px;
+}
+#cover article h1, #cover article h2, #cover article h3, #cover article a{
+    color: black;
+}
+
+.bold{
+    font-weight: bold;
+    letter-spacing:0;
+}
+/*Subheader bold is 'bolder'*/
+.subheaderbold {
+    font-family: 'RobotoSlabRegular';
+    font-weight: 600;
+    letter-spacing:0;
+}
+
+.italic{
+    font-style: italic;
+    letter-spacing: 0;
+}
+.big_number {
+    float: left;
+    height: 110px;
+    margin-right: 20px;
+    font-size: 120px;
+    font-weight: bold;
+    text-shadow: 4px 4px #DFDFDF;
+}
+h5 {
+    font-size: 30px;
+    line-height: 130%;
+}
+.headline {
+    margin: 0 0 40px 120px;
+}
+.clear {
+    clear: both;
+}
+.image_hold {
+    width: 460px;
+    transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    -webkit-transition: background-position 1s;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: 415px auto;
+    margin-bottom: 20px;
+}
+
+.image_hold:hover {
+    cursor: crosshair;
+}
+.full .image_hold {
+    width: 100%;
+    height: 100%;
+    background-size: 98% auto;
+    padding: 0;
+    margin: 0;
+}
+.full {
+    height: 100%;
+}
+.full_article {
+    padding: 40px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#title{
+    text-shadow: 4px 4px #FFFFFF;
+}
+
+#produced{
+    text-shadow: 2px 2px #FFFFFF;
+}
+
+#spring{
+    text-shadow: 2px 2px #FFFFFF;
+}
+
+#STEAM {
+    height: 600px;
+    background-image: url('img/STEAM/yellow.jpg'), url('img/STEAM/cyan.jpg'), url('img/STEAM/magenta.jpg'), url('img/STEAM/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#two1 {
+    margin-top:5px;
+    height: 275px;
+    background-image: url('img/2-1/yellow.jpg'), url('img/2-1/cyan.jpg'), url('img/2-1/magenta.jpg'), url('img/2-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#two2 {
+    height: 260px;
+    background-image: url('img/2-2/yellow.jpg'), url('img/2-2/cyan.jpg'), url('img/2-2/magenta.jpg'), url('img/2-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#two3 {
+    height: 445px;
+    background-image: url('img/2-3/yellow.jpg'), url('img/2-3/cyan.jpg'), url('img/2-3/magenta.jpg'), url('img/2-3/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#two4 {
+    height: 335px;
+    background-image: url('img/2-4/yellow.jpg'), url('img/2-4/cyan.jpg'), url('img/2-4/magenta.jpg'), url('img/2-4/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#two5 {
+    height: 265px;
+    background-image: url('img/2-5/yellow.jpg'), url('img/2-5/cyan.jpg'), url('img/2-5/magenta.jpg'), url('img/2-5/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#two6 {
+    height: 325px;
+    background-image: url('img/2-6/yellow.jpg'), url('img/2-6/cyan.jpg'), url('img/2-6/magenta.jpg'), url('img/2-6/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#three1 {
+    height: 325px;
+    background-image: url('img/3-1/yellow.jpg'), url('img/3-1/cyan.jpg'), url('img/3-1/magenta.jpg'), url('img/3-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#three2 {
+    height: 300px;
+    background-image: url('img/3-2/yellow.jpg'), url('img/3-2/cyan.jpg'), url('img/3-2/magenta.jpg'), url('img/3-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#three3 {
+    height: 340px;
+    background-image: url('img/3-3/yellow.jpg'), url('img/3-3/cyan.jpg'), url('img/3-3/magenta.jpg'), url('img/3-3/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#three4 {
+    margin-top:10px;
+    height: 330px;
+    background-image: url('img/3-4/yellow.jpg'), url('img/3-4/cyan.jpg'), url('img/3-4/magenta.jpg'), url('img/3-4/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#three5 {
+    height: 300px;
+    background-image: url('img/3-5/yellow.jpg'), url('img/3-5/cyan.jpg'), url('img/3-5/magenta.jpg'), url('img/3-5/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#three6 {
+    height: 325px;
+    background-image: url('img/3-6/yellow.jpg'), url('img/3-6/cyan.jpg'), url('img/3-6/magenta.jpg'), url('img/3-6/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#four1{
+    height: 450px;
+    background-image: url('img/4-1/yellow.jpg'), url('img/4-1/cyan.jpg'), url('img/4-1/magenta.jpg'), url('img/4-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#four2{
+    height: 300px;
+    background-image: url('img/4-2/yellow.jpg'), url('img/4-2/cyan.jpg'), url('img/4-2/magenta.jpg'), url('img/4-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#five1{
+    height: 360px;
+    background-image: url('img/5-1/yellow.jpg'), url('img/5-1/cyan.jpg'), url('img/5-1/magenta.jpg'), url('img/5-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#five2{
+    height: 360px;
+    background-image: url('img/5-2/yellow.jpg'), url('img/5-2/cyan.jpg'), url('img/5-2/magenta.jpg'), url('img/5-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#six1{
+    height: 300px;
+    background-image: url('img/6-1/yellow.jpg'), url('img/6-1/cyan.jpg'), url('img/6-1/magenta.jpg'), url('img/6-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#seven1{
+    height: 340px;
+    background-image: url('img/7-1/yellow.jpg'), url('img/7-1/cyan.jpg'), url('img/7-1/magenta.jpg'), url('img/7-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#eight1{
+    height: 310px;
+    background-image: url('img/8-1/yellow.jpg'), url('img/8-1/cyan.jpg'), url('img/8-1/magenta.jpg'), url('img/8-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#eight2{
+    height: 310px;
+    background-image: url('img/8-2/yellow.jpg'), url('img/8-2/cyan.jpg'), url('img/8-2/magenta.jpg'), url('img/8-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#eight3{
+    height: 310px;
+    background-image: url('img/8-3/yellow.jpg'), url('img/8-3/cyan.jpg'), url('img/8-3/magenta.jpg'), url('img/8-3/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#squiggly1{
+    height: 260px;
+    background-image: url('img/squiggly-1/yellow.jpg'), url('img/squiggly-1/cyan.jpg'), url('img/squiggly-1/magenta.jpg'), url('img/squiggly-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#squiggly2{
+    height: 345px;
+    background-image: url('img/squiggly-2/yellow.jpg'), url('img/squiggly-2/cyan.jpg'), url('img/squiggly-2/magenta.jpg'), url('img/squiggly-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#squiggly3{
+    height: 345px;
+    background-image: url('img/squiggly-3/yellow.jpg'), url('img/squiggly-3/cyan.jpg'), url('img/squiggly-3/magenta.jpg'), url('img/squiggly-3/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#squiggly4{
+    height: 355px;
+    background-image: url('img/squiggly-4/yellow.jpg'), url('img/squiggly-4/cyan.jpg'), url('img/squiggly-4/magenta.jpg'), url('img/squiggly-4/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#mapping1{
+    height: 280px;
+    background-image: url('img/mapping-1/yellow.jpg'), url('img/mapping-1/cyan.jpg'), url('img/mapping-1/magenta.jpg'), url('img/mapping-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#optical1{
+    height: 270px;
+    background-image: url('img/optical-1/yellow.jpg'), url('img/optical-1/cyan.jpg'), url('img/optical-1/magenta.jpg'), url('img/optical-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#lighting1{
+    height: 260px;
+    background-image: url('img/lighting-1/yellow.jpg'), url('img/lighting-1/cyan.jpg'), url('img/lighting-1/magenta.jpg'), url('img/lighting-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#lighting2{
+    height: 270px;
+    background-image: url('img/lighting-2/yellow.jpg'), url('img/lighting-2/cyan.jpg'), url('img/lighting-2/magenta.jpg'), url('img/lighting-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#recycling1{
+    height: 325px;
+    background-image: url('img/recycling-1/yellow.jpg'), url('img/recycling-1/cyan.jpg'), url('img/recycling-1/magenta.jpg'), url('img/recycling-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#recycling2{
+    height: 325px;
+    background-image: url('img/recycling-2/yellow.jpg'), url('img/recycling-2/cyan.jpg'), url('img/recycling-2/magenta.jpg'), url('img/recycling-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#ten1{
+    height: 340px;
+    background-image: url('img/10-1/yellow.jpg'), url('img/10-1/cyan.jpg'), url('img/10-1/magenta.jpg'), url('img/10-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#ten2{
+    height: 310px;
+    background-image: url('img/10-2/yellow.jpg'), url('img/10-2/cyan.jpg'), url('img/10-2/magenta.jpg'), url('img/10-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#ten3{
+    height: 450px;
+    background-image: url('img/10-3/yellow.jpg'), url('img/10-3/cyan.jpg'), url('img/10-3/magenta.jpg'), url('img/10-3/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#eleven1{
+    height: 480px;
+    background-image: url('img/11-1/yellow.jpg'), url('img/11-1/cyan.jpg'), url('img/11-1/magenta.jpg'), url('img/11-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#eleven2{
+    height: 380px;
+    background-image: url('img/11-2/yellow.jpg'), url('img/11-2/cyan.jpg'), url('img/11-2/magenta.jpg'), url('img/11-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#twelve1{
+    height: 310px;
+    background-image: url('img/12-1/yellow.jpg'), url('img/12-1/cyan.jpg'), url('img/12-1/magenta.jpg'), url('img/12-1/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#twelve2{
+    height: 310px;
+    background-image: url('img/12-2/yellow.jpg'), url('img/12-2/cyan.jpg'), url('img/12-2/magenta.jpg'), url('img/12-2/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#twelve3{
+    height: 310px;
+    background-image: url('img/12-3/yellow.jpg'), url('img/12-3/cyan.jpg'), url('img/12-3/magenta.jpg'), url('img/12-3/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#twelve4{
+    height: 750px;
+    background-image: url('img/12-4/yellow.jpg'), url('img/12-4/cyan.jpg'), url('img/12-4/magenta.jpg'), url('img/12-4/black.jpg');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#circle{
+    height: 500px;
+    background-image: url('img/kinder/yellow.png'), url('img/kinder/cyan.png'), url('img/kinder/magenta.png'), url('img/kinder/black.png');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#network{
+    height: 300px;
+    background-image: url('img/network/yellow.png'), url('img/network/cyan.png'), url('img/network/magenta.png'), url('img/network/black.png');
+    background-position: -25px 0, 25px 25px, 0 0, 0 25px;
+}
+#books {
+    height: 300px;
+    background-image: url('img/books/yellow.png'), url('img/books/cyan.png'), url('img/books/magenta.png'), url('img/books/black.png');
+    background-position: 25px 0, 25px 25px, 0 0, 0 25px;
+}
+#friends {
+    height: 250px;
+    background-image: url('img/friends/yellow.png'), url('img/friends/cyan.png'), url('img/friends/magenta.png'), url('img/friends/black.png');
+    background-position: -15px 0, 15px 15px, 0 0, 0 15px;
+}
+#pentagon {
+    height: 250px;
+    background-image: url('img/pentagon/yellow.png'), url('img/pentagon/cyan.png'), url('img/pentagon/magenta.png'), url('img/pentagon/black.png');
+    background-position: -15px 0, 15px 15px, 0 0, 0 15px;
+}
+#pig {
+    height: 250px;
+    background-image: url('img/pig/yellow.png'), url('img/pig/cyan.png'), url('img/pig/magenta.png'), url('img/pig/black.png');
+    background-position: -15px 0, 15px 15px, 0 0, 0 15px;
+}
+#rocket {
+    height: 275px;
+    background-image: url('img/rocket/yellow.png'), url('img/rocket/cyan.png'), url('img/rocket/magenta.png'), url('img/rocket/black.png');
+    background-position: 15px 15px, 15px 0, -5px -5px, 0 15px;
+}
+#big {
+    height: 100%;
+    width: 103%;
+    background-image: url('img/big/yellow.jpg'), url('img/big/cyan.jpg'), url('img/big/magenta.jpg'), url('img/big/black.jpg');
+    background-position: 45px 0, 45px 45px, -45px -45px, 0 45px;
+}
+
+/* Static versions, no offset (This was not an efficient way to do it but it works!, fix next year)*/
+/*#STEAMstatic {
+    height: 600px;
+    background-image: url('orig/STEAM.jpg');
+    background-position: 0 0;
+}
+#two1static {
+    margin-top:5px;
+    height: 275px;
+    background-image: url('orig/2-1.JPG');
+    background-position: 0 0;
+}
+#two2static {
+    height: 260px;
+    background-image: url('orig/2-1.JPG');
+    background-position: 0 0;
+}
+#two3static {
+    height: 445px;
+    background-image: url('orig/2-3.jpg');
+    background-position: 0 0;
+}
+#two4static {
+    height: 335px;
+    background-image: url('orig/2-4.jpg');
+    background-position: 0 0;
+}
+#two5static {
+    height: 265px;
+    background-image: url('orig/2-5.jpg');
+    background-position: 0 0;
+}
+#two6static {
+    height: 325px;
+    background-image: url('img/2-6/yellow.jpg'), url('img/2-6/cyan.jpg'), url('img/2-6/magenta.jpg'), url('img/2-6/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#three1static {
+    height: 325px;
+    background-image: url('img/3-1/yellow.jpg'), url('img/3-1/cyan.jpg'), url('img/3-1/magenta.jpg'), url('img/3-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#three2static {
+    height: 300px;
+    background-image: url('img/3-2/yellow.jpg'), url('img/3-2/cyan.jpg'), url('img/3-2/magenta.jpg'), url('img/3-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#three3static {
+    height: 340px;
+    background-image: url('img/3-3/yellow.jpg'), url('img/3-3/cyan.jpg'), url('img/3-3/magenta.jpg'), url('img/3-3/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#three4static {
+    margin-top:10px;
+    height: 330px;
+    background-image: url('img/3-4/yellow.jpg'), url('img/3-4/cyan.jpg'), url('img/3-4/magenta.jpg'), url('img/3-4/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#three5static {
+    height: 300px;
+    background-image: url('img/3-5/yellow.jpg'), url('img/3-5/cyan.jpg'), url('img/3-5/magenta.jpg'), url('img/3-5/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#three6static {
+    height: 325px;
+    background-image: url('img/3-6/yellow.jpg'), url('img/3-6/cyan.jpg'), url('img/3-6/magenta.jpg'), url('img/3-6/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#four1static{
+    height: 450px;
+    background-image: url('img/4-1/yellow.jpg'), url('img/4-1/cyan.jpg'), url('img/4-1/magenta.jpg'), url('img/4-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#four2static{
+    height: 300px;
+    background-image: url('img/4-2/yellow.jpg'), url('img/4-2/cyan.jpg'), url('img/4-2/magenta.jpg'), url('img/4-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#five1static{
+    height: 360px;
+    background-image: url('img/5-1/yellow.jpg'), url('img/5-1/cyan.jpg'), url('img/5-1/magenta.jpg'), url('img/5-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#five2static{
+    height: 360px;
+    background-image: url('img/5-2/yellow.jpg'), url('img/5-2/cyan.jpg'), url('img/5-2/magenta.jpg'), url('img/5-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#six1static{
+    height: 300px;
+    background-image: url('img/6-1/yellow.jpg'), url('img/6-1/cyan.jpg'), url('img/6-1/magenta.jpg'), url('img/6-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#seven1static{
+    height: 340px;
+    background-image: url('img/7-1/yellow.jpg'), url('img/7-1/cyan.jpg'), url('img/7-1/magenta.jpg'), url('img/7-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#eight1static{
+    height: 310px;
+    background-image: url('img/8-1/yellow.jpg'), url('img/8-1/cyan.jpg'), url('img/8-1/magenta.jpg'), url('img/8-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#eight2static{
+    height: 310px;
+    background-image: url('img/8-2/yellow.jpg'), url('img/8-2/cyan.jpg'), url('img/8-2/magenta.jpg'), url('img/8-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#eight3static{
+    height: 310px;
+    background-image: url('img/8-3/yellow.jpg'), url('img/8-3/cyan.jpg'), url('img/8-3/magenta.jpg'), url('img/8-3/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#squiggly1static{
+    height: 260px;
+    background-image: url('img/squiggly-1/yellow.jpg'), url('img/squiggly-1/cyan.jpg'), url('img/squiggly-1/magenta.jpg'), url('img/squiggly-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#squiggly2static{
+    height: 345px;
+    background-image: url('img/squiggly-2/yellow.jpg'), url('img/squiggly-2/cyan.jpg'), url('img/squiggly-2/magenta.jpg'), url('img/squiggly-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#squiggly3static{
+    height: 345px;
+    background-image: url('img/squiggly-3/yellow.jpg'), url('img/squiggly-3/cyan.jpg'), url('img/squiggly-3/magenta.jpg'), url('img/squiggly-3/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#squiggly4static{
+    height: 355px;
+    background-image: url('img/squiggly-4/yellow.jpg'), url('img/squiggly-4/cyan.jpg'), url('img/squiggly-4/magenta.jpg'), url('img/squiggly-4/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#mapping1static{
+    height: 280px;
+    background-image: url('img/mapping-1/yellow.jpg'), url('img/mapping-1/cyan.jpg'), url('img/mapping-1/magenta.jpg'), url('img/mapping-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#optical1static{
+    height: 270px;
+    background-image: url('img/optical-1/yellow.jpg'), url('img/optical-1/cyan.jpg'), url('img/optical-1/magenta.jpg'), url('img/optical-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#lighting1static{
+    height: 260px;
+    background-image: url('img/lighting-1/yellow.jpg'), url('img/lighting-1/cyan.jpg'), url('img/lighting-1/magenta.jpg'), url('img/lighting-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#lighting2static{
+    height: 270px;
+    background-image: url('img/lighting-2/yellow.jpg'), url('img/lighting-2/cyan.jpg'), url('img/lighting-2/magenta.jpg'), url('img/lighting-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#recycling1static{
+    height: 325px;
+    background-image: url('img/recycling-1/yellow.jpg'), url('img/recycling-1/cyan.jpg'), url('img/recycling-1/magenta.jpg'), url('img/recycling-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#recycling2static{
+    height: 325px;
+    background-image: url('img/recycling-2/yellow.jpg'), url('img/recycling-2/cyan.jpg'), url('img/recycling-2/magenta.jpg'), url('img/recycling-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#ten1static{
+    height: 340px;
+    background-image: url('img/10-1/yellow.jpg'), url('img/10-1/cyan.jpg'), url('img/10-1/magenta.jpg'), url('img/10-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#ten2static{
+    height: 310px;
+    background-image: url('img/10-2/yellow.jpg'), url('img/10-2/cyan.jpg'), url('img/10-2/magenta.jpg'), url('img/10-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#ten3static{
+    height: 450px;
+    background-image: url('img/10-3/yellow.jpg'), url('img/10-3/cyan.jpg'), url('img/10-3/magenta.jpg'), url('img/10-3/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#eleven1static{
+    height: 480px;
+    background-image: url('img/11-1/yellow.jpg'), url('img/11-1/cyan.jpg'), url('img/11-1/magenta.jpg'), url('img/11-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#eleven2static{
+    height: 380px;
+    background-image: url('img/11-2/yellow.jpg'), url('img/11-2/cyan.jpg'), url('img/11-2/magenta.jpg'), url('img/11-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#twelve1static{
+    height: 310px;
+    background-image: url('img/12-1/yellow.jpg'), url('img/12-1/cyan.jpg'), url('img/12-1/magenta.jpg'), url('img/12-1/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#twelve2static{
+    height: 310px;
+    background-image: url('img/12-2/yellow.jpg'), url('img/12-2/cyan.jpg'), url('img/12-2/magenta.jpg'), url('img/12-2/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#twelve3static{
+    height: 310px;
+    background-image: url('img/12-3/yellow.jpg'), url('img/12-3/cyan.jpg'), url('img/12-3/magenta.jpg'), url('img/12-3/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#twelve4static{
+    height: 750px;
+    background-image: url('img/12-4/yellow.jpg'), url('img/12-4/cyan.jpg'), url('img/12-4/magenta.jpg'), url('img/12-4/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#circlestatic{
+    height: 500px;
+    background-image: url('img/kinder/yellow.png'), url('img/kinder/cyan.png'), url('img/kinder/magenta.png'), url('img/kinder/black.png');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#networkstatic{
+    height: 300px;
+    background-image: url('img/network/yellow.png'), url('img/network/cyan.png'), url('img/network/magenta.png'), url('img/network/black.png');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#booksstatic {
+    height: 300px;
+    background-image: url('img/books/yellow.png'), url('img/books/cyan.png'), url('img/books/magenta.png'), url('img/books/black.png');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#friendsstatic{
+    height: 250px;
+    background-image: url('img/friends/yellow.png'), url('img/friends/cyan.png'), url('img/friends/magenta.png'), url('img/friends/black.png');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#pentagonstatic {
+    height: 250px;
+    background-image: url('img/pentagon/yellow.png'), url('img/pentagon/cyan.png'), url('img/pentagon/magenta.png'), url('img/pentagon/black.png');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#pigstatic {
+    height: 250px;
+    background-image: url('img/pig/yellow.png'), url('img/pig/cyan.png'), url('img/pig/magenta.png'), url('img/pig/black.png');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#rocketstatic {
+    height: 275px;
+    background-image: url('img/rocket/yellow.png'), url('img/rocket/cyan.png'), url('img/rocket/magenta.png'), url('img/rocket/black.png');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+#bigstatic {
+    height: 100%;
+    width: 103%;
+    background-image: url('img/big/yellow.jpg'), url('img/big/cyan.jpg'), url('img/big/magenta.jpg'), url('img/big/black.jpg');
+    background-position: 0 0, 0 0, 0 0, 0 0;
+}
+*/
+
+#STEAM:hover,#two1:hover, #two2:hover, #two3:hover, #two4:hover, #two5:hover, #two6:hover,#three1:hover, #three2:hover, #three3:hover, #three3:hover, #three4:hover, #three5:hover, #three6:hover, #four1:hover, #four2:hover, #five1:hover, #five2:hover, #six1:hover, #seven1:hover, #mapping1:hover, #optical1:hover, #lighting1:hover, #lighting2:hover, #recycling1:hover, #recycling2:hover, #squiggly1:hover, #squiggly2:hover, #squiggly3:hover, #squiggly4:hover, #eight1:hover, #eight2:hover, #eight3:hover, #ten1:hover, #ten2:hover, #ten3:hover, #eleven1:hover, #eleven2:hover, #twelve1:hover, #twelve2:hover, #twelve3:hover, #circle:hover, #books:hover, #pentagon:hover, #pig:hover, #rocket:hover, #friends:hover, #network:hover{
+    background-position: 0 0;
+    transition: background-position 1.5s ;
+    -moz-transition: background-position 1.5s ;
+    -webkit-transition: background-position 1.5s ;
+}
+#big:hover {
+    background-position: 0 0;
+    transition: background-position 1.5s ;
+    -moz-transition: background-position 1.5s ;
+    -webkit-transition: background-position 1.5s ;
+}
+#twelve4:hover{
+    background-position: 13px 13px;
+    transition: background-position 1.5s 0;
+    -moz-transition: background-position 1.5s 0;
+    -webkit-transition: background-position 1.5s 0;
+}
+
+img {
+    max-width: 420px;
+    padding-bottom: 10px;
+    display: inline;
+}
+.full img {
+    max-width: 100%;
+}
+.show_mobile {
+    display: none;
+}
+#gif {
+    height: 100%;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 10rem;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%; /*modified for STEAM Pavilion video */
+    height: 90%;
+}
+/*------------*/
+/*--------*/
+/*----*/
+/*MEDIA QUERIES AFTER THIS!!!*/
+/*----*/
+/*-------*/
+@media screen and (min-width: 801px) {
+    section {
+        height: 100vh;
+    }
+    .fourthirty{
+        max-width: 430px;
+    }
+    .fourtwenty {
+        max-width: 420px;
+    }
+    .fourfifteen {
+        max-width: 415px;
+    }
+    .fourten {
+        max-width: 410px;
+    }
+    .fourfive {
+        max-width: 405px;
+    }
+    .threeeightfive {
+        max-width: 385px;
+    }
+    .threehundred {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    body {
+        width: 1080px;
+    }
+}
+@media screen and (max-width: 800px) {
+    /*end*/
+    
+    .half {
+        width: 100%;
+    }
+    .hide_mobile {
+        display: none;
+    }
+    .show_mobile {
+        display: inline;
+    }
+    .chunk {
+        width: 100%;
+        min-height: 100%;
+    }
+    .left {
+        float: none;
+    }
+    .right {
+        float: none;
+        padding: 0;
+    }
+    /* .column {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        -o-column-count: 1;
+        column-count: 1;
+        min-height: 100%;
+    }*/
+    
+    section {
+        max-height: 100%;
+        min-height: 0;
+    }
+    article {
+        min-height: 0;
+    }
+    p {
+        max-width: 80%;
+    }
+    h1 {
+        font-size: 18vw;
+    }
+    h2 {
+        font-size: 10vw;
+    }
+    h3, h4 {
+        font-size: 7.5vw;
+    }
+    li, dd, dt {
+        font-size: 5vw;
+    }
+    .pagination {
+        display: none;
+    }
+    body, section {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    h5 {
+        font-size: 5vw;
+    }
+    #cover article {
+        padding-bottom: 50px;
+    }
+    #granoff {
+        background-position: 5px 0, 5px 5px, 0 0, 0 5px;
+    }
+    .full .image_hold {
+        width: 100%;
+        height: 500px;
+        background-size: 95% auto;
+        padding: 0;
+        margin: 0;
+    }
+    .no article {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .yes {
+        background-image: none;
+    }
+    #gif{height: 400px;}
+}
+@media screen and (max-width: 640px) {
+    /*end*/
+    
+    article {
+        padding: 20px;
+    }
+    p {
+        max-width: 100%;
+    }
+    .image_hold {
+        width: 400px;
+        background-size: 290px auto;
+    }
+    .text_img {
+        max-width: 100%;
+    }
+    #STEAM{
+        height: 450px;
+    }
+    #two1 {
+        height: 200px;
+    }
+    #two2 {
+        height: 190px;
+    }
+    #two3 {
+        height: 325px;
+    }
+    #two4 {
+        height: 240px;
+    }
+    #two5 {
+        height: 190px;
+    }
+    #two6 {
+        height: 230px;
+    }
+    #three1 {
+        height: 230px;
+    }
+    #three2 {
+        height: 220px;
+    }
+    #three3 {
+        height: 240px;
+    }
+    #three4 {
+        height: 230px;
+    }
+    #three5 {
+        height: 220px;
+    }
+    #three6 {
+        height: 235px;
+    }
+    #four1{
+        height: 340px;
+    }
+    #four2{
+        height: 225px;
+    }
+    #five1{
+        height: 225px;
+    }
+    #five2{
+        height: 225px;
+    }
+    #six1{
+        height: 220px;
+    }
+    #seven1{
+        height: 245px;
+    }
+    #eight1{
+        height: 225px;
+    }
+    #eight2{
+        height: 225px;
+    }
+    #eight3{
+        height: 225px;
+    }
+    #squiggly1{
+        height: 190px;
+    }
+    #squiggly2{
+        height: 250px;
+    }
+    #squiggly3{
+        height: 250px;
+    }
+    #squiggly4{
+        height: 260px;
+    }
+    #mapping1{
+        height: 190px;
+    }
+    #optical1{
+        height: 200px;
+    }
+    #lighting1{
+        height: 190px;
+    }
+    #lighting2{
+        height: 200px;
+    }
+    #recycling1{
+        height:235px;
+    }
+    #recycling2{
+        height:235px;
+    }
+    #ten1{
+        height: 250px;
+    }
+    #ten2{
+        height: 225px;
+    }
+    #ten3{
+        height: 320px;
+    }
+    #eleven1{
+        height: 330px;
+    }
+    #eleven2{
+        height: 270px;
+    }
+    #twelve1{
+        height: 225px;
+    }
+    #twelve2{
+        height: 225px;
+    }
+    #twelve3{
+        height: 225px;
+    }
+    #twelve4{
+        height: 360px;
+    }
+    #circle{
+        height: 330px;
+    }
+    #network {
+        height: 200px;
+    }
+    #books {
+        height: 200px;
+    }
+    #friends {
+        height: 170px;
+    }
+    #pentagon {
+        height: 170px;
+    }
+    #pig {
+        height: 200px;
+    }
+    #rocket {
+        height: 200px;
+    }
+    #big{
+        height: 300px;
+    }
+
+    /*static versions*/
+    /*
+    #STEAMstatic{
+        height: 450px;
+    }
+    #two1static {
+        height: 200px;
+    }
+    #two2static {
+        height: 190px;
+    }
+    #two3static {
+        height: 325px;
+    }
+    #two4static {
+        height: 240px;
+    }
+    #two5static {
+        height: 190px;
+    }
+    #two6static {
+        height: 230px;
+    }
+    #three1static {
+        height: 230px;
+    }
+    #three2static {
+        height: 220px;
+    }
+    #three3static {
+        height: 240px;
+    }
+    #three4static {
+        height: 230px;
+    }
+    #three5static {
+        height: 220px;
+    }
+    #three6static {
+        height: 235px;
+    }
+    #four1static{
+        height: 340px;
+    }
+    #four2static{
+        height: 225px;
+    }
+    #five1static{
+        height: 225px;
+    }
+    #five2static{
+        height: 225px;
+    }
+    #six1static{
+        height: 220px;
+    }
+    #seven1static{
+        height: 245px;
+    }
+    #eight1static{
+        height: 225px;
+    }
+    #eight2static{
+        height: 225px;
+    }
+    #eight3static{
+        height: 225px;
+    }
+    #squiggly1static{
+        height: 190px;
+    }
+    #squiggly2static{
+        height: 250px;
+    }
+    #squiggly3static{
+        height: 250px;
+    }
+    #squiggly4static{
+        height: 260px;
+    }
+    #mapping1static{
+        height: 190px;
+    }
+    #optical1static{
+        height: 200px;
+    }
+    #lighting1static{
+        height: 190px;
+    }
+    #lighting2static{
+        height: 200px;
+    }
+    #recycling1static{
+        height:235px;
+    }
+    #recycling2static{
+        height:235px;
+    }
+    #ten1static{
+        height: 250px;
+    }
+    #ten2static{
+        height: 225px;
+    }
+    #ten3static{
+        height: 320px;
+    }
+    #eleven1static{
+        height: 330px;
+    }
+    #eleven2static{
+        height: 270px;
+    }
+    #twelve1static{
+        height: 225px;
+    }
+    #twelve2static{
+        height: 225px;
+    }
+    #twelve3static{
+        height: 225px;
+    }
+    #twelve4static{
+        height: 360px;
+    }
+    #circlestatic{
+        height: 330px;
+    }
+    #networkstatic {
+        height: 200px;
+    }
+    #booksstatic {
+        height: 200px;
+    }
+    #friendsstatic {
+        height: 170px;
+    }
+    #pentagonstatic {
+        height: 170px;
+    }
+    #pigstatic {
+        height: 200px;
+    }
+    #rocketstatic {
+        height: 200px;
+    }
+    #bigstatic{
+        height: 300px;
+    }*/
+
+}

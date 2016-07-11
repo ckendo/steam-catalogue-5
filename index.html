@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>STEAM Catalogue 4</title>
+    <meta name="description" content="Steam Catalogue 4">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property='og:image' content='http://steamwith.us/content/catalogue/four/newsteamicon.png'/>
+    <link rel="image_src" href="newsteamicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="author" content="Barron Webster, Kenji Endo">
+    <meta name="keyword" content="Steam, RISD, Brown, MIT, Yale">
+    <script src="jquery.js"></script>
+    <!--<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>-->
+    <script src="script.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        // Click event for any anchor tag that's href starts with #
+        $('a[href^="#"]').click(function(event) {
+
+            // The id of the section we want to go to.
+            var id = $(this).attr("href");
+
+            // An offset to push the content down from the top.
+            var offset = 0;
+
+            // Our scroll target : the top position of the
+            // section that has the id referenced by our href.
+            var target = $(id).offset().top - offset;
+
+            // The magic...smooth scrollin' goodness.
+            $('html, body').animate({
+                scrollTop: target
+            }, 200);
+
+            //prevent the page from jumping down to our section.
+            event.preventDefault();
+        });
+    });
+    </script>
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script type="text/javascript">
+    //uncomment and change this to false if you're having trouble with WOFFs
+    //var woffEnabled = true;
+    //to place your webfonts in a custom directory 
+    //uncomment this and set it to where your webfonts are.
+    //var customPath = "/themes/fonts";
+    </script>
+
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>-->
+</head>
+
+<body>
+    <section class="scroll " id="cover">
+        <article>
+            <div class="left chunk">
+                <h1 class = "bold" id = "title" style = "margin-top: -20px">
+                    STEAM:
+                    <br/>Catalogue
+                    <br/>Four</h1>
+            </div>
+            <div class="right chunk">
+                <h3 class = "bold" id = "produced">
+                    <span class="show_mobile"><br/></span>
+                    Produced by:
+                    <br/>
+                    Barron Webster
+                    <br/>
+                    Kenji Endo
+                    <br/>
+                    <br/>
+                </h3>
+                <h3 class = "bold" id = "spring">Spring 2015
+                    <br/>
+                    RISD
+                    <br/>
+                    Brown
+                    <br/>
+                    Yale
+                    <br/>
+                    MIT
+                    <br/>
+                </h3>
+            </div>
+        </article>
+    </section>
+    <section class="scroll ">
+        <article>
+            <div class="right chunk">
+                <h4> <span class="">Welcome to Catalogue Four!</h4>
+                <br/>
+                <br/>
+                <p>We are RISD, Brown, MIT, and Yale STEAM. <a href="http://steamwith.us" style="text-decoration:underline;">STEAM</a> is STEM + Art/Design.</p>
+                <p class="fourtwenty">We strive to integrate the creativity and aesthetics of the arts; the problem solving tools and rigor of the STEM fields; &amp; the critical thinking and ethical considerations of the humanities. We believe that this unification powerfully drives progress toward the future. This is our fourth Catalogue.</p>
+                <p>This fourth catalogue contains everything we've done from Winter 2015 to Spring 2015.</p>
+                <p class="fourtwenty subheaderbold"><span class="hide_mobile">Optimized for the latest versions of Chrome/Safari. We recommend navigating pages with your arrow keys, and exploring imagery with your trackpad/mouse/what have you. Click "STEAM Catalogue Four" on any page to return to the top.</span>
+                </p>
+            </div>
+        </article>
+    </section>
+    <section class="scroll ">
+        <article>
+            <div class="right chunk">
+                <h4> <span class="">About Catalogue Four</h4>
+                <br/>
+                <br/>
+                <p>This Catalogue, like the catalogue of a show, is a collection of documented work. At STEAM, this includes workshops, lectures, installations, discussions, and writing we created this spring.</p>
+                <p>STEAM Press, the mechanism through which Catalogue is published, accepts submissions from members of our communities, and outside contributors. Please reach out to us if you would like to add to the next issue of Catalogue.</p>
+                <p>The theme of this Catalogue is "Patterns for Play".
+            </div>
+        </article>
+    </section>
+    <section class="scroll " id="table_of_contents">
+        <article>
+            <div class="left chunk">
+                <h4>Contents</h4>
+                <br/>
+                <br/>
+                <br/>
+                <dl>
+                    <dt>1</dt>
+                    <dd class="bold"><a href="#1">Foreword</a>
+                        <br/><span>Minsoo Thigpen</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>2</dt>
+                    <dd class="bold"><a href="#2">Body + Internet</a>
+                        <br/><span>Tony Yang</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>3</dt>
+                    <dd class="bold"><a href="#3">The STEAM Pavilion</a>
+                        <br/><span>Victoria Wu</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>4</dt>
+                    <dd class="bold"><a href="#4">Rafaël Rozendaal</a>
+                        <br/><span>Barron Webster</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>5</dt>
+                    <dd class="bold"><a href="#5">Inclusive Design Workshop</a>
+                        <br/><span>Ingrid Lange</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>6</dt>
+                    <dd class="bold"><a href="#6">Thoughts on Approaching STEAM</a>
+                        <br/><span>Brian Oakes</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>7</dt>
+                    <dd class="bold"><a href="#7">Studio Applied Math</a>
+                        <br/><span>Lukas WinklerPrins</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>8</dt>
+                    <dd class="bold"><a href="#8">mini_me</a>
+                        <br/><span>Kenji Endo</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="right chunk">
+                <dl>
+                    <div class="clear"></div>
+                    <dt>9</dt>
+                    <dd class="bold"><a href="#9"> KinderSTEAM Week</a>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>&nbsp;&nbsp;&nbsp;</dt>
+                    <dd class="bold"><a href="#squiggly">"1 + 1 = Squiggly" : STEAM Learning Tools for K-12 Education</a>
+                        <br/><span>Allison Chen</span>
+                    </dd>
+                    <div class="clear"</div>
+                    <dt>&nbsp;&nbsp;&nbsp;</dt>
+                    <dd class="bold"><a href="#mapping">Interactive Mapping</a>
+                        <br/><span>Vandhana Ravi</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>&nbsp;&nbsp;&nbsp;</dt>
+                    <dd class="bold"><a href="#optical">Exploring Optical Illusions</a>
+                        <br/><span>Savannah Barkley</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>&nbsp;&nbsp;&nbsp;</dt>
+                    <dd class="bold"><a href="#lighting">Lighting and Circuitry</a>
+                        <br/><span>Sofya Zeylikman</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>&nbsp;&nbsp;&nbsp;</dt>
+                    <dd class="bold"><a href="#recycling">Recycling and Sound</a>
+                        <br/><span>Bethany Dubois</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>10</dt>
+                    <dd class="bold"><a href="#10">Yale STEAM Update</a>
+                        <br/><span>Chanthia Ma</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>11</dt>
+                    <dd class="bold"><a href="#11">Culture Yourself!</a>
+                        <br/><span>Jonelle Ahiligwo</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>12</dt>
+                    <dd class="bold"><a href="#12">The Dandelion Project at MIT</a>
+                        <br/><span>Hannarae Nam</span>
+                    </dd>
+                    <div class="clear"></div>
+                    <dt>13</dt>
+                    <dd class="bold"><a href="#13">New Frontiers</a>
+                        <br/><span>Skye Ray</span>
+                    </dd>
+                    <div class="clear"></div>
+                </dl>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="1">
+        <article>
+            <div class="left chunk"></div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+<span class="big_number">1</span>
+                <!-- <img class="big_number" src="img/1.png" /> -->
+                <div class="headline">
+                    <h5> <span class="bold">Foreword</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;">Patterns for Play
+                        <br/><a href="http://portfolios.risd.edu/mthigpen" style="text-decoration:underline;">Minsoo Thigpen</a>
+                        <br/> <span class = "italic"> Brown | RISD Dual Degree '18<br/> Painting &amp; Engineering</span> 
+                    </p>
+                    <div class="clear"></div>
+                </div>
+                <p>The SMPTE (The Society of Motion Picture and Television Engineers) color bars shown above is a television test pattern, along with a continuous  audio tone, which acts as a known standard for all other broadcasting programs to adjust their equipment to. This test pattern is used only where the NTSC analog video standard is utilized, such as countries in North America where we, as one of the last generations of TV watching children, might still recognize it in the wisps of our nostalgic memory.</p>
+
+                <p class="fourfifteen">Video and audio engineers can compare this known standard to the received pattern from other TV stations or broadcasters so that the program material is showing the analog video chrominance <span class="show_mobile">and luminance information correctly. Therefore, a TV station or or network broadcaster usually will transmit this test pattern with the audio tone together before sending program material in order to show legitimacy and authority of the transmission line, so that the receiving stations may adjust their equipment accordingly.</span></p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+            </div>
+            <div class="pagination right">
+                <a href="#cover">Foreword</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p><span class="hide_mobile">and luminance information correctly. Therefore, a TV station or or network broadcaster usually will transmit this test pattern with the audio tone together before sending program material in order to show legitimacy and authority of the transmission line, so that the receiving stations may adjust their equipment accordingly.</span></p>
+
+                <p>Each semester, the STEAM clubs collect documentation and materials from our open call for interdisciplinary work for our catalogues. Such as the SMPTE is a known standard for analog video transmission, this Catalogue strives to be a known source of documentation and support for the rising STEAM movement. This Catalogue is an open broadcast to the STEAM community: students, educators, politicians, administrators, industry leaders, health care professionals, activists, artists, and designers. This is our pattern for play, for learning, for improving, and for growing. We hope that you will contribute to the standard that we are trying to build, in part, with the projects and communities described in the following chapters. We hope that you will receive our signal and in return, respond with your own patterns for play.</p>
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="STEAM"></div></span>
+                <!--<span class="show_mobile"><div class="image_hold" id="STEAMstatic"></div></span>-->
+                <span class="show_mobile"><img class="text_img" src="orig/STEAM.jpg"/></span>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#1">Foreword</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="2">
+        <article>
+            <div class="left chunk">
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">2</span>
+                <div class="headline">
+                    <h5> <span class="bold">Body + Internet</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;">Winter-session and IAP workshop series
+                        <br/><a href="mailto:tyang@risd.edu" style="text-decoration:underline;">Tony Yang</a>
+                        <br/> <span class = "italic"> RISD '17, Architecture</span> 
+                    </p>
+                        <div class="clear"></div>
+                </div>
+                <p>The Winter-session and IAP (Independent Activities Period) workshop series is an annual 4-week event organized by the collective STEAM clubs. Workshop sessions are held once every week during the intermission between Fall and Spring semester (January – February) – and culminates in a gallery exhibition showcasing the projects developed.</p> 
+                <p>The schema for this year’s workshop series was to capitalize on the diversity of specializations and academic degree of the participants – to maximize the potential for collaborative dynamics and minimize any programmatic redundancies. It was imperative to design content that could engage an illustrator, a mechanical engineer, and a medical practitioner at the same time.</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#2">Body + Internet</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="fourfifteen">The principle framework of each session reflected aspects of a studio setting; wherein the workshops facilitated considerations of theoretical foundations; where conceptual and technical progression arose from peer-to-peer conversations and critiques; and where the emphasis was placed on iterations of concept and proto-types.</p> 
+                <p class="subheaderbold"> Body + Internet!</p> 
+                <p>Out of 60 applicants from the three collegiate communities, we welcomed fifteen students to investigate the theme of Body+Internet – the interaction between analog and digital presence: </p> 
+                <p>”Internet presentation and the physical body are both representations of the individual. The existence of both and its duality leads us to think about the relationship between body and mind. On the internet all nature has been reduced to symbols (Sophia Al-Maria); how do we understand the alternative online reality with this? What is the materiality of the internet?”</p> 
+            </div>
+            <div class="right chunk">
+                <p>Separated into groups of three, the teams were challenged to develop a project that inhabits two spaces simultaneously. The event culminated in two simultaneous gallery shows, one at Expose (Providence) and on at Industry Labs (Boston). The teams developed projects ranging from industry facing design concepts to speculative aspects and conceptual art works.</p> 
+                <p class="fourfifteen">The workshop sessions were organized by Ryan Mather (RISD, Industrial Design) and I (RISD, Architecture), and facilitated by Ji-Fei Ou (MIT Media Lab), Lily Bui (MIT, Comparative Media Studies), and Cynthia Xin Liu (RISD, Digital + Media).</p> 
+                <p>The following are highlights of the Body+Internet workshops: </p> 
+                <p class="subheaderbold">Session One – MIT Media Lab</p> 
+                <p>Cynthia, Lily, and Ji-Fei led the students through a series of precedent work providing a basis for the proceeding workshops. The content included <span class="show_mobile">discussions regarding cultural impacts and theory behind internet-related projects; introducing the fascinating concept of enchanted objects, semiotics, and sensors, in relation to the body; and current research in the realm of actuated physical objects and programmable materials.</span></p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#2">Body + Internet</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p><span class="hide_mobile">discussions regarding cultural impacts and theory behind internet-related projects; introducing the fascinating concept of enchanted objects, semiotics, and sensors, in relation to the body; and current research in the realm of actuated physical objects and programmable materials.</span></p> 
+                <p class="fourtwenty">After lunch, Ji-Fei and Lily co-presented the day’s workshop: <a href="http://ou-jifei.com/pneui/" style="text-decoration:underline;">Programmable Pneumatic Systems</a>: devices that move in various patterns based on the input/output of air that is being let through valves.</p> 
+                <span class="hide_mobile"><div class="image_hold" id="two1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/2-1.JPG"/></span>
+                <p class = "caption">Ji-Fei demonstrating his kit</p> 
+            </div>
+            <div class="right chunk">
+                <p>Teams were given time to experiment with the binary drivers of the kits and explore possibilities of applying these concepts of invoking material responses to their own projects.</p> 
+                <p>As the first day came to a close, Ryan provided a short demo on two Arduino cars: one that was afraid of the dark and one that was afraid of intimacy. The demo set the tone to the principles of a design process: that concept and proto-typing are recursive within each other; concept will drive proto-types, and proto-types will redefine concept. </p> 
+                <span class="hide_mobile"><div class="image_hold" id="two2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/2-2.JPG"/></span>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#2">Body + Internet</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="subheaderbold">Session Two – RISD Nature Lab &amp; CIT building </p>
+                <p>We began the day conversing with <a href="http://www.paperkettle.com/home/illucia/" style="text-decoration:underline;">Chris Novello</a> about what it meant to be a manipulator of digital space – how can one invoke alternative realities through the curation of geographic and cultural content on the internet; and how can this become a potential tool for creation.</p> 
+                <p>Cynthia Liu led a workshop circuit with new “sensational” virtual reality technologies. Teams circulated between creating and interacting in surreal environments through the use of 3-d scanners, Xbox Kinect, Unity game engine, and the Oculus Rift.</p>
+                <p>Lily concluded the day with a discussion organized around theories of hyper-textuality and sensorial experience. Although we ran out of time, we agreed that this conversation was the highlight of the day.</p>
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="two3"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/2-3.jpg"/></span>
+                <p class="caption">Ryan lost in cyber-space</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#2">Body + Internet</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="two4"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/2-4.jpg"/></span>
+                <p class="caption">3-D scanned donut as topology</p>
+            </div>
+            <div class="right chunk">
+                <p class="subheaderbold">Session Three – MIT Media Lab</p>
+                <p>For the third week, <a href="http://www.ikatun.com/kanarinka/" style="text-decoration:underline;">Catherine D’Ignazio</a>, a.k.a. Kanarinka, to presented insight into her world. Catherine, at any given time, operates as an artist, a software developer, and an educator. We discussed how her creative expressions are catalyzed through mediums that draw parallels between her three identities; and her methodology in utilizing these collective disciplines in a relatable manner towards a wide-spread audience.</p>
+                <p>After lunch, Ji-Fei gave us a tour of the Tangible Media Group and showcased the projects that were housed there; such as the infamous <a href="http://tangible.media.mit.edu/project/inform/" style="text-decoration:underline;">inForm</a> apparatus! While this was going on, Ryan demonstrated how to connect two Raspberry Pi’s to each other through the internet.</p>
+                <p>After observing the excitement from the discussion, we asked Lily to orchestrate an activity based on the principles of sensorial experiences. Blind-folded and equipped with head-phones, we asked the students to dance in response to stimuli from their choice of music. <span class="show_mobile">The goal of the students was to become interconnected while deprived of their senses. We ran the activity several times and with each progression observed how cluster behaviour differ with the addition of sensory acuities. </span></p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#2">Body + Internet</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p><span class="hide_mobile">The goal of the students was to become interconnected while deprived of their senses. We ran the activity several times and with each progression observed how cluster behaviour differ with the addition of sensory acuities. </span></p>
+                <p class="subheaderbold">Session Four – RISD E’Ship space</p>
+                <p>The workshop series officially concluded with a final critique with a panel of critics – Soo-Jung Ham (Department Head, Industrial Design) and Dan Goods (Visual Strategist, NASA) – while the tone was informal, Dan and Soo-Jung’s creative sensibilities offered stimulating contributions to each team’s project.</p>
+                <p class="subheaderbold">Ending Notes:</p>
+                <p>Unfortunately due to the scale of the workshop series, STEAM can only invite a maximum of fifteen students. However, we are committed to extending facets of the event to anyone that is so inclined to participate. As such, through Body+Internet, we invited NASA’s Propulsion Laboratory’s Visual Strategist: <a href="http://www.directedplay.com/" style="text-decoration:underline;">Dan Goods</a> to share with us his narrative. The talk, open to the public, <span class="show_mobile">provided an inspiring discussion on the operations of his team within a STEM-centric environment. And how he has managed a symbiotic relationship with the scientists at NASA. The event received a successful reception and caused great excitement in the community at large!</span></p>
+
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="two5"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/2-4.jpg"/></span>
+                <p class="caption">Internet Sensations Wand by Rob Learsch (MIT), Ijeoma Azoda (Brown), and Horatio Han (RISD)</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#2">Body + Internet</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="two6"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/2-6.png"/></span>
+                <p class="caption">Cat Me If You Can by Matthew Lim (RISD), Ned Burnell (MIT), Esther Jang (MIT), and Bonny Cai (Brown | RISD)</p>
+            </div>
+            <div class="right chunk">
+                <p class="fourfifteen"><span class="hide_mobile">provided an inspiring discussion on the operations of his team within a STEM-centric environment. And how he has managed a symbiotic relationship with the scientists at NASA. The event received a successful reception and caused great excitement in the community at large!</span></p>
+                <p>For STEAM, each iteration of this workshop series is a continuum into researching the structure of multi-disciplinary teams and workshop design. The next Winter-session and IAP workshop series will build on successes of Body+Internet and Human+Computer.</p>
+                <br/>
+                <p class = "caption"> See the Body + Internet <a href="body+internet-catalog.pdf" style="text-decoration:underline;">exhibition catalog</a>.</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#2">Body + Internet</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="3">
+        <article>
+            <div class="left chunk"></div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">3</span>
+                <div class="headline">
+                    <h5> <span class="bold">The STEAM Pavilion</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="https://www.linkedin.com/pub/victoria-wu/62/a47/952" style="text-decoration:underline;">Victoria Wu</a>
+                    <br/> <span class = "italic"> Brown '15, Materials Engineering <br/>&amp; Visual Arts </span> </p> 
+                        <div class="clear"></div>
+                </div>
+                <p class="subheaderbold"> The Concept</p>
+                <p> The concept for the STEAM Pavilion began as a “what if” dream: What if STEAM had its own building– a space specifically for STEAM events? What would that look like? </p>
+                <p>The idea came about after a semester of organizing STEAM events that were scattered across campus, in List Art Center, the Biomedical Center, Barus &amp; Holley / the Brown Design Workshop, the Science Center, the Rock, as well as at RISD. We also received some feedback that STEAM seemed too exclusive, and that our emphasis on student interest-driven projects– <span class="show_mobile"> i.e. that we’re interested in every intersection of science and art that you’re interested in, from storytelling, dance, and neuroscience to math and education, not just biology/engineering and design– was lost on most of the student body. Brown STEAM is growing, thanks to many successful events and passionate students, but it is still not as accessible and visible as we’d like it to be.</span>
+                </p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#3">The STEAM Pavilion</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="threeeightfive"><span class="hide_mobile">i.e. that we’re interested in every intersection of science and art that you’re interested in, from storytelling, dance, and neuroscience to math and education, not just biology/engineering and design– was lost on most of the student body. Brown STEAM is growing, thanks to many successful events and passionate students, but it is still not as accessible and visible as we’d like it to be.</span> </p>
+                <p> That’s where the idea for a unifying, interdepartmental space came in. Conceptually, this space, called the STEAM Pavilion, will be an iconic, physical representation of our goals for STEAM’s presence on College Hill in Providence: accessible, versatile, and inspiring. We came up with these conceptual design goals after about three meetings with our collaborators, the designers from <a href="http://www.pneuha.us/" style="text-decoration:underline;">Pneuhaus,</a> a local design company founded by RISD Furniture Design and Ohio State University Architecture graduates.</p>
+            </div>
+            <div class="right chunk">
+                <p class="subheaderbold"> The Design Team</p>
+                <p>Although I officially spearheaded this project, this endeavor was unique in that all members of the Brown STEAM student leadership team were involved. In other words, on top of other bioSTEAM, C+STEAM, educational outreach, and guest speaker events, we all got together to discuss our ideas for the Pavilion. The team consisted of myself (Engineering/Visual Art, Senior), Jonelle Ahiligwo (Biology/Public Health, Junior), Noah Schlottman (Environmental Students/Music, Junior), John Filmanowicz (Computer Science, Sophomore), Kenji Endo (Computer Science, Visual Art, Freshman), Chelsea Phan (Mechanical Engineering, Sophomore), Rana Ozdeslik (Molecular Pharmacology, Physiology, and Biotechnology, 4th year Graduate Student).
+                </p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#3">The STEAM Pavilion</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p>Prior to meeting Pneuhaus in September at the Better World by Design Conference, I had been considering constructing the Pavilion from lightweight plywood and metal hardware because I wanted the Pavilion to be easily assembled, disassembled and stored. As soon as I stepped in Pneuhaus’ RGBubble, a spacious pneumatic “bubble” lounge, at the Better World Conference, I rethought the materials selection for the Pavilion.
+                </p>
+                <p class="fourfifteen">Pneumatics refer to things that use air, contained and pressurized, to perform an action or generate force. Pneuhaus specializes in creating pneumatic structures from nylon, the same material used in parachutes. We recognized that pneumatics make a lot of sense for our design goals; an inflatable structure is easy to assemble, clean, and easily assume different shapes. We pitched our idea for the STEAM Pavilion to Pneuhaus, and, to our delight, they matched our excitement to collaborate.</p>
+            </div>
+            <div class="right chunk">
+                <p class="subheaderbold"> The Design Process</p>
+                <p>We met once a week for about a month during January 2015 to brainstorm ideas for the Pavilion layout and structure. We came up with several ideas for expressing the concepts of accessibility and openness while making a structural, versatile space (shown below). </p>
+                <p> Critically, our meetings were fueled by an excess of baked goods, tea, and craft paper turned tablecloth for sketching. We identified the most important aspects of the Pavilion to be: </p>
+                <p class = "fourthirty">
+                (1)  Portability: easy to put up, take down, and store;<br/>&nbsp; &nbsp; &nbsp;lightweight <br/>
+                (2)  Accessibility: intuitive to interact with <br/>
+                (3)  Versatility: able to host different types of events, <br/>&nbsp; &nbsp; &nbsp;such as presentations, workshops, and exhibits <br/>
+                (4)  Capacity: able to hold at least 40 people <br/>
+                (5)  Iconic: visually representative of STEAM
+                </p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#3">The STEAM Pavilion</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="fourtwenty">From there, we sketched and sketched and sketched.</p>
+                <span class="hide_mobile"><div class="image_hold" id="three1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/3-1.JPG"/></span>
+                <p class="caption">Toothed wall concept for "omnipermeability"</p>
+                <p class="fourtwenty"> Eventually, we landed on the idea of a pentagonal shaped structure, symbolic of the “five” disciplines within STEAM. Every wall contains multiple slit-like doors, allowing the space to be entered and exited from any side.<span class="show_mobile"> We also developed a design that would enable the division of the Pavilion into smaller rooms, using panels of nylon connected to attachment points on the Pavilion floor and ceiling. We addressed this challenge by designing veins of bungee cord into the ceiling for versatile clipping points, and weighted panels. This would allow us to reconfigure the Pavilion depending on the event. </span>
+                </p>
+            </div>
+            <div class="right chunk">
+                <p class="fourthirty"> <span class="hide_mobile">  We also developed a design that would enable the division of the Pavilion into smaller rooms, using panels of nylon connected to attachment points on the Pavilion floor and ceiling. We addressed this challenge by designing veins of bungee cord into the ceiling for versatile clipping points, and weighted panels. This would allow us to reconfigure the Pavilion depending on the event.</span>
+                </p>
+                <span class="hide_mobile"><div class="image_hold" id="three2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/3-2.JPG"/></span>
+
+                <p class="caption">Methods of dividing the Pavilion into smaller spaces</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#3">The STEAM Pavilion</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="three3"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/3-3.png"/></span>
+               <p class="caption">Selected major configurations of the STEAM Pavilion</p>
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="three4"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/3-4.JPG"/></span>
+                <p class="caption">Door/wall color renderings</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#3">The STEAM Pavilion</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> We designed the Pavilion to have a 60-person capacity, translating to a 40-ft interior footprint. We chose the Pavilion to be white with red accents at the doors, to indicate where to enter/exit. Pen plots and 3D prints of the design were used to visualize what the space would look like. We used Rhino and Grasshopper to model the Pavilion and generate a template for the nylon fabric and plastic floor.</p>
+                <span class="hide_mobile"><div class="image_hold" id="three5"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/3-5.png"/></span>
+                <p class="caption">Early Rhino model of the STEAM Pavilion</p>
+            </div>
+            <div class="right chunk">
+                <p class="subheaderbold"> Construction </p>
+                <p class="fourthirty"> This project was funded in part by the School of Engineering and in part by the Science Center. We purchased materials and organized hours to visit the Pneuhaus studio to construct the actual inflatable. Construction of the Pavilion consisted of cutting the materials, prepping the seams, and sewing.</p>
+                <span class="hide_mobile"><div class="image_hold" id="three6"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/3-6.jpg"/></span>
+                <p class="caption">Slit-door prototype</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#3">The STEAM Pavilion</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="caption">Tooth prototype with robust seams</p>
+
+                <div class='videoWrapper'>
+                    <iframe src="https://player.vimeo.com/video/128372995?byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                
+
+            </div>
+            <div class="right chunk">
+                <p class="subheaderbold"> The Future of the STEAM Pavilion </p>
+                <p> The future of the STEAM Pavilion is full of potential. Because it is portable, the STEAM Pavilion can travel to different places on College Hill and beyond– for instance, to STEAM hubs at Yale and MIT. We hope to host many events in the fall and spring, and in doing so, develop different configurations and forms for the Pavilion as STEAM develops.</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#3">The STEAM Pavilion</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="4">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="four1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/4-1.jpg"/></span>
+
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">4</span>
+                <div class="headline">
+                    <h5> <span class="bold">Rafaël Rozendaal</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="http://barronwebster.com" style="text-decoration:underline;">Barron Webster</a>
+                    <br/> <span class = "italic"> RISD '16, Graphic Design</span> </p> 
+                        <div class="clear"></div>
+                </div>
+                <p>Rafaël Rozendaal visited RISD on Friday, April 3, 2015 to give a lecture. Rafaël's work has been circulating heavily recently; a focus on internet art and related aesthetics has been on the rise over the past few years with the rise of access and sharability. Rafaël's work has been dealing with the "internet" as a platform, however, for over a decade, starting in 2001. It's hard for us now to imagine a world where fine art and the internet are disentangled; with new platforms, curation efforts, buy-in from credible institutions, and even active archiving measures all part of the fabric of internet art at this point. Rafaël's work has been an integral part of this tide; the rhetoric of "why don't I make the website the art?" seems obvious now, but someone had to ask it first.</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#4">Rafaël Rozendaal</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p>It seemed prudent to invite Rafaël at a time when more students than ever are considering or actively engaging the internet in their practice, whether literally or thematically, to hear the reasoning behind his practice. The relevance of his work to the student body was well represented by the turnout: the Chace auditorium was filled to capacity, with some resorting to standing. This also reflected the interest of multiple disciplines in his work; though many can see the direct relevance to graphic design or painting, his work also brought students from textiles, (directly related, as it turned out, as he's working on some fabric prints) industrial design, illustration, digital + media, architecture and other majors.</p>
+                <p>His rhetoric behind using the browser as a medium was quite refreshingly egalitarian. Purportedly, once access to the internet supersedes access to urban cultural centers, art that lives on the internet allows appreciation <span class="show_mobile">and access to a much wider pool of people than art in urban centers. This is beneficial to the artist and the viewers; more exposure on one hand, and more access to art on the other. He also spoke about his process of selling work that doesn't exist physically and the development of his internet works contract. His sales involve the sale of the domain, one of the only things on the internet that isn't only artificially scarce, and for the purchaser to keep the work in the public domain so that access is kept open. This is something endemic to websites; most art sales, as he mentioned, have the chance at ending up in a collector's basement somewhere.</span></p>
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="four2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/4-2.jpg"/></span>
+                <p class="caption">Rozendaal at the Chace Auditorium</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#4">Rafaël Rozendaal</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class = "fourtwenty"><span class="hide_mobile">and access to a much wider pool of people than art in urban centers. This is beneficial to the artist and the viewers; more exposure on one hand, and more access to art on the other. He also spoke about his process of selling work that doesn't exist physically and the development of his internet works contract. His sales involve the sale of the domain, one of the only things on the internet that isn't only artificially scarce, and for the purchaser to keep the work in the public domain so that access is kept open. This is something endemic to websites; most art sales, as he mentioned, have the chance at ending up in a collector's basement somewhere.</span></p>
+                <p>After he moved on to talks about the other half of his practice (read: shows, lenticulars, and poetry) we opened up for questions, many of which were about the nature of his sales and what happens to the work when the technical standards change and the websites are no longer visitable. The quotable answer was that even if the websites <span class="show_mobile">fail after 10 years, that's still the longest solo show in the history of art. All in all, the talk hopefully got many more people thinking about the medium specificity of the web and how to incorporate it into their practices.</span>
+                </p>
+            </div>
+            <div class="right chunk">
+                <p class="fourten"><span class="hide_mobile">fail after 10 years, that's still the longest solo show in the history of art. All in all, the talk hopefully got many more people thinking about the medium specificity of the web and how to incorporate it into their practices.</span>
+                </p>
+                <br/>
+
+                <p class ="caption"> Watch Rozendaal's full lecture on <a href="https://vimeo.com/124126663" style="text-decoration:underline;">Vimeo</a>. </p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#4">Rafaël Rozendaal</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="5">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="five1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/5-1.jpg"/></span>
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">5</span>
+                <div class="headline">
+                    <h5> <span class="bold">Inclusive Design <br/> Workshop</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="http://ingridlange.com" style="text-decoration:underline;">Ingrid Lange</a>
+                    <br/> <span class = "italic"> RISD '16, Industrial Design</span> </p> 
+                    <div class="clear"></div>
+                </div>
+                <p class="fourfifteen"> In 2014, the World Health Organization radically revised their definition of disability. The crux of this change was to define disability as context dependent rather than as an attribute of a person. Interactions with technology are a clear example of this shift. Most of us experience disabilities that are temporary or situational on a daily basis. A person’s physical abilities change dramatically as they move through multiple environments. In a loud crowd, they can’t hear well. In a car, they’re visually and cognitively impaired. A new parent spends much of their day doing tasks one-handed. Interactions with technology depend heavily on what a person sees, hears, says, smells, and touches.</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#5">Inclusive Design Workshop</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p>With increasingly longer life spans and increased ubiquitous technologies, designers must create adaptive solutions that address a person’s permanent, situational, and temporary constraints. On April 1st and 2nd, Brown/RISD STEAM and <a href="http://www.abetterworldbydesign.com/2015/" style="text-decoration:underline;">A Better World by Design </a>collaborated with Microsoft Design on a workshop based on this shift in semantics. “Inclusive Design” brought together 6 RISD students and 5 Brown University students to dive into researching and designing for optimal inclusivity in technology products.</p>
+                <p class="subheaderbold"> Day 1</p>
+                <p> At 10am on the first day, 11 students from Brown and RISD navigated through Barus and Holley, the Brown Physics and Engineering building, to find the Brown Design Workshop, a fantastic maker space tucked away in the Brown Prince Lab. With sketchbooks and coffee cups in hand, they spent the next full day and a half in the Brown Design Workshop, researching, ideating, and collaborating in groups.</p>
+            </div>
+            <div class="right chunk">
+                <p class="fourthirty"> The groups were as follows:</p>
+
+                <p>Hae Bung Min, RISD Industrial Design ’15 <br/>
+                Sara Peletz, Brown Engineering ’17 <br/>
+                Timothy Duschenes, RISD Industrial Design ’17 <br/>
+                </br>
+
+                Jeeyoung Yang, RISD Industrial Design ’16 <br/> 
+                Iyad Owen-Elia, Brown Mechanical <br/> &nbsp; &nbsp; &nbsp;Engineering ’16 <br/> 
+                Luci Cooke, Brown Computer Science + <br/> &nbsp; &nbsp; &nbsp;Visual Arts ’17 <br/> 
+                </br>
+
+                Beryl Bai, RISD Graphic Design ’15 <br/> 
+                Adrienne Tran, Brown Computer Science ’15 <br/> 
+                John Filmanowicz, Brown Computer Science ’17 <br/> 
+                </br>
+
+                Adi Azulay, RISD Industrial Design ’18 <br/> &nbsp; &nbsp; &nbsp;(first year grad) <br/> 
+                Timothy Rooney, RISD Industrial Design ’16</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#5">Inclusive Design Workshop</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class = "threeeightfive">With these interdisciplinary groups of students in mind, Margaret Price, Principal Design Strategist, and Kat Holmes, Principal Design Lead, of Microsoft Design crafted the framework of Inclusive Design and led the participants through the workshop process over the two days. Margaret is a design strategist who lives in the intersection between research, business strategy, design, and technology. In a world where many are focused on looking forward, she believes looking back can provide a deep level of insight into the human condition and a unique perspective on creative problem solving. Kat works on building connections between design, cultural insights, and human behavior. She believes technology has a lot to learn from people and that human interaction can be a powerful metaphor for digital interaction design. She brings these insights to life through creative strategy and product execution.</p>
+            </div>
+            <div class="right chunk">
+                <p> After initial introductions, Margaret set the tone for the first day of Inclusive Design with some opening thoughts on her team’s research into Inclusive Design. Stemming from the World Health Organization’s newly refined definition of “disability” that focuses on situational disability, the team from Microsoft encouraged the workshop participants to look to human behavior to make technological experiences that are both universal and more personal in nature.</p>
+
+                <p class="fourfive"> After these opening remarks, volunteers of the Providence Deaf community joined the participants for user research interviews and lunch provided by the local Providence Flatbread Pizza Company. Betsy Beach (Providence community member), Mackenzie Woodburn (Brown Cognitive Neuroscience ’17), Alexander Laferriere (Brown Graduate student, focusing on filmmaking) provided the participants with<span class="show_mobile">invaluable insights about the benefits and challenges of a more visually-centric culture that stems from the use of American Sign Language. By gaining a deeper understanding of a form of communication that relies heavily on visual and tactile cues, workshop participants were able to think about designing technological experiences in a new way that could benefit not only the Deaf community, but hearing users as well. These first-hand stories and perspectives on alternative forms of communication, as well as the drawbacks of existing technology experiences, inspired participants to rethink how technology currently connects or disconnects humans. </span></p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#5">Inclusive Design Workshop</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> <span class="hide_mobile">invaluable insights about the benefits and challenges of a more visually-centric culture that stems from the use of American Sign Language. By gaining a deeper understanding of a form of communication that relies heavily on visual and tactile cues, workshop participants were able to think about designing technological experiences in a new way that could benefit not only the Deaf community, but hearing users as well. These first-hand stories and perspectives on alternative forms of communication, as well as the drawbacks of existing technology experiences, inspired participants to rethink how technology currently connects or disconnects humans. </span></p> 
+
+                <p> Once user interviews concluded, the workshop participants continued to build empathy through exercises that allowed them to experience temporary blindness, deafness, or arthritis. <span class = "show_mobile"> Using altered goggles, headphones, and arm braces provided by Margaret and Kat, workshop participants were challenged to complete a basic task in their small groups while each member experienced one of these different disabilities. Despite having one of these hindrances, each team member used their most heightened sense to help each other complete the task of sending a text message or creating a calendar event on their laptops or phones.</span>
+                </p> 
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="five2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/5-2.jpg"/></span>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#5">Inclusive Design Workshop</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> <span class = "hide_mobile"> Using altered goggles, headphones, and arm braces provided by Margaret and Kat, workshop participants were challenged to complete a basic task in their small groups while each member experienced one of these different disabilities. Despite having one of these hindrances, each team member used their most heightened sense to help each other complete the task of sending a text message or creating a calendar event on their laptops or phones.</span>
+                </p> 
+
+                <p> With a couple of hours left in the first day, the workshop participants returned to their sketchbooks and white boards to digest the brief first-hand experiences with disability, as well as the user interviews from that morning. Both individually and in their small groups, the participants identified spaces for opportunity in technology based off the insights they had gathered throughout the day. Two groups <span class = "show_mobile">were tasked with focusing on the realm of “dialogue and cues” in technology and communication, while the other two groups focused on “perception and sensing”. The groups finished the first day discussing and identifying areas of improvement in technology, while considering the full spectrum of users that would be sharing these experiences.</span> 
+                </p> 
+            </div>
+            <div class="right chunk">
+                <p> <span class = "hide_mobile">were tasked with focusing on the realm of “dialogue and cues” in technology and communication, while the other two groups focused on “perception and sensing”. The groups finished the first day discussing and identifying areas of improvement in technology, while considering the full spectrum of users that would be sharing these experiences.</span> </p> 
+
+                <p class = "subheaderbold"> Day 2</p> 
+                <p> After a night off from Inclusive Design, workshop participants came in the next morning refreshed with clearer concepts and ideas. For the first two hours, the groups refined the ideas that emerged in discussion at the end of the first day and crafted presentations to pitch at the end of the short day. Due to the short 1.5 day time frame of the workshop, final presentations focused more on illustration of concept and analysis, rather than a functioning prototype.
+                </p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#5">Inclusive Design Workshop</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class = "fourtwenty"> Once the presentations were finalized mid-morning on Day 2, the groups then pitched their ideas to not only Margaret and Kat, but also the user interview volunteers from the previous day. Microsoft’s film team from Cinelan, who are helping Margaret and Kat make an Inclusive Design documentary, also joined the group to view the presentations. Miao Wang, Damon Smith, Robert Chang of Cinelan sat in on both days of the workshop to get a deeper understanding of the Inclusive Design project within Microsoft Design.
+                </p> 
+
+                <p> The final projects were as follows:
+                </p> 
+
+                <p class="subheaderbold"> Physical Designs </p> 
+                <p> <u> Em_Path </u> <br/> Beryl Bai, John Filmanowicz, and Adrienne Tran</p>
+                <p class="fourtwenty"> An immersive, maze-like experience that would help people who are not blind or deaf develop greater empathy for those who don’t have their vision <span class="show_mobile">or hearing through a simulated experience. This design acts as tool for both empathy and research. </span> </p> 
+
+            </div>
+            <div class="right chunk">
+                <p> <span class="hide_mobile">or hearing through a simulated experience. This design acts as tool for both empathy and research. </span> </p> 
+
+                <p> <u> Tac-clip </u> <br/> Tim Rooney, Adi Azulay</p>
+                <p> A discrete, physical product that clips onto a user’s clothing and sends vibrating notifications when someone nearby is trying to get the user’s attention or if the user is in danger. Possible users could range from construction workers to runners to Deaf users.</p>
+
+                <p class="subheaderbold"> UX/UI Designs </p> 
+                <p> <u> EyeCon </u> <br/> Tim Duschenes, Hae Bung Min, Sara Peletz</p>
+                <p> An optional real-time relay of an expressive and unique avatar to a conversation partner while the user is engaging with the partner’s message. This personalized avatar goes beyond the homogenous <span class="show_mobile"> emoji options and emphasizes the importance of facial cues in human-to-human interaction. </span></p> 
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#5">Inclusive Design Workshop</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> <span class="hide_mobile"> emoji options and emphasizes the importance of facial cues in human-to-human interaction. </span></p>
+
+                <p> <u> T-Mo </u> <br/> Jeeyoung Yang, Iyad Owen-Elia, Luci Cooke </p>
+                <p class = "fourtwenty"> A texting feature that allows the user to select a word in a sentence and animate that word across the screen by drawing a path for that word with the user’s finger on the screen. The unique motion of a word augments the emotional and personal aspect of communication that texting doesn’t fully capture.</p>
+                
+                <p> The resulting projects showed a range in interest and expertise within the teams, and excited those who came to the presentations. “We were thrilled to share and pilot Inclusive thinking with the students. The final projects showed a range of diverse and universal solutions that can benefit all of us. Our goal was to help students think differently and intrinsically embed Inclusive practices into the design process. We were impressed by the caliber of thinking of those who participated. In fact, one of our summer interns was hired from the group.” – Margaret Price, Principal Design Strategist at Microsoft. </p>
+            </div>
+            <div class="right chunk">
+                <p> In its entirety, Inclusive Design showed the participants the importance of conceptual validation through research and empathy, allowing participants to deeply engage with a topic and process that permeates their other coursework and personal projects. RISD/Brown STEAM and Better World by Design hope to continue to collaborate again in the future on interdisciplinary projects that are focused on inclusivity and access in design.</p> 
+                <br/> 
+
+                <p class = "caption"> Additional Press at<a href="http://www.risd.edu/about/news/2015/aiming-for-optimal-accessibility/" style="text-decoration:underline;"> risd.edu </a></p>
+
+                <br/> 
+                <p class = "caption"> For additional questions, please email to Ingrid Lange at <a href="mailto:ilange@risd.edu" style="text-decoration:underline;"> ilange@risd.edu. </a> </p> 
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#5">Inclusive Design Workshop</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="6">
+        <article>
+            <div class="left chunk">
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">6</span>
+                <div class="headline">
+                    <h5> <span class="bold">Thoughts on Approaching STEAM</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="https://brianoakes.squarespace.com/" style="text-decoration:underline;">Brian Oakes</a>
+                    <br/> <span class = "italic"> RISD '18, Sculpture</span> 
+                    </p>
+                    <div class="clear"></div>
+                </div>
+                <p>Upon arriving on a scattered campus this past fall as a RISD freshman, I began to wonder what kind of projects I would come in contact with– what kind of creative minds and inspiring people I would befriend. It wasn’t until a club fair at RISD that I came in contact with the RISD and Brown STEAM Team. The very idea of a student-run club integrating art and design with STEM science not only blew my mind but also brought me to an entirely new level of inspiration. Now, instead of making paintings on canvas, why not make paintings on microscope slides with bacteria? What if you took 3D scans of animals and combined them? What if I want to learn about the Internet as an art form? </p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#6">Thoughts on Approaching STEAM</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> Before I could even ask myself these questions, I was presented the answer to my “what-if’s” in the form of a workshop, a lecture, or event run by the STEAM team. After showing interest at a workshop and lecture I was quickly adopted by the clubs welcoming members and incredible leaders, with whom I plan to work and create with in the coming years.
+                </p>
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="six1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/6-1.JPG"/></span>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#6">Thoughts on Approaching STEAM</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="7">
+        <article>
+            <div class="left chunk">
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">7</span>
+                <div class="headline">
+                    <h5> <span class="bold">Studio Applied Math</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="http://ltwp.net/" style="text-decoration:underline;">Lukas WinklerPrins</a>
+                    <br/> <span class = "italic"> Brown '15.5, Applied Math</span> </p> 
+                        <div class="clear"></div>
+                </div>
+                <p class="fourtwenty"> Studio Applied Math was an effort to start chipping away at the traditional model of STEM education, to re-engage new scientists at the onset of their careers, and to synthesize the sensitivity of the arts and design fields into a STEM context. </p>
+
+                <p>“Studio Applied Math: Topics in Emergent Behavior” was a Group Independent Study Project (GISP) at Brown University, hosted by Björn Sandstede of the Division of Applied Mathematics in Spring semester 2015. What we sought is to take the structure of a studio art class (its key components being open-ended projects, continuous collaboration and peer-to-peer learning, regular critiques and feedback, and the professor as mentor rather than delivering content), and create a math class in this format.
+                </p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#7">Studio Applied Math</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class = "threeeightfive">We broke the semester into two halves. In the first, students designed and delivered interactive lectures on a breadth of topics under emergent behavior. Our midterm project was to formalize these lessons into stand-alone pedagogy tools, which took a variety of forms—two websites, an R package, a MATLAB GUI, and an IPython Notebook. </p>
+
+                <p> After this, students decided on final projects and set off on 6 weeks of self-directed work. Our four projects were on automated cellular automata classification via machine learning, an expansion of simulating the Hodgkin-Huxley neuron model, exploring bifurcations in a bacterial growth PDE system with fluid advection, and graph-theoretic properties of polynomials on finite fields. During each studio week we gave updates on our progress, and invited guest critics to lend each project new eyes and insights from directions <span class="show_mobile">between the quantitative sciences of Math, Applied Math, Computer Science, Physics, and Engineering. </span></p> 
+            </div>
+            <div class="right chunk">
+                <p class = "fourfive"> <span class="hide_mobile">between the quantitative sciences of Math, Applied Math, Computer Science, Physics, and Engineering.</span></p>
+                <p> At its core, this was an experiment in true form, an idea we ran with that could have crashed and burned. But it didn’t. The class, with 6 people total, each with strong research backgrounds from different departments, produced four original and deep research projects all under the umbrella of emergent behavior. Some things did not go as planned: we found a week-to-week schedule difficult for the pace of research possible, that focusing on the guests was sometimes misplaced as the projects were far outside their knowledge, and that the scope of “Emergent Behavior” was too large to ensure our projects would enmesh or learn from each other effectively. </p> 
+
+                <p> Supported by both our successes and failures, we feel we have stuck a foot in the door for effective <span class = "show_mobile"> rethinking of what a STEM class can embody—openness, flexibility, and empowerment. We are further engaging with professors and administrators at Brown to see where these ideas can go as they can be implemented in more classes, to see STEM learning grow through the Arts. </span> </p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#7">Studio Applied Math</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class ="fourten"><span class = "hide_mobile"> rethinking of what a STEM class can embody—openness, flexibility, and empowerment. We are further engaging with professors and administrators at Brown to see where these ideas can go as they can be implemented in more classes, to see STEM learning grow through the Arts. </span> </p> 
+                <br/>
+                <p class = "caption"> For more details and history of the project, please visit: <a href="http://studioapma.tumblr.com" style="text-decoration:underline;"> studioapma.tumblr.com </a> </p> 
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="seven1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/7-1.jpg"/></span>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#7">Studio Applied Math</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="8">
+        <article>
+            <div class="left chunk">
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">8</span>
+                <div class="headline">
+                    <h5> <span class="bold">mini_me</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="http://ckendo.weebly.com/" style="text-decoration:underline;">Kenji Endo</a>
+                    <br/> <span class = "italic"> Brown '18, Computer Science &amp; <br/>Visual Arts</span> </p> 
+                        <div class="clear"></div>
+                </div>
+                <p> In April 2015, Brown and RISD STEAM hosted the mini_me workshop, a C+STEAM workshop on 3D scanning and additive manufacturing – using a Kinect as a simple 3D scanner and modeling the scans in Skanect and Rhino to create mini busts, figurines, and self-portraits. </p>
+                <p>The mini_me workshop was the first event for C+STEAM, a new STEAM branch focused on computer science and technology. We formed the subgroup out of shared interest in the ways one can create art and design in the digital realm, apply programming design principles to other areas, or use hardware and software to visualize and create new experiences. This event’s planning was a team effort with C+STEAM leaders from <span class="show_mobile">Brown and RISD – Kenji Endo (Brown ’18), John Filmanowicz (Brown ’17), Brian Oakes (RISD ’18), Miranda Chao (Brown ’18), Madison Beckerman (RISD ’18), and Rohan Rastogi (Brown ’18).</span>
+                </p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#8">mini_me</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> <span class="hide_mobile">Brown and RISD – Kenji Endo (Brown ’18), John Filmanowicz (Brown ’17), Brian Oakes (RISD ’18), Miranda Chao (Brown ’18), Madison Beckerman (RISD ’18), and Rohan Rastogi (Brown ’18).</span>
+                </p>
+                <p class="fourten"> About 25 participants gathered in List Art Building at Brown on the morning of the workshop, including a mix of both Brown and RISD students from a variety of backgrounds, some grad students, as well as a digital media professor from Brown and his son. The event started with a presentation and introduction to the day’s topic and the sensor and programs we were going to be using. </p> 
+
+                <p> The focus for this workshop was the ways we can use simple technology like the Kinect sensor and free software like Skanect and Rhino to create new forms of busts and portraiture. Busts and portraits have been used in the past as a way to memorialize the rich and powerful, for political <span class="show_mobile">imagery, or to convey insight into a subject’s personality and character. We asked participants to consider the modern uses of self-imagery, and how new available tech can affect the construction and meaning of portraits.  </span></p> 
+            </div>
+            <div class="right chunk">
+                <p class="fourfifteen"> <span class="hide_mobile">imagery, or to convey insight into a subject’s personality and character. We asked participants to consider the modern uses of self-imagery, and how new available tech can affect the construction and meaning of portraits.  </span></p> 
+
+                <span class="hide_mobile"><div class="image_hold" id="eight1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/8-1.JPG"/></span>
+                <p class="caption">Cleaning up a scan in Skanect</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#8">mini_me</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="eight2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/8-2.JPG"/></span>
+                <p class = "caption"> Banana phone! </p>            
+                <p class = "fourtwenty"> The group split into four teams to start scanning with the Kinects. Participants connected their laptops and opened up Skanect, a scanning software that can be used with the Kinect to capture quick, <span class="show_mobile">full-color 3D models of objects, people, and rooms. The Kinect collects photos to construct digital 3D models, recovering the positions of surface points from multiple photographs in a process similar to panoramic photography.</span></p> 
+            </div>
+            <div class="right chunk">
+                <p> <span class="hide_mobile">full-color 3D models of objects, people, and rooms. The Kinect collects photos to construct digital 3D models, recovering the positions of surface points from multiple photographs in a process similar to panoramic photography.</span></p> 
+
+                <p> C+STEAM workshop facilitators circulated the room to help participants learn how to capture a scan, process and repair the scan to fill holes and make it watertight, and to export it to use in Rhino. Participants experimented with different ways of scanning, by kneeling on a spinning chair, or by standing still in a pose with a partner moving the Kinect by hand to capture from all angles. Some scanned with props – Dumbo and Pikachu hats, a banana phone, or a camera. This technology is not perfect – some scans came out with protrusions or holes in the head or back, or someone walked into frame in the middle of a scan. Scanning required a bit of experimentation and teamwork to figure out the speed and process that worked best.</p> 
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#8">mini_me</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="threeeightfive"> Participants began to take their .obj files and manipulate them in Rhino, a 3D command-based modeling software used in rapid prototyping and computer aided manufacturing. Participants cleaned up and modified their scans in Rhino, editing out extra captured background pieces, and adding holes for a keychain or a slot for a camera strap.</p> 
+
+                <p> The group then migrated over to the Brown Design Workshop in Prince Lab, where we 3D printed the models into the mini_busts, mini_keychains, and mini_figurines. This technology is not perfect as well, and we had to redo many failed prints because of caught filament or issues with the MakerBot printers.</p> 
+
+                <p> This workshop brought together a range of interested members of the Brown and RISD community for a day of group experimentation <span class = "show_mobile">and learning. This workshop reminded us of the power of technology to capture and create – that with a Kinect, patience, a solid pose, and perhaps a banana phone or fun hat, you can make some really cool things.</span> </p> 
+
+            </div>
+            <div class="right chunk">
+                <p> <span class="hide_mobile">and learning. This workshop reminded us of the power of technology to capture and create – that with a Kinect, patience, a solid pose, and perhaps a banana phone or fun hat, you can make some really cool things.</span> </p> 
+                <span class="hide_mobile"><div class="image_hold" id="eight3"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/8-3.JPG"/></span>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#8">mini_me</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="9">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="circle"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/kinder.jpg"/></span>
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">9</span>
+                <div class="headline" style="margin-left:0;">
+                    <h5> <span class="bold">KinderSTEAM Week at JCDS</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="http://steamwith.us" style="text-decoration:underline;">STEAM</a></p> 
+                        <div class="clear"></div>
+                </div>
+                <p> This spring, students from Brown and RISD worked with the teaching staff at the <a href="http://jcdsri.org/" style="text-decoration:underline;">Jewish Community Day School</a> to develop exciting new ways to look at Learning through Design. This work culminated with a STEAM Week in April at JCDS. Documentary to come!</p> 
+
+                <p class="subheaderbold"> The following five articles document the work of Brown and RISD students for STEAM Week lesson plans on the following topics: Anatomy: Form Follows Function (Allison Chen), including Allison's senior thesis work, Interactive Mapping (Vandhana Ravi), Exploring Optical Illusions (Savannah Barkley), Lighting and Circuitry (Sofya Zeylikman), and Recycling and Sound (Bethany Dubois and Heini Korhonen).</p> 
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#9">KinderSTEAM Week</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="squiggly">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="squiggly1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/squiggly-1.png"/></span>
+
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <div class="headline" style="margin-left:0;">
+                    <h5> <span class="bold">"1 + 1 = Squiggly": STEAM Learning Tools for K-12 Education</span></h5>
+                    <p style="font-size:18px; line-height:140%;">KinderSTEAM
+                    <br/>
+                    <a href="http://www.allisonychen.com/#about" style="text-decoration:underline;">Allison Chen</a>
+                    <br/> <span class = "italic"> RISD '15, Industrial Design</span> </p> 
+                        <div class="clear"></div>
+                </div>
+                <p>Our education system today is filled with various different kinds of reform movements geared toward better preparing our students for fulfilling lives and careers. Just to name a few – the STEM movement to encourage interest and study of STEM fields, the maker movement to return to the making of physical objects, and the design thinking movement to encourage everyone to use the design process.</p>
+
+                <p> Related to these movements, STEAM makes a phenomenal argument for arts integration and increased interdisciplinary collaboration. As a framework, STEAM serves as a catalyst for innovation by equally valuing creative thinking in <span class = "show_mobile">tandem with the STEM fields. However, STEAM is not as prominent as its fellow movements, not because we don’t value it as much, but because it lacks precedent and is not as easily definable.
+                </span> </p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents">STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#squiggly">"1 + 1 = Squiggly": STEAM Learning Tools for K-12 Education</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> <span class = "hide_mobile">tandem with the STEM fields. However, STEAM is not as prominent as its fellow movements, not because we don’t value it as much, but because it lacks precedent and is not as easily definable.
+                </span> </p>
+                <p> Here lies our opportunity to experiment – let’s begin to create that STEAM pedagogy within the education system! Motivated by that opportunity but grounded in practicality, my goal for this project as to answer the question: How might we implement STEAM in K-12 schools? And the first step was to understand our users in context, teachers and students in the classroom.</p> 
+                <p> I took the human-centered design process because I feel too often are individual teachers and student values considered in the grand scheme of national education reform. Over the <span class="show_mobile">course of both Fall and Spring Semester, I visited nine local schools mostly grades K-8 in Providence, including independent, public, and public charter schools. I also interviewed various teachers, students, and stakeholders both in person and remotely.</span></p> 
+            </div>
+            <div class="right chunk">
+                <p> <span class="hide_mobile">course of both Fall and Spring Semester, I visited nine local schools mostly grades K-8 in Providence, including independent, public, and public charter schools. I also interviewed various teachers, students, and stakeholders both in person and remotely.</span></p> 
+
+                <p> During this research stage I was able to create great mentorship relationships with my thesis advisors, Melita Morales and John Fitsioris. As the STEAM and EPSCoR Coordinator at the RISD Nature Lab and long-time art teacher, Melita provided great guidance as broad as defining transdisciplinary thinking and as specific as planning the timing of a lesson. And because John is a math curriculum developer and long-time math teacher and tutor, he gave great advice about teaching practices and considerations.</p> 
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#squiggly">"1 + 1 = Squiggly": STEAM Learning Tools for K-12 Education</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="threeeightfive"> In my research, some of the observations that I made include:</p>
+
+                <p>• Teachers are incredibly busy. Besides teaching they are also constantly preparing, planning, assessing, and reflecting.</p>
+
+                <p class="fourtwenty">• Class time is short. Schedules are very regimented, and starting middle school teachers typically have 45 minutes to an hour with their students.</p>
+
+                <p>• Students often feel restricted by their class subjects. They may think they can’t combine math with science, or that they shouldn’t do reading in science class.</p> 
+
+                <p>And of course, the national government requires and incentivizes educational standards such as Common Core and Next Generation Science. With all of these constraints, you might wonder if we<span class="show_mobile">have any hope of introducing outside opinion or new ideas all.</span></p> 
+
+            </div>
+            <div class="right chunk">
+                <p><span class="hide_mobile">have any hope of introducing outside opinion or new ideas all.</span></p> 
+                <p> But an important insight I gained was that educational standards mandate what teachers should teach, but not how they should teach it. Because education is always changing, teachers are open to new ideas that will bring meaningful experiences to their students, as long as they can fit their classroom structure. We’re not looking at two separate problems, but rather one possible solution. We can implement STEAM in the form of resources for teachers when they’re planning curriculum, in a way that values user needs.</p>
+
+                <p> That’s how I arrived at Squiggly School, an online resource center that provides support and creates community. Rather than dictate programming, let’s give schools something to work with. Let’s give teacher something to hack.</p>  
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#squiggly">"1 + 1 = Squiggly": STEAM Learning Tools for K-12 Education</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p>These online resources are disseminated in the form of a product line of toolkits, each targeting various topics. The components of a toolkit include activities that provide ideas and outline lesson plans, manipulatives that guide exploration and play, references that explain visually or audiovisually, and materials for creating and building their ideas.</p>
+
+                <span class="hide_mobile"><div class="image_hold" id="squiggly2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/squiggly-2.jpg"/></span>
+
+            </div>
+            <div class="right chunk">
+                <p>These toolkits can be found on the website, where teachers can customize them to suit their classroom. Perhaps they’d like to use the toolkit as a whole, combine toolkits, take elements from various ones, combine them with existing curriculum, even just take inspiration and create their own program.</p>
+                <p> Then, after using it in their classroom they can upload feedback on the website and start forum discussions on what worked and what didn’t so that they can continue to inform the continuous development of these resources.</p> 
+                <p class="fourten"> This semester I iterated upon and prototyped ideas for three toolkits – Data Viz, Anatomy, and Geometry, mainly targeting grades 4-8, and had the privilege of seeing a few of them tested in schools.</p> 
+                <p> The first was a Design Your Anatomy workshop at Jewish Community Day School, which I facilitated with Melita Morales and Amy Zhang, a sophomore <span class="show_mobile"> student in ID. This was an activity with 4th and 5th graders where we challenged them to redesign their body to help them survive in a particular environment, such as the rainforest or the desert.</span></p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#squiggly">"1 + 1 = Squiggly": STEAM Learning Tools for K-12 Education</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> <span class="hide_mobile"> student in ID. This was an activity with 4th and 5th graders where we challenged them to redesign their body to help them survive in a particular environment, such as the rainforest or the desert.</span></p> 
+
+                <span class="hide_mobile"><div class="image_hold" id="squiggly3"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/squiggly-3.JPG"/></span>
+                <p class="caption"> Design Your Anatomy for KinderSTEAM week at JCDS</p>
+
+            </div>
+            <div class="right chunk">
+                <p class="threeeightfive"> We opened with a short presentation comparing animal anatomy, gave them time to research the animals living in their ecosystems, asked them to draw and/or build their anatomy redesigns, and circled around to present at the end. The students were incredibly creative and came up with some wild suggestions, from an eagle/cheetah hybrid that took a running leap to flying to gain momentum, to a combination of several deadly snakes to result in an animal that had virtually no predator. </p> 
+                <p> The second was the use of Geotiles, a manipulative designed for the geometry toolkit. This was a great example of a teacher using a resource and combining it with their own lesson plan, for the art teacher at Nathan Bishop Middle School used them to help teach drawing perspective to her students.</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#squiggly">"1 + 1 = Squiggly": STEAM Learning Tools for K-12 Education</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p>The class started with students playing with Geotiles to create forms that they could sketch and draw, and later use as a reference as they defined techniques to one-point perspective. Of their many uses, Geotiles had found a use in helping translate 3D ideas into 2D forms.
+                </p>
+                <p>From here, I believe there is only room to grow. As technology continues to develop and influence how we study and how we make, work in STEAM is also continuously changing. The possibilities for how current work can translate into educational resources are endless. I believe STEAM learning promotes not only the subject that builds the acronym, but the kind of playful, exploratory, and tactile learning that is incredibly valuable in opening students’ curiosity and providing avenues for different creative thinking. Let’s build STEAM in support of students, in support of teachers, and in support of making our schools a creative space.</p>
+                <br/>
+                <p class = "caption"> To learn more, email Allison Chen at <a href="mailto:achen01@risd.edu" style="text-decoration:underline;"> achen01@risd.edu</a> or visit <a href="http://www.allisonychen.com/" style="text-decoration:underline;"> www.allisonychen.com</a></p> 
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="squiggly4"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/squiggly-4.jpg"/></span>
+                <p class="caption"> Geotiles at Nathan Bishop Middle School</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#squiggly">"1 + 1 = Squiggly": STEAM Learning Tools for K-12 Education</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="mapping">
+        <article>
+            <div class="left chunk">
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <div class="headline" style="margin-left:0;">
+                    <h5> <span class="bold">Interactive Mapping</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;">KinderSTEAM
+                    <br/>
+                    <a href="mailto:vandhana_ravi@brown.edu" style="text-decoration:underline;">Vandhana Ravi</a>
+                    <br/> <span class = "italic"> Brown '17, Applied Math</span></p> 
+                        <div class="clear"></div>
+                </div>
+                <p>I went into STEAM week with no idea of what to expect. I had no previous experience with teaching or even with the integration of STEAM before. But, I found the whole project very exciting and everyone else who was a part of it was so enthusiastic, passionate and helpful that they really inspired me to want to try this out. </p> 
+
+                <p> Working with JCDS, and with Jamie Faith Woods (5th grade teacher at JCDSRI) in particular, was amazing. She was always willing to listen to me ramble on and on about my ambitious plans while keeping me grounded in the realities of how we could translate my ideas into real classroom experiences. We decided on conducting an interactive mapping workshop for the 3rd and <span class="show_mobile">4th graders. I have always been really interested in maps and especially different kinds of sensory maps. </span></p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents">STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#mapping">Interactive Mapping</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="threeeightfive"> <span class="hide_mobile">4th graders. I have always been really interested in maps and especially different kinds of sensory maps. </span></p>
+                <p> So, for my workshop, I decided to create a sound map of the 3rd and 4th grade classroom at JCDS with the kids. It was a really fun experience and the kids at JCDS are so intelligent, innovative and bubbling with enthusiasm. They really made it a great experience for me. One thing I learnt was that to work with kids, you've got to be able to improvise. And that improvisation actually takes a lot of pre-planning. But even with all the planning you do, you've got to be able to think quick on your feet, be able to gauge the classroom atmosphere, and respond spontaneously to the quick feedback that you're getting from the children from moment to moment. It really was an eye-opening and exhilarating experience for me. I really hope the children enjoyed themselves as much as I did.</p>
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="mapping1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/mapping1.png"/></span>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#mapping">Interactive Mapping</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="optical">
+        <article>
+            <div class="left chunk">
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <div class="headline" style="margin-left:0;">
+                    <h5> <span class="bold">Exploring Optical Illusions</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;">KinderSTEAM
+                    <br/>
+                    <a href="http://savannahbarkley.com/" style="text-decoration:underline;">Savannah Barkley</a>
+                    <br/> <span class = "italic"> RISD '17, Film/Animation/Video</span> </p> 
+                        <div class="clear"></div>
+                </div>
+                <p>When I heard about KinderSTEAM week I was very excited to come up with a workshop that would use my art school training in conjunction with my interest in science and math. Being a student in Film/Animation/Video, I found that it would be enriching for myself and the students at JCDS to learn about optics and how the brain perceives what your eyes see. With this in mind, I decided to focus on optical illusions. I found, through teaching the workshop, that the students are amazingly perceptive and intrigued by the nature of an 'illusion'.</p>
+
+                <p>I began the workshop by stepping through a series of different types of optical tricks and asked the students to explain what they thought they were seeing. We looked at illusions dealing with color, <span class="show_mobile">pattern, and motion. The students were both awed and skeptical, which allowed for them to be interested in the workings behind the imagery. At first, some of them would regard optical illusions as magic. However, as the workshop went on they began to put together that although they may seem 'magical,’  for the most part you can explain these illusions through science.</span></p>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents">STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#optical">Exploring Optical Illusions</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p><span class="hide_mobile">pattern, and motion. The students were both awed and skeptical, which allowed for them to be interested in the workings behind the imagery. At first, some of them would regard optical illusions as magic. However, as the workshop went on they began to put together that although they may seem 'magical,’  for the most part you can explain these illusions through science.</span></p>
+                <p class="fourten">After taking a look at varying types of illusions we took the time to look into the way the brain and eye connect. We went over diagrams, talked about the connection, and in particular focused on how the eye sees quicker than the brain perceives. The class began to really dissect the notion of illusion when they were given the opportunity to craft one of their own. The next step of the workshop  was to create thaumatropes which exemplify the persistence of vision. They were given two sheets of paper and asked to draw relating compositions on each sheet. When assembled back to back with a wooden dowel in between and spun, they were able to create moving imagery from still drawings. This process sparked their interest and understanding of how you can use basic optical phenomena to make something really visually exciting.</p>
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="optical1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/optical-1.png"/></span>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#optical">Exploring Optical Illusions</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="lighting">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="lighting1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/lighting-1.png"/></span>
+
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <div class="headline" style="margin-left:0;">
+                    <h5> <span class="bold">Lighting and Circuitry</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;">KinderSTEAM
+                    <br/>
+                    <a href="http://www.sofyazeylikman.com/about/" style="text-decoration:underline;">Sofya Zeylikman</a>
+                    <br/> <span class = "italic"> RISD '16, Furniture Design</span> </p> 
+                        <div class="clear"></div>
+                </div>
+                <p>To quote one of my students from the Lighting and Circuitry Workshop:</p>
+
+                <p class="italic"> “Some of the things made were a heat lamp, a flashlight, and a few other variations on those basic subjects. I made a little light-up tube that lit up when you pressed it in a certain place.  I learned that even the simplest of circuits can be very hard to make.” – Tamar, grade 5 </p> 
+
+                <p> There’s nothing quite like wiring up a simple circuit correctly and seeing a light flicker as you complete the circuit. When I was a kid, and yes, still today, I was always interested in tinkering with the objects I had around me to create some kind of simple machine or work of art. <span class="show_mobile">It was interesting seeing the students struggle through their first assignment to complete the circuit until lights started flickering around the room like fireflies! </span></p> 
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents">STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#lighting">Lighting and Circuitry</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+        <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> <span class="hide_mobile">It was interesting seeing the students struggle through their first assignment to complete the circuit until lights started flickering around the room like fireflies! </span></p> 
+
+                <p> For the second half of the workshop, I introduced the students to some design principles, specifically issues concerning a lighting designer. I wanted the students to engage not only with the scientific aspects of current, voltage, resistance, and photons, but also with concerns of light quality, material choice, and user interaction.</p> 
+
+                <p>The students used all kinds of materials available to them in their Design Lab to create their own “lamps”. It was amazing to see how quickly they were able to apply a new concept to design and create their own lighting prototypes! As mentioned above, there was a student who created a hanging heating lamp for her pet, another student who created a task lamp with a detachable flashlight, and another student creates a small LED paper campfire.</p> 
+
+            </div>
+            <div class="right chunk">
+                <p>I hope that the 4th and 5th graders were inspired to try out other ideas on their own using inexpensive materials that can be found at home.</p>
+
+                <span class="hide_mobile"><div class="image_hold" id="lighting2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/lighting-2.png"/></span>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#lighting">Lighting and Circuitry</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="recycling">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="recycling1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/recycling-1.jpg"/></span>
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <div class="headline" style="margin-left:0;">
+                    <h5> <span class="bold">Recycling and Sound</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;">KinderSTEAM
+                    <br/>
+                    <a href="mailto:bethany_dubois@brown.edu" style="text-decoration:underline;">Bethany Dubois</a>
+                    <br/> <span class = "italic">Brown '18, Physics</span> </p> 
+                        <div class="clear"></div>
+                </div>
+                <p>Heini Korhonen and I wanted to teach our students about the physics behind sound while helping them create a "sound machine" out of PVC pipes that resembled a pan flute crossed with a marimba. For about three weeks before our lesson we visited the school and introduced our class to the topic through a series of "mini-lessons." We found this to be extremely valuable on the workshop day because by then, we were very familiar with the class, and thus were able to tailor our lesson to exactly what the students needed. For example, we learned that this first-grade classroom could only sit for about ten minutes, and that they needed to have the freedom to run around and express their creativity <span class="show_mobile">at all times. So, we moved to instrument constructing outside, and asked each of them to decorate the pipes individually before assembling it all together. On the last day that we visited, the sound machine was built, and the students had all constructed their own instruments to bring together in a class orchestra!</span></p>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents">STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#recycling">Recycling and Sound</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p><span class="hide_mobile">at all times. So, we moved to instrument constructing outside, and asked each of them to decorate the pipes individually before assembling it all together. On the last day that we visited, the sound machine was built, and the students had all constructed their own instruments to bring together in a class orchestra!</span></p>
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="recycling2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/recycling-2.JPG"/></span>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#recycling">Recycling and Sound</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="10">
+        <article>
+            <div class="left chunk">
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">10</span>
+                <div class="headline">
+                    <h5> <span class="bold">Yale STEAM Update</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="mailto:chanthia.ma@yale.edu" style="text-decoration:underline;">Chanthia Ma</a>
+                    <br/> <span class = "italic"> Yale '16, Molecular, Cellular, and Developmental Biology (MCDB)</span> </p> 
+                        <div class="clear"></div>
+                </div>
+                <p class="fourten"> Yale STEAM had a wonderful first year on campus! First semester was dedicated to getting registered as an official undergraduate organization, creating a bank account, and growing our recognition on campus. We began hosting events in the spring semester of 2015. These events, proposed by various members on the Yale STEAM team, focused on bringing to the Yale campus events that would introduce students to various topics integrating the arts and sciences. </p> 
+                <p> As an organization, we hope to draw connections between distinct disciplines and explore the potential for collaboration between fields traditionally seen as discrete domains of study through events such as workshops, speaker <span class ="show_mobile">forums, and discussions. Yale STEAM hopes to utilize innovative spaces around Yale University such as the art galleries: the Yale University Art Gallery (YUAG) and the Yale Center for British Art, as well as the Yale Center for Engineering Innovation &amp; Design (CEID), which provides a space for design projects in its machine shops, wet lab, and studio. </p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#10">Yale</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="fourtwenty"> <span class ="hide_mobile">forums, and discussions. Yale STEAM hopes to utilize innovative spaces around Yale University such as the art galleries: the Yale University Art Gallery (YUAG) and the Yale Center for British Art, as well as the Yale Center for Engineering Innovation &amp; Design (CEID), which provides a space for design projects in its machine shops, wet lab, and studio.</span></p>
+
+                <p class="fourtwenty"> Yale STEAM also plans to eventually host workshops in the graphic labs, video labs, and recording studios of the newly opened Digital Media Center for the Arts (DMCA) as well as the scientific research labs of the Institute for the Preservation of Cultural Heritage (IPCH), dedicated to advancing the field of heritage science by improving the practice of conservation in a sustainable manner. We may also collaborate with the Peabody Museum of Natural History and Beinecke Rare Book and Manuscript Library to analyze the science and art behind the relics of ages gone by.</p> 
+
+                <p class="subheaderbold">Imposters in the Gallery</p> 
+                <p class="threeeightfive"> Our first event of the semester was <span class="italic">Impostors in the Gallery</span>, delving into the science behind art conservation and detection of art forgery. The <span class = "show_mobile">lecture, followed by a workshop, explored how works of art can turn out to be fakes as they are being considered for acquisition or many years after landing in a collection. Ian McClure, Susan Morse Hilles Chief Conservator at the YUAG, gave the lecture, highlighting some case studies to shed light on the process of evaluating the attribution and authenticity of works at the Yale art galleries and other collections.</span></p>
+
+
+            </div>
+            <div class="right chunk">
+                <p><span class = "hide_mobile">lecture, followed by a workshop, explored how works of art can turn out to be fakes as they are being considered for acquisition or many years after landing in a collection. Ian McClure, Susan Morse Hilles Chief Conservator at the YUAG, gave the lecture, highlighting some case studies to shed light on the process of evaluating the attribution and authenticity of works at the Yale art galleries and other collections.</span></p>
+                <span class="hide_mobile"><div class="image_hold" id="ten1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/10-1.jpg"/></span>
+
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand">Fifty-Six </a>
+            </div>
+            <div class="pagination right">
+                <a href="#10">Yale</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p>The workshop, with Ian McClure and the staff of the Technical Studies Laboratory at Yale’s Institute for the Preservation of Cultural Heritage, Anikó Bezur, Erin Mysak and Jens Stenger, gave students a chance to look at works of art up close and “in a different light.” Students were able to experience paintings by viewing them closely using different regions of the electromagnetic spectrum: infrared, visible, ultraviolet radiation, and even x-rays. Students learned how to read the different lines of evidence and discuss what implications the findings might have for understanding the creation and life history of each artwork. Original works were brought over from Yale’s IPCH on West Campus to the Nolen Center classrooms at the YUAG. Workstations were set up so that each had a special mode of visual detection and analysis of the various fake and authentic artworks in a specific electromagnetic spectrum. </p> 
+
+                <p>This event was a huge success in bringing together many students and faculty from various backgrounds to learn more about a modern integration of the arts and sciences at the Yale art <span class="show_mobile">galleries and scientific research facilities. The workshop not only introduced students to state of the arts technology for art conservation research, but also allowed students to interact closely with the art collection and art conservation scientists of the Technical Studies Laboratory. Yale STEAM will collaborate with other labs at the IPCH to host future events focusing on various intersections of the arts and sciences. </span></p> 
+            </div>
+            <div class="right chunk">
+                <p><span class="hide_mobile">galleries and scientific research facilities. The workshop not only introduced students to state of the arts technology for art conservation research, but also allowed students to interact closely with the art collection and art conservation scientists of the Technical Studies Laboratory. Yale STEAM will collaborate with other labs at the IPCH to host future events focusing on various intersections of the arts and sciences. </span></p> 
+                <span class="hide_mobile"><div class="image_hold" id="ten2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/10-2.jpg"/></span>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#10">Yale</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="subheaderbold">Music Therapy Study Break</p> 
+                <p class="fourten">Our next event was a reading period study break the day before finals where we invited a board-certified music therapist from the American Music Therapy Association (AMTA) to help students relax a little before finals. The event started with an introduction to music therapy, a clinical and evidence-based use of music interventions to accomplish individualized goals within a therapeutic relationship. Music therapy is more targeted than therapeutic music in that it utilizes music as a tool to achieve a clinical result for specific groups of people. This field of study is not well known in the Ivy League curricula, and Yale STEAM may be the first in probing into this topic. </p> 
+                <p>The second part of the event involved a group relaxation exercise, followed by a drawing exercise, where students were asked to document their experience of the group relaxation in colors. This event was a wonderful way to provide a space for relaxation and learning before finals week. We utilized our funding to buy some <span class="show_mobile">delicious mochi ice cream and soothing tea for the study break, and successfully produced a peaceful environment for the group relaxation event. </span></p> 
+            </div>
+            <div class="right chunk">
+                <p class="fourten"><span class="hide_mobile">delicious mochi ice cream and soothing tea for the study break, and successfully produced a peaceful environment for the group relaxation event. </span></p> 
+                <p class="subheaderbold">Yummy Gummy Lego Making with YaleMakes</p>
+                <p>Other smaller events Yale STEAM hosted throughout the year involve gummy making sessions and information session recruitment events. Collaborating with YaleMakes, Yale STEAM hosted various Yummy Gummy Lego Making and Lego Building workshops, leading up to Bulldog Days where we actively recruited admitted students with our homemade lego gummies. YaleMakes is a similar student organization that started up at Yale around the same time Yale STEAM took root. Unlike STEAM, which aims to host larger events integrating the arts and sciences for the whole Yale community, YaleMakes holds weekly Saturday morning design workshops for a smaller group of students, focusing on a different theme each week. Yale STEAM plans to collaborate more in the future with YaleMakes on various events and activities. </p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#10">Yale</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="ten3"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/10-3.jpg"/></span>
+            </div>
+            <div class="right chunk">
+                <p>As we wrap up the spring semester of 2015, we’re looking forward to the many more events lined up for the next term. We are currently developing a Musical Acoustics and Instrument Design Workshop for students to learn about the process of instrument design and the science behind instrumental sound making at Yale’s CEID. We also hope to craft an outdoors experience, taking students to Sleeping Giant State Park to experience and document the beauty of the park in sketches, poetry, and ecological explorations. </p> 
+
+                <p class="fourfifteen">Our experiences from Yale STEAM’s first year on campus as a registered undergraduate organization are definitely promising. We are actively promoting our mission to integrate the arts and sciences at Yale across campus through printed posters and Facebook publicity. We hope to be a well-know organization on campus by the end of next year, especially after so much publicity during Bulldog Days. We hope to welcome even more students onto the Yale STEAM team as well as recruit a diverse range of project leaders to organize some more wonderfully interesting events in the years to come!</p> 
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#10">Yale</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="11">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="eleven1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/11-1.png"/></span>
+
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">11</span>
+                <div class="headline">
+                    <h5> <span class="bold">Culture Yourself!</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="https://www.linkedin.com/pub/jonelle-ahiligwo/a3/1b6/b13" style="text-decoration:underline;">Jonelle Ahiligwo</a>
+                    <br/> <span class = "italic"> Brown '16, Biology &amp; Public Health</span> </p> 
+                        <div class="clear"></div>
+                </div>
+               <p>The human microbiome is integral to human life. Bacteria cover your skin, oral cavities and especially in your gut. Despite their importance in human metabolism, regulation of blood pressure and antagonistic relationship with autoimmune diseases, not all microbiomes are the same. Everyone has a unique make up of bacterial species with varying amounts of those species. Kari Reis is an artist who creates bacteria inspired petri dish art. Through the event “Culture Yourself!”, we aimed to combine the individualistic property of of our microbiomes with the visual quality of petri dish art.</p>
+               <p>In the RISD Nature Lab on April 11th, around twenty or so of us gathered to “culture” ourselves. <span class = "show_mobile">We poured nutrient agar into petri dishes and swabbed our own bacteria onto them. In addition to culturing bacteria found on humans, we also sampled tabletops. They were incubated for several days and then we poured resin with droplets of dye and paint to add some aesthetic value.  Each petri dish was unique to each person. The result was a striking visual representation of an individual microbiome.</span></p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#11">Culture Yourself!</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p><span class = "hide_mobile">We poured nutrient agar into petri dishes and swabbed our own bacteria onto them. In addition to culturing bacteria found on humans, we also sampled tabletops. They were incubated for several days and then we poured resin with droplets of dye and paint to add some aesthetic value.  Each petri dish was unique to each person. The result was a striking visual representation of an individual microbiome.</span></p>
+            </div>
+            <div class="right chunk">
+                
+                <span class="hide_mobile"><div class="image_hold" id="eleven2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/11-2.jpg"/></span>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand">Fifty-Six </a>
+            </div>
+            <div class="pagination right">
+                <a href="#11">Culture Yourself!</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll yes no" id="12">
+        <article>
+            <div class="left chunk">
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">12</span>
+                <div class="headline">
+                    <h5> <span class="bold">The Dandelion <br/> Project at MIT</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;"><a href="https://www.linkedin.com/pub/hannarae-annie-nam/42/559/67" style="text-decoration:underline;">Hannarae Nam</a>
+                    <br/> <span class = "italic"> MIT '15, Mechanical Engineering</span> </p> 
+                    <div class="clear"></div>
+                </div>
+                <p> MIT STEAM started out with eager students in mechanical engineering. With an expanded number of scientists, engineers, and architects in the club, STEAM has various visions for what STEAM can accomplish at MIT. I was personally searching for projects that will involve a large number of students at MIT, in particular, something that would be participatory, modular, and large-scale. </p> 
+
+                <p class = "subheaderbold"> The Process </p>
+                <p> It all started with a dinner conversation of one of my best friends at MIT, Joanne Zhou, who is also the president of MIT Class of 2015. During our conversation, I mentioned that I wanted to see a <span class = "show_mobile"> large scale art project in the undergraduate community that everyone can participate in. Hearing this, Joanne immediately responded by saying, “We should do this. Student Council would be on board too”. After a five minute discussion, we came the the conclusion that we want to collaborate on a project together: using the funding and resources of Student Council and the artistic interest and building skills of STEAM, we could make a very large and successful event happen. This is also when we decided on the concept of a “dandelion” - something modular to encourage participation, but also familiar and symbolic.</span></p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#12">The Dandelion Project at MIT</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="fourtwenty"> <span class = "hide_mobile"> large scale art project in the undergraduate community that everyone can participate in. Hearing this, Joanne immediately responded by saying, “We should do this. Student Council would be on board too”. After a five minute discussion, we came the the conclusion that we want to collaborate on a project together: using the funding and resources of Student Council and the artistic interest and building skills of STEAM, we could make a very large and successful event happen. This is also when we decided on the concept of a “dandelion” - something modular to encourage participation, but also familiar and symbolic.</span> </p>
+                <p> The ideation started early. We had multiple ideation sessions in the fall semester, especially by using the ideation methods we learned in product design classes. After taking time to sketch out ideas individually, discussing each idea, and then improving each one, we came to the conclusion that we want to see something that represents a garden: modular pieces would be planted into soil or pseudo-soil, and we would use fiber optic elements to represent the plants. </p> 
+            </div>
+            <div class="right chunk">
+                <p> We also got comments and critique from experts in public art projects. We met with Gediminas Urbonas, a professor in the Arts, Culture and Technology program at MIT, and also the professor of the class I was taking this semester: Studio Seminar on Public Art and Public Space. He suggested that instead of a bed of soil, a 3D bed might be more engaging to the participants. He gave us some references to consider, such as PUPPY by Jeff Koons, and Ark Nova concert hall by Anish Kapoor. RISD STEAM was also generous with their time and helped with the ideation process in terms of figuring out potential material choice and experiential flow.</p> 
+
+                <p> Introduced through members of RISD STEAM, we got in contact with the members of <a href="http://www.pneuha.us/" style="text-decoration:underline;">Pneuhaus</a>, a Providence based design collective with expertise in inflatable structures and spaces founded by recent RISD and Ohio State University graduates. We knew that we wanted to have a fiber optic Dandelion sculpture inside an inflatable structure to create an immersive experience. Based on our initial ideas, Pneuhaus provided us with a <span class = "show_mobile">concretized plan of action and fabricated all parts of the Dandelion Project. </span></p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#12">The Dandelion Project at MIT</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> <span class = "hide_mobile">concretized plan of action and fabricated all parts of the Dandelion Project. </span></p> 
+                <p class = "subheaderbold"> The Project </p> 
+                <p class="fourtwenty"> The ideation and collaboration resulted in a beautiful and thought-provoking event that caught the attention of the members of the MIT community. </p> 
+                <p> The main objective of the Dandelion Project was to create an environment for members of the MIT community to reflect on our dreams and aspirations while also celebrating the other people in the community and their aspirations, visually confirming that the collective nature of this place is what makes it beautiful.</p> 
+                <p> The process of participation was the following:</p> 
+                <p> 1. Walk up to the large inflatable dome<br/>
+                    2. Write a wish on a tag<br/>
+                    3. Hang the wish and add a fiber optic rod to the central piece inside the dome</p> 
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="twelve1"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/12-1.JPG"/></span>
+
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#12">The Dandelion Project at MIT</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <span class="hide_mobile"><div class="image_hold" id="twelve2"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/12-2.JPG"/></span>
+                <p> The end product was much greater than what we had imagined. In addition to the beautiful collaborative sculpture that emerged from people’s participation, the participants themselves became the biggest part of the event. Most people stayed for several minutes inside the dome to <span class = "show_mobile">read through other people’s wishes and admired at the funny, sad, and hopeful wishes hanging inside the dome. This was something that I had hoped for but did not anticipate from MIT students, who are always in a hurry to finish a problem set or study for an exam. People were spending time sharing their aspirations and caring about the dreams of anonymous “others” in the community.</span></p> 
+            </div>
+            <div class="right chunk">
+                <p> <span class = "hide_mobile">read through other people’s wishes and admired at the funny, sad, and hopeful wishes hanging inside the dome. This was something that I had hoped for but did not anticipate from MIT students, who are always in a hurry to finish a problem set or study for an exam. People were spending time sharing their aspirations and caring about the dreams of anonymous “others” in the community.</span></p> 
+                <p> A community does not consist of an individual. Larger communities like that at MIT can sometimes feel too big, aloof, or uninvolved. The community’s boundary is a difficult one to grasp when the intensity of MIT forces people to prioritize work and productivity. But by definition, the MIT community includes everyone. We needed a medium to communicate with others, and sharing our wish anonymously and being able to see the archive of everyone else’s wishes was a simple but effective way to do so. Had it been just a few wishes hung up by a select few people, the large sphere, and the large campus of MIT, would not be so brightly lit.</p> 
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#12">The Dandelion Project at MIT</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p> Having seen the students of MIT interact with the project throughout the night, I was amazed at how that little enclosed space, paired with something as simple as tags with people’s wishes written on them, could transform a seemingly banal space that we walk through every day. </p> 
+                <p class ="subheaderbold"> So, what is my wish? </p> 
+                <p> I wish that the transformation brought about by the Dandelion for one night could be made permanent, and that students who walk through that space will take a moment to reflect on the collective aspirations of the community that they find themselves a part of.</p> 
+            </div>
+            <div class="right chunk">
+                <span class="hide_mobile"><div class="image_hold" id="twelve3"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/12-3.JPG"/></span>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents"> STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#12">The Dandelion Project at MIT</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article class="full_article">
+            <div class="full">
+                <span class="hide_mobile"><div class="image_hold" id="twelve4"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/12-4.JPG"/></span>
+            </div>
+            <a class="page_numbers left_hand hide"></a>
+            <a class="page_numbers hide"></a>
+
+        </article>
+    </section>
+    <section class="scroll yes no" id="13">
+        <article>
+            <div class="left chunk">
+            </div>
+            <div class="right chunk">
+                <div class="break_after"></div>
+                <span class="big_number">13</span>
+                <div class="headline">
+                    <h5> <span class="bold">New Frontiers</span><br/></h5>
+                    <p style="font-size:18px; line-height:140%;">
+                        <a href="http://skyeray.com" style="text-decoration:underline;">Skye Ray</a>
+                        <br/> <span class = "italic"> RISD '16, Industrial Design</span> </p> 
+
+                    </p>
+                    <div class="clear"></div>
+                </div>
+                <p class="threeeightfive"> Three years ago, STEAM only existed on one college campus, and has now grown with studios on four - RISD, Brown, MIT, and Yale. We have enjoyed ongoing collaboration and discussion between these partner schools, and we couldn't be more excited for what the future will bring for STEAM. 
+                <p class="fourtwenty"> As our network continues to grow, we will find more successful interactions across disciplines, and publish even larger catalogues! Interested in bringing STEAM to your school or organization? Please email us at <a href="mailto:info@steamwith.us" style="text-decoration:underline;">info@steamwith.us</a>, or read the next few pages for our STEAM-builder’s checklist.</p>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents">STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand hide"></a>
+
+            </div>
+            <div class="pagination right">
+                <a href="#13">New Frontiers</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p>This guide will help you start a ‘studio’ at your institution. Partnering with the STEAM Club network will get you access to our modules for events, collaborative funding opportunities, and most importantly, notes from all of our successes and failures.</p>
+                <br/>
+                <span class="hide_mobile"><div class="image_hold" id="network"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/network.png"/></span>
+            </div>
+            <div class="right chunk">
+                <p class="subheaderbold">1. Reading</p>
+                <p> The first thing that we recommend you do is take a look through our <a href="http://steamwith.us/?/press/catalogue/" style="text-decoration:underline;">catalogues</a>. Reading the catalogues will give you a sense for the kinds of things we like to do. You’ll notice that a lot of our events fall into one of two categories: workshops and lectures.</p>
+                <br/>
+                <span class="hide_mobile"><div class="image_hold" id="books"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/books.jpg"/></span>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents">STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#13">New Frontiers</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="subheaderbold">2. Make Friends</p>
+                <p class="fourten">We strongly recommend that you locate two faculty or administrative advisers for your organization. This could be a Dean, Professor, or anyone else who is knowledgeable about the way your school works. We also recommend that you find 2-3 other passionate students that you want to work with in leading STEAM at your organization.</p>
+                <p>Lastly, find an initial membership of at least ten people that are interested in STEAM events (probably your friends).</p>
+                <br/>
+                <span class="hide_mobile"><div class="image_hold" id="friends"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/friends.jpg"/></span>
+            </div>
+            <div class="right chunk">
+                <p class="subheaderbold">3. Fit</p>
+                <p> How will a STEAM group at your school be special? Does your school have the world’s biggest collection of taxidermied mammals? Is your adviser the foremost authority on the musical qualities of the number pi?</p>
+                <p>Think about how your school’s unique culture will influence how you move forward with STEAM. Then, you can draft your first mission statement! Take a look at the existing mission statements on our websites if you get stuck.</p>
+                <br/>
+                <span class="hide_mobile"><div class="image_hold" id="pentagon"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/pentagon.png"/></span>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents">STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#13">New Frontiers</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class="scroll no">
+        <article>
+            <div class="left chunk">
+                <p class="subheaderbold">4. Money</p>
+                <p>In order to do things, you’re going to need some money. This money might pay for luminaries to come to your snazziest auditorium to share their wisdom or pizza to fuel weekend-long hackathons. We recommend that you raise about $1,000 for your first year, but you can probably get by with less if you’re smart about it.</p>
+                <br/>
+                <br/>
+                <span class="hide_mobile"><div class="image_hold" id="pig"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/pig.png"/></span>
+            </div>
+            <div class="right chunk">
+                <p class="subheaderbold">5. Send!</p>
+                <p class="fourfifteen">• Read through catalogues and blogs
+                    <br/>• Locate advisers(2), leaders(2-3), &amp; members(10+)
+                    <br/>• Locate funding (~$1,000)
+                    <br/>• Draft a mission statement
+                </p>
+                <p>When you are ready, send this info in any format (creativity recommended) to <a href="mailto:info@steamwith.us" style="text-decoration:underline;">info@steamwith.us</a> and one of our leaders will follow up with you. Have fun with it!</p>
+                <br/>
+                <br/>
+                <span class="hide_mobile"><div class="image_hold" id="rocket"></div></span>
+                <span class="show_mobile"><img class="text_img" src="orig/rocket.png"/></span>
+            </div>
+            <div class="pagination left">
+                <a href="#table_of_contents">STEAM Catalogue Four</a>
+                <a class="page_numbers left_hand"></a>
+            </div>
+            <div class="pagination right">
+                <a href="#13">New Frontiers</a>
+                <a class="page_numbers"></a>
+            </div>
+        </article>
+    </section>
+    <section class = "scroll no">
+        <div class = "full">
+            <span class="hide_mobile"><div class = "image_hold" id = "big"></div></span>
+            <span class="show_mobile"><img class="text_img" src="orig/big.jpg"/></span>
+        </div>
+    </section>
+    <section class="scroll ">
+        <article>
+            <div class="left chunk">
+                <h4> <span class=""><a href="http://risd.steamwith.us/">RISD STEAM</a></h4>
+                <br/>
+                <br/>
+                <p><span class="bold">Ingrid Lange</span> &nbsp;
+                    <span style="font-style:italic;">Co-President</span>
+                    <br/>Industrial Design '16</p>
+                <p><span class="bold">Minsoo Thigpen</span> &nbsp;
+                    <span style="font-style:italic;">Co-President</span>
+                    <br/>Brown | RISD Dual Degree, Painting &amp; Engineering '18</p>
+                <p><span class="bold">Anthony Peer</span> &nbsp;
+                    <span style="font-style:italic;">Vice President</span>
+                    <br/>Industrial Design '16</p>
+                <p><span class="bold">Barron Webster</span> &nbsp;
+                    <span style="font-style:italic;">Vice President</span>
+                    <br/>Graphic Design '16</p>
+                <p><span class="bold">Eli Block</span> &nbsp;
+                    <span style="font-style:italic;">Vice President</span>
+                    <br/>Brown | RISD Dual Degree, Industrial Design &amp; Biology '17</p>
+                <p><span class="bold">May Kodama</span> &nbsp;
+                    <span style="font-style:italic;">Project Leader</span>
+                    <br/>Graphic Design '17</p>
+                <p><span class="bold">Brian Oakes</span> &nbsp;
+                    <span style="font-style:italic;">Project Leader</span>
+                    <br/>Sculpture '18</p>
+                <p><span class="bold">Joshua Bohar</span> &nbsp;
+                    <span style="font-style:italic;">Project Leader</span>
+                    <br/>Industrial Design Grad '16</p>
+                <p><span class="bold">Tony Yang</span> &nbsp;
+                    <span style="font-style:italic;">Project Leader</span>
+                    <br/>Architecture '17</p>
+            </div>
+            <div class="right chunk">
+                <h4> <span class=""><a href="http://brown.steamwith.us/">Brown STEAM</a></h4>
+                <br/>
+                <br/>
+                <p><span class="bold">Victoria Wu</span> &nbsp;
+                    <span style="font-style:italic;">President</span>
+                    <br/>Materials Engineering &amp; Visual Arts '15</p>
+                <p><span class="bold">Jonelle Ahiligwo</span> &nbsp;
+                    <span style="font-style:italic;">Project Manager, bioSTEAM, Nature Lab Liaison</span>
+                    <br/>Biology &amp; Public Health '16</p> 
+                <p><span class="bold">John Filmanowicz</span> &nbsp;
+                    <span style="font-style:italic;">Project Manager, C+STEAM, Better World By Design Liaison</span>
+                    <br/>Computer Science '17</p>
+                <p><span class="bold">Noah Schlottman</span> &nbsp;
+                     <span style="font-style:italic;">Project Manager, bioSTEAM, Science Center Liaison</span>
+                    <br/> Music &amp; Environmental Science '16</p> 
+                <p><span class="bold">Kenji Endo</span> &nbsp;
+                     <span style="font-style:italic;">Project Manager, C+STEAM</span>
+                    <br/>Computer Science &amp; Visual Arts '18</p>
+                <p><span class="bold">Chelsea Phan</span> &nbsp;
+                     <span style="font-style:italic;">Project Manager</span>
+                    <br/>Mechanical Engineering '17</p>
+                <p><span class="bold">Maggie Mathieu</span> &nbsp;
+                     <span style="font-style:italic;">Project Manager</span>
+                    <br/>Engineering &amp; Visual Arts '17</p>
+                <p><span class="bold">Lukas WinklerPrins</span> &nbsp;
+                     <span style="font-style:italic;">Elder/Advisor</span>
+                    <br/>Applied Math '15.5</p>
+            </div>
+        </article>
+    </section>
+    <section class="scroll ">
+        <article>
+            <div class="left chunk">
+                <h4> <span class=""><a href="http://mit.steamwith.us/">MIT STEAM</a></h4>
+                <br/>
+                <br/>
+                <p><span class="bold">Grace Li</span> &nbsp;
+                    <span style="font-style:italic;">President &amp; Co-founder of MIT STEAM</span>
+                    <br/>Mechanical Engineering '17</p>
+                <p><span class="bold">Alice Huang</span> &nbsp;
+                    <span style="font-style:italic;">Co-founder of MIT STEAM</span>
+                    <br/>Mechanical Engineering '15</p>
+                <p><span class="bold">Hannarae Nam</span> &nbsp;
+                    <span style="font-style:italic;">Co-founder of MIT STEAM</span>
+                    <br/>Mechanical Engineering '15</p>
+            </div>
+            <div class="right chunk">
+                <h4> <span class=""><a href="http://yale.steamwith.us/">Yale STEAM</a></h4>
+                <br/>
+                <br/>
+                <p><span class="bold">Chanthia Ma</span> &nbsp;
+                    <span style="font-style:italic;">President &amp; Founder</span>
+                    <br/>Molecular, Cellular, and Developmental Biology (MCDB) ‘16</p>
+                <p><span class="bold">Chris Paolini</span> &nbsp;
+                    <span style="font-style:italic;">Vice President of Design</span>
+                    <br/>Art, concentration in Graphic Design '17</p>
+                <p><span class="bold">Audrey Luo</span> &nbsp;
+                    <span style="font-style:italic;">Vice President of Operations</span>
+                    <br/>Psychology '17</p>
+                <p><span class="bold">Anna Griffin</span> &nbsp;
+                    <span style="font-style:italic;">Vice President of Outreach</span>
+                    <br/>Environmental Engineering '16</p>
+                <p><span class="bold">Kristoffer Acuña</span> &nbsp;
+                    <span style="font-style:italic;">Treasurer</span>
+                    <br/>Astrophysics '17</p>
+                <p><span class="bold">Anna Chase</span> &nbsp;
+                    <span style="font-style:italic;">Head Graduate Liaison</span>
+                    <br/>Graduate Student in Molecular Biophysics and Biochemistry (MB&amp;B)</p>
+                <p><span class="bold">Sarah Ludwin-Peery</span> &nbsp;
+                    <span style="font-style:italic;">Project Leader</span>
+                    <br/>Chemistry '18</p>
+                <p><span class="bold">Zishi (Lizzie) Li</span> &nbsp;
+                    <span style="font-style:italic;">Project Leader</span>
+                    <br/>Undeclared '18</p>
+            </div>
+        </article>
+    </section>
+    <section class="scroll ">
+        <article>
+            <div class="left chunk">
+                <h4> <span class="">Special thanks to:</h4>
+                <br/>
+                <br/>
+                <p>Babette Allina, Kim Almeida, Anikó Bezur, Christopher Bull, Patricia Capece, Jennifer Casasanto, Edward Werner Cook, Richard Fishman, Jodie Gill, John Maeda, Ian McClure, Deborah Mills-Scofield, Rachel Mollicone, Erin Mysak, David Odo, Sarah Pease, Pneuhaus, Pradeep Sharma, Roseanne Somerson, Jens Stenger, David Targan, Adam Tilove, Gediminas Urbonas, Heather Wagner, Jamie Faith Woods, Jewish Community Day School of Rhode Island, and many others without whom these projects would not be possible.</p> 
+                <div class="break_after"></div>
+            </div>
+            <div class="right chunk">
+                <h4> <span class="">We are funded by:</h4>
+                <br/>
+                <br/>
+                <p><a href="https://brown.edu/academics/creative-arts-council/" style="text-decoration:underline;">Brown Creative Arts Council</a>
+                </p>
+                <p><a href="http://browncreativemind.com/" style="text-decoration:underline;">Brown Creative Mind Initiative</a>
+                </p>
+                <p><a href="http://www.brown.edu/academics/engineering/" style="text-decoration:underline;">Brown School of Engineering</a>
+                </p>
+                <p><a href="http://www.brown.edu/academics/science-center/" style="text-decoration:underline;">Brown Science Center</a>
+                </p>
+                <p><a href="http://arts.mit.edu/" style="text-decoration:underline;">Council for the Arts at MIT</a>
+                </p>
+                <p><a href="http://csi.risd.edu" style="text-decoration:underline;">RISD Center for Student Involvement</a>
+                </p>
+                <p><a href="http://csi.risd.edu/programming/" style="text-decoration:underline;">RISD Programming Board</a>
+                </p>
+                <p><a href="https://www.facebook.com/RISDStudentAlliance" style="text-decoration:underline;">RISD Student Alliance</a>
+                </p>
+                <p><a href="http://naturelab.risd.edu/" style="text-decoration:underline;">The Edna Lawrence Nature Lab</a>
+                </p>
+                <p><a href="https://www.facebook.com/YaleSigmaXi" style="text-decoration:underline;">Yale Chapter of Sigma Xi</a>
+                </p>
+            </div>
+        </article>
+    </section>
+    <section class="scroll " id="colophon">
+        <article>
+            <div class="left chunk"></div>
+            <div class="right chunk">
+                <h4>Colophon</h4>
+                <br/>
+                <br/>
+                <p>Made in 2015 with Roboto Slab by Christian Robertson, Hypertext Markup Language, Cascading Style Sheets, and Ecmascript 5</p>
+
+                <p>Designed by <a href="http://barronwebster.com" style="text-decoration:underline;">Barron Webster</a> and <a href="http://ckendo.weebly.com/" style="text-decoration:underline;">Kenji Endo</a>, with <a href="https://brianoakes.squarespace.com/" style="text-decoration:underline;">Brian Oakes</a></p> 
+
+                <p>Built by <a href="http://barronwebster.com" style="text-decoration:underline;">Barron Webster</a> and <a href="http://ckendo.weebly.com/" style="text-decoration:underline;">Kenji Endo</a>
+
+                <p>Curated by <a href="http://portfolios.risd.edu/mthigpen" style="text-decoration:underline;">Minsoo Thigpen</a> </p> 
+
+                <p>Assorted graphics by <a href="http://ckendo.weebly.com/" style="text-decoration:underline;">Kenji Endo</a> and <a href="http://barronwebster.com" style="text-decoration:underline;">Barron Webster</a>
+                </p>
+                <p>Hosted on <a href="http://steamwith.us" style="text-decoration:underline;">Steamwith.us</a> with Dreamhost</p>
+                <p>Say hello at <a href="mailto:info@steamwith.us" style="text-decoration:underline;">info@steamwith.us!</a>
+                </p>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
