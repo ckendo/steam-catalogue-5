@@ -4,24 +4,32 @@
 */
 
 /* Roboto Slab Light by Christian Robertson, by free licence from http://www.fontsquirrel.com/fonts/roboto-slab */
-@font-face{ 
+/*@font-face{ 
     font-family: 'RobotoSlabLight';
     src: url('roboto-slab-light/RobotoSlab-Light-webfont.eot');
     src: url('roboto-slab-light/RobotoSlab-Light-webfont.eot?iefix') format('eot'),
          url('roboto-slab-light/RobotoSlab-Light-webfont.woff') format('woff'),
          url('roboto-slab-light/RobotoSlab-Light-webfont.ttf') format('truetype'),
          url('roboto-slab-light/RobotoSlab-Light-webfont.svg#webfont') format('svg');
-}
+}*/
 
 /* Roboto Slab Regular by Christian Robertson, by free licence from http://www.fontsquirrel.com/fonts/roboto-slab */
-@font-face{ 
+/*@font-face{ 
     font-family: 'RobotoSlabRegular';
     src: url('roboto-slab-regular/RobotoSlab-Regular-webfont.eot');
     src: url('roboto-slab-regular/RobotoSlab-Regular-webfont.eot?iefix') format('eot'),
          url('roboto-slab-regular/RobotoSlab-Regular-webfont.woff') format('woff'),
          url('roboto-slab-regular/RobotoSlab-Regular-webfont.ttf') format('truetype'),
          url('roboto-slab-regular/RobotoSlab-Regular-webfont.svg#webfont') format('svg');
+}*/
+
+@font-face{
+    font-family: 'Open Sans', sans-serif;
 }
+ 
+@font-face{
+    font-family: 'Montserrat', sans-serif;
+}   
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -61,8 +69,9 @@ table {
     -webkit-box-sizing: border-box;
 }
 body {
-    font-family: 'RobotoSlabLight';
-    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
     letter-spacing: .025em;
     overflow-x: hidden;
 }
@@ -165,6 +174,8 @@ a:hover {
     text-shadow: 2px 5px 5px rgba(0, 0, 0, .5);
 }
 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 9vw;
     line-height: 120%;
     letter-spacing: 2px;
@@ -215,7 +226,7 @@ ol {
 }
 #cover {
     background-color: #555;
-    background-image: url('img/colorbars.jpg');
+    background-image: url('img/temp.jpg');
     background-size: 100% 100%;
     /*background-blend-mode: screen;*/
 }
@@ -232,7 +243,7 @@ ol {
 }
 /*Subheader bold is 'bolder'*/
 .subheaderbold {
-    font-family: 'RobotoSlabRegular';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     letter-spacing:0;
 }
