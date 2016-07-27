@@ -6,13 +6,14 @@ var BACKGROUND = 255;
 // var GFX = P2D;
 
 var SPEED = 0.75;
-var NUM = 350;
+var NUM = 300;
 var MAX_DIST = 125;
 // Node[] nodes; 
 var nodes; 
 var connections = 0;
 var maxDist = MAX_DIST;
 var text;
+var paused;
 
 // TODO: Resize window working, rescatter points
 // Make MAX_DIST function of canvas size
@@ -26,6 +27,8 @@ function setup() {
 	noSmooth();
 	strokeWeight(WEIGHT);
 	stroke(FOREGROUND, OPACITY);
+	paused = false;
+
 	nodes = Array(NUM);
 	for (var i = 0; i < NUM; i++){
 		// nodes[i] = new Node(random(width), random(height), random(SPEED/4, SPEED));
@@ -39,24 +42,36 @@ function setup() {
 	// text.style("font-size", "12px");
 }
 
+// TODO: this can probably be done cleaner. without so many if statements
 function draw() {
 	background(BACKGROUND);  
-	nodes.sort(compare);
+	// if not paused
+	if (paused != true){
+		nodes.sort(compare);
+		maxDist = map(mouseY, windowHeight, 0, MAX_DIST/5, MAX_DIST);
+		connections = 0;
 
-	maxDist = map(mouseY, windowHeight, 0, MAX_DIST/5, MAX_DIST);
-	connections = 0;
-
-	for (var i = 0; i < NUM; i++){
-		var n = nodes[i];
-		n.update();
-		n.drawPoint();
-		nearestNeighbors(n, i, maxDist);
-	} 
-
-	// Log
-	out = Math.round(frameRate());
-	var string = 'fps ' + out + ' | maxDist ' + Math.round(maxDist) + ' | nodes ' + NUM + ' | connections ' + connections;
-	var log = text(string, 15, 15);
+		for (var i = 0; i < NUM; i++){
+			var n = nodes[i];
+			n.drawPoint();
+			n.update();	
+			nearestNeighbors(n, i, maxDist);
+		} 
+		// Log
+		out = Math.round(frameRate());
+		var string = 'fps ' + out + ' | maxDist ' + Math.round(maxDist) + ' | nodes ' + NUM + ' | connections ' + connections;
+		var log = text(string, 15, 15);
+	// else just draw static points
+	}else{
+		for (var i = 0; i < NUM; i++){
+			var n = nodes[i];
+			n.drawPoint();
+			nearestNeighbors(n, i, maxDist);
+		} 
+		// Log paused
+		var string = 'paused';
+		var log = text(string, 15, 15);
+	}
 
 }
 
@@ -90,6 +105,11 @@ function nearestNeighbors(n1, i, maxDist){
 
 function compare(n1, n2){
 	return Math.sign(n1.getX() - n2.getX());
+}
+
+function mousePressed(){
+	// reverse paused state
+	paused = !paused
 }
 
 // Node Class
