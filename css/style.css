@@ -60,7 +60,6 @@ h1 {
 h2 { 
 	font-size: 24px;
 	font-size: 2.4rem; /* =24px */
-	font-weight:;
 }
 h3 { 
 	font-size: 16px;
@@ -190,6 +189,9 @@ dd {
 	padding-bottom: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
+	border-top-color: #000000;
+	border-top-style: solid;
+	border-top-width: 5px;
 }
 
 #fixed-nav{
@@ -219,6 +221,39 @@ dd {
 #fixed-nav li a:hover{
 	color: #cccccc;
 }
+
+.RISD:hover {
+  color: #000000;
+}
+
+.Yale:hover {
+	color: #1A76BB;
+}
+
+.MIT:hover {
+	color: #24A8B3;
+}
+
+.New-School:hover {
+	color: #f77116;
+}
+
+.Brown:hover {
+	color: #EC1C24;
+}
+
+.BU:hover {
+	color: #0ba016;
+}
+
+.Rutgers:hover {
+	color: #6048a8;
+}
+
+.Harvard:hover {
+	color: #fcc342;
+}
+
 /*article {
 	padding: 80px 80px 80px 80px;
 	height: 100%;
