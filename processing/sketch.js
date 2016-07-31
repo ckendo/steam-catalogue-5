@@ -46,7 +46,7 @@ function setup() {
 function draw() {
 	background(BACKGROUND);  
 	// if not paused
-	paused = true;
+	// paused = true;
 	if (paused != true){
 		nodes.sort(compare);
 		maxDist = map(mouseY, windowHeight, 0, MAX_DIST/5, MAX_DIST);
