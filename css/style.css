@@ -76,6 +76,17 @@ h3 {
 
 a {
 	text-decoration: none;
+    color: black;
+    transition: color .2s;
+}
+a:visited {
+	text-decoration: none;
+    color: black;
+}
+a:hover {
+	text-decoration: none;
+    color: rgb(0, 0, 200);
+    transition: color .2s;
 }
 
 p {
@@ -86,14 +97,17 @@ p {
 
 dt {
 	float: left;
+	text-align: right;
 	/*font-size: 18px;*/
 	font-weight: 700;
 	/*line-height: 130%;*/
+	/*padding-right:10px;*/
 }
 
 dd {
 	float: left;
 	padding: 0 0 10px 10px;
+	/*padding-bottom: 10px;*/
 }
 
 .bold{
@@ -262,17 +276,6 @@ dt {
 .left_hand {
 	padding-right: 5vw;
 }*/
-a {
-	color: black;
-	transition: color .2s;
-}
-a:visited {
-	color: black;
-}
-a:hover {
-	color: rgb(0, 0, 255);
-	transition: color .2s;
-}
 .caption {
 	font-style: italic;
 	font-size: 13px;
