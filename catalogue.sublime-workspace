@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"border-top",
+				"border-top-width"
+			],
+			[
 				"list-style",
 				"list-style-type"
 			]
@@ -15,7 +19,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 15954,
+				"buffer_size": 17268,
 				"line_ending": "Unix"
 			}
 		},
@@ -23,7 +27,15 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 3669,
+				"buffer_size": 11826,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "processing/sketch.js",
+			"settings":
+			{
+				"buffer_size": 3610,
 				"line_ending": "Unix"
 			}
 		}
@@ -101,6 +113,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"container",
+			"canvas",
+			"section",
 			"article",
 			"skye ",
 			"steam pavilion",
@@ -225,10 +240,7 @@
 			"freshman",
 			"whistle",
 			"freshman",
-			"whistle",
-			"freshman",
-			"whistle",
-			"/br"
+			"whistle"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -254,15 +266,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 15954,
+						"buffer_size": 17268,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								730,
-								730
+								2548,
+								2548
 							]
 						],
 						"settings":
@@ -272,7 +284,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 97.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -282,22 +294,49 @@
 					"file": "style.css",
 					"settings":
 					{
-						"buffer_size": 3669,
+						"buffer_size": 11826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1752,
-								1752
+								675,
+								675
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "processing/sketch.js",
+					"settings":
+					{
+						"buffer_size": 3610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1160,
+								1160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -358,6 +397,10 @@
 		"selected_items":
 		[
 			[
+				"sketch",
+				"processing/sketch.js"
+			],
+			[
 				"css",
 				"style.css"
 			]
@@ -375,7 +418,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 139.0,
+	"side_bar_visible": false,
+	"side_bar_width": 218.0,
 	"status_bar_visible": true
 }
