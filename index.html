@@ -10,7 +10,6 @@
 
 	<!--<meta property='og:image' content='http://steamwith.us/content/catalogue/four/newsteamicon.png'/>
 	<link rel="image_src" href="newsteamicon.png" />-->
-	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -19,6 +18,46 @@
 	<script language="javascript" type="text/javascript" src="processing/libraries/p5.min.js"></script>
 	<script language="javascript" type="text/javascript" src="processing/libraries/p5.dom.js"></script>
 	<script language="javascript" type="text/javascript" src="processing/sketch.js"></script>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!--<script src="jquery.js"></script>
+	<script src="script.js"></script>
+	<script>
+
+	$(document).ready(function() {
+
+		// Click event for any anchor tag that's href starts with #
+		$('a[href^="#"]').click(function(event) {
+
+			// The id of the section we want to go to.
+			var id = $(this).attr("href");
+
+			// An offset to push the content down from the top.
+			var offset = 0;
+
+			// Our scroll target : the top position of the
+			// section that has the id referenced by our href.
+			var target = $(id).offset().top - offset;
+
+			// The magic...smooth scrollin' goodness.
+			$('html, body').animate({
+				scrollTop: target
+			}, 200);
+
+			//prevent the page from jumping down to our section.
+			event.preventDefault();
+		});
+	});
+	</script>-->
+
+	<!-- <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" /> -->
+	<script type="text/javascript">
+	//uncomment and change this to false if you're having trouble with WOFFs
+	//var woffEnabled = true;
+	//to place your webfonts in a custom directory 
+	//uncomment this and set it to where your webfonts are.
+	//var customPath = "/themes/fonts";
+	</script>
 </head>
 
 <body>
@@ -51,28 +90,270 @@
 		<p> Test font</p>
 		<h1> hello</h1>
 	</section>
+<!-- 	<section class = "full">
+	</section> -->
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('#fixed-nav-bar a').on('click', function(e) {
-				e.preventDefault();
-			});
-			var bottomOfSketch = $('#sketch').height();
 
-			$(window).on('scroll',function() {
-				var scrolltop = $(this).scrollTop();
 
-				if(scrolltop >= bottomOfSketch) {
-					// $('#fixed-nav-bar').fadeIn(250);
-					$("#fixed-nav-bar").show()
-				}
 
-				else if(scrolltop <= bottomOfSketch) {
-					// $('#fixed-nav-bar').fadeOut(250);
-					$("#fixed-nav-bar").hide()
-				}
-			});
-		});
-	</script>
+
+<!-- 	<section class="scroll ">
+		<article>
+			<div class="full">
+				<h4> <span class="">Welcome to Catalogue Four!</h4>
+				<br/>
+				<br/>
+				<p>We are RISD, Brown, MIT, and Yale STEAM. <a href="http://steamwith.us" style="text-decoration:underline;">STEAM</a> is STEM + Art/Design.</p>
+				<p class="fourtwenty">We strive to integrate the creativity and aesthetics of the arts; the problem solving tools and rigor of the STEM fields; &amp; the critical thinking and ethical considerations of the humanities. We believe that this unification powerfully drives progress toward the future. This is our fourth Catalogue.</p>
+				<p>This fourth catalogue contains everything we've done from Winter 2015 to Spring 2015.</p>
+				<p class="fourtwenty subheaderbold"><span class="hide_mobile">Optimized for the latest versions of Chrome/Safari. We recommend navigating pages with your arrow keys, and exploring imagery with your trackpad/mouse/what have you. Click "STEAM Catalogue Four" on any page to return to the top.</span>
+				</p>
+			</div>
+		</article>
+	</section>
+	<section class="scroll ">
+		<article>
+			<div class="full">
+				<h4> <span class="">About Catalogue Four</h4>
+				<br/>
+				<br/>
+				<p>This Catalogue, like the catalogue of a show, is a collection of documented work. At STEAM, this includes workshops, lectures, installations, discussions, and writing we created this spring.</p>
+				<p>STEAM Press, the mechanism through which Catalogue is published, accepts submissions from members of our communities, and outside contributors. Please reach out to us if you would like to add to the next issue of Catalogue.</p>
+				<p>The theme of this Catalogue is "Patterns for Play".
+			</div>
+		</article>
+	</section>
+	<section class="scroll " id="table_of_contents">
+		<article>
+			<div class="left chunk">
+				<h4>Contents</h4>
+				<br/>
+				<br/>
+				<br/>
+				<dl>
+					<dt>1</dt>
+					<dd class="bold"><a href="#1">Foreword</a>
+						<br/><span>Minsoo Thigpen</span>
+					</dd>
+					<div class="clear"></div>
+					<dt>2</dt>
+					<dd class="bold"><a href="#2">Body + Internet</a>
+						<br/><span>Tony Yang</span>
+					</dd>
+					<div class="clear"></div>
+					</dd>
+				</dl>
+			</div>
+			<div class="right chunk">
+				<dl>
+				</dl>
+			</div>
+		</article>
+	</section>
+	<section class="scroll yes no" id="1">
+		<article>
+			<div class="full"></div>
+				<div class="break_after"></div>
+<span class="big_number">1</span>
+				<div class="headline">
+					<h5> <span class="bold">Foreword</span><br/></h5>
+					<p style="font-size:18px; line-height:140%;">Patterns for Play
+						<br/><a href="http://portfolios.risd.edu/mthigpen" style="text-decoration:underline;">Minsoo Thigpen</a>
+						<br/> <span class = "italic"> Brown | RISD Dual Degree '18<br/> Painting &amp; Engineering</span> 
+					</p>
+					<div class="clear"></div>
+				</div>
+				<p>The SMPTE (The Society of Motion Picture and Television Engineers) color bars shown above is a television test pattern, along with a continuous  audio tone, which acts as a known standard for all other broadcasting programs to adjust their equipment to. This test pattern is used only where the NTSC analog video standard is utilized, such as countries in North America where we, as one of the last generations of TV watching children, might still recognize it in the wisps of our nostalgic memory.</p>
+
+				<p class="fourfifteen">Video and audio engineers can compare this known standard to the received pattern from other TV stations or broadcasters so that the program material is showing the analog video chrominance <span class="show_mobile">and luminance information correctly. Therefore, a TV station or or network broadcaster usually will transmit this test pattern with the audio tone together before sending program material in order to show legitimacy and authority of the transmission line, so that the receiving stations may adjust their equipment accordingly.</span></p>
+			</div>
+			<div class="pagination left">
+				<a href="#table_of_contents"> STEAM Catalogue Four</a>
+			</div>
+			<div class="pagination right">
+				<a href="#cover">Foreword</a>
+				<a class="page_numbers"></a>
+			</div>
+		</article>
+	</section>
+	<section class="scroll no">
+		<article>
+			<div class="full">
+				<p><span class="hide_mobile">and luminance information correctly. Therefore, a TV station or or network broadcaster usually will transmit this test pattern with the audio tone together before sending program material in order to show legitimacy and authority of the transmission line, so that the receiving stations may adjust their equipment accordingly.</span></p>
+
+				<p>Each semester, the STEAM clubs collect documentation and materials from our open call for interdisciplinary work for our catalogues. Such as the SMPTE is a known standard for analog video transmission, this Catalogue strives to be a known source of documentation and support for the rising STEAM movement. This Catalogue is an open broadcast to the STEAM community: students, educators, politicians, administrators, industry leaders, health care professionals, activists, artists, and designers. This is our pattern for play, for learning, for improving, and for growing. We hope that you will contribute to the standard that we are trying to build, in part, with the projects and communities described in the following chapters. We hope that you will receive our signal and in return, respond with your own patterns for play.</p>
+				<span class="hide_mobile"><div class="image_hold" id="STEAM"></div></span>
+				<span class="show_mobile"><img class="text_img" src="orig/STEAM.jpg"/></span>
+			</div>
+			<div class="pagination left">
+				<a href="#table_of_contents"> STEAM Catalogue Four</a>
+				<a class="page_numbers left_hand"></a>
+			</div>
+			<div class="pagination right">
+				<a href="#1">Foreword</a>
+				<a class="page_numbers"></a>
+			</div>
+		</article>
+	</section>
+	<section class="scroll yes no" id="2">
+		<article>
+			<div class="full">
+				<div class="break_after"></div>
+				<span class="big_number">2</span>
+				<div class="headline">
+					<h5> <span class="bold">Body + Internet</span><br/></h5>
+					<p style="font-size:18px; line-height:140%;">Winter-session and IAP workshop series
+						<br/><a href="mailto:tyang@risd.edu" style="text-decoration:underline;">Tony Yang</a>
+						<br/> <span class = "italic"> RISD '17, Architecture</span> 
+					</p>
+						<div class="clear"></div>
+				</div>
+				<p>The Winter-session and IAP (Independent Activities Period) workshop series is an annual 4-week event organized by the collective STEAM clubs. Workshop sessions are held once every week during the intermission between Fall and Spring semester (January – February) – and culminates in a gallery exhibition showcasing the projects developed.</p> 
+				<p>The schema for this year’s workshop series was to capitalize on the diversity of specializations and academic degree of the participants – to maximize the potential for collaborative dynamics and minimize any programmatic redundancies. It was imperative to design content that could engage an illustrator, a mechanical engineer, and a medical practitioner at the same time.</p>
+			</div>
+			<div class="pagination left">
+				<a href="#table_of_contents"> STEAM Catalogue Four</a>
+				<a class="page_numbers left_hand hide"></a>
+			</div>
+			<div class="pagination right">
+				<a href="#2">Body + Internet</a>
+				<a class="page_numbers"></a>
+			</div>
+		</article>
+	</section>
+	<section class="scroll no">
+		<article>
+			<div class="full">
+				<p><span class="hide_mobile">The goal of the students was to become interconnected while deprived of their senses. We ran the activity several times and with each progression observed how cluster behaviour differ with the addition of sensory acuities. </span></p>
+				<p class="subheaderbold">Session Four – RISD E’Ship space</p>
+				<p>The workshop series officially concluded with a final critique with a panel of critics – Soo-Jung Ham (Department Head, Industrial Design) and Dan Goods (Visual Strategist, NASA) – while the tone was informal, Dan and Soo-Jung’s creative sensibilities offered stimulating contributions to each team’s project.</p>
+				<p class="subheaderbold">Ending Notes:</p>
+				<p>Unfortunately due to the scale of the workshop series, STEAM can only invite a maximum of fifteen students. However, we are committed to extending facets of the event to anyone that is so inclined to participate. As such, through Body+Internet, we invited NASA’s Propulsion Laboratory’s Visual Strategist: <a href="http://www.directedplay.com/" style="text-decoration:underline;">Dan Goods</a> to share with us his narrative. The talk, open to the public, <span class="show_mobile">provided an inspiring discussion on the operations of his team within a STEM-centric environment. And how he has managed a symbiotic relationship with the scientists at NASA. The event received a successful reception and caused great excitement in the community at large!</span></p>
+				<span class="hide_mobile"><div class="image_hold" id="two5"></div></span>
+				<span class="show_mobile"><img class="text_img" src="orig/2-4.jpg"/></span>
+				<p class="caption">Internet Sensations Wand by Rob Learsch (MIT), Ijeoma Azoda (Brown), and Horatio Han (RISD)</p>
+			</div>
+			<div class="pagination left">
+				<a href="#table_of_contents"> STEAM Catalogue Four</a>
+				<a class="page_numbers left_hand"></a>
+			</div>
+			<div class="pagination right">
+				<a href="#2">Body + Internet</a>
+				<a class="page_numbers"></a>
+			</div>
+		</article>
+	</section>
+	<section class="scroll no">
+		<article>
+			<div class="full">
+				<span class="hide_mobile"><div class="image_hold" id="two6"></div></span>
+				<span class="show_mobile"><img class="text_img" src="orig/2-6.png"/></span>
+				<p class="caption">Cat Me If You Can by Matthew Lim (RISD), Ned Burnell (MIT), Esther Jang (MIT), and Bonny Cai (Brown | RISD)</p>
+				<p class="fourfifteen"><span class="hide_mobile">provided an inspiring discussion on the operations of his team within a STEM-centric environment. And how he has managed a symbiotic relationship with the scientists at NASA. The event received a successful reception and caused great excitement in the community at large!</span></p>
+				<p>For STEAM, each iteration of this workshop series is a continuum into researching the structure of multi-disciplinary teams and workshop design. The next Winter-session and IAP workshop series will build on successes of Body+Internet and Human+Computer.</p>
+				<br/>
+				<p class = "caption"> See the Body + Internet <a href="body+internet-catalog.pdf" style="text-decoration:underline;">exhibition catalog</a>.</p>
+			</div>
+			<div class="pagination left">
+				<a href="#table_of_contents"> STEAM Catalogue Four</a>
+				<a class="page_numbers left_hand"></a>
+			</div>
+			<div class="pagination right">
+				<a href="#2">Body + Internet</a>
+				<a class="page_numbers"></a>
+			</div>
+		</article>
+	</section>
+	<section class = "scroll no">
+		<div class = "full">
+			<span class="hide_mobile"><div class = "image_hold" id = "big"></div></span>
+			<span class="show_mobile"><img class="text_img" src="orig/big.jpg"/></span>
+		</div>
+	</section>
+	<section class="scroll ">
+		<article>
+			<div class="full">
+				<h4> <span class=""><a href="http://risd.steamwith.us/">RISD STEAM</a></h4>
+				<br/>
+				<br/>
+				<p><span class="bold">Ingrid Lange</span> &nbsp;
+					<span style="font-style:italic;">Co-President</span>
+					<br/>Industrial Design '16</p>
+				<p><span class="bold">Minsoo Thigpen</span> &nbsp;
+					<span style="font-style:italic;">Co-President</span>
+					<br/>Brown | RISD Dual Degree, Painting &amp; Engineering '18</p>
+				<h4> <span class=""><a href="http://brown.steamwith.us/">Brown STEAM</a></h4>
+				<br/>
+				<br/>
+				<p><span class="bold">Victoria Wu</span> &nbsp;
+					<span style="font-style:italic;">President</span>
+					<br/>Materials Engineering &amp; Visual Arts '15</p>
+				<p><span class="bold">Jonelle Ahiligwo</span> &nbsp;
+					<span style="font-style:italic;">Project Manager, bioSTEAM, Nature Lab Liaison</span>
+					<br/>Biology &amp; Public Health '16</p> 
+			</div>
+		</article>
+	</section>
+	<section class="scroll ">
+		<article>
+			<div class="full">
+				<h4> <span class="">Special thanks to:</h4>
+				<br/>
+				<br/>
+				<p>Babette Allina, Kim Almeida, Anikó Bezur, Christopher Bull, Patricia Capece.</p> 
+				<div class="break_after"></div>
+				<h4> <span class="">We are funded by:</h4>
+				<br/>
+				<br/>
+				<p><a href="https://brown.edu/academics/creative-arts-council/" style="text-decoration:underline;">Brown Creative Arts Council</a>
+			</div>
+		</article>
+	</section>
+	<section class="scroll " id="colophon">
+		<article>
+			<div class="full"></div>
+				<h4>Colophon</h4>
+				<br/>
+				<br/>
+				<p>Made in 2015 with Roboto Slab by Christian Robertson, Hypertext Markup Language, Cascading Style Sheets, and Ecmascript 5</p>
+				<p>Hosted on <a href="http://steamwith.us" style="text-decoration:underline;">Steamwith.us</a> with Dreamhost</p>
+				<p>Say hello at <a href="mailto:info@steamwith.us" style="text-decoration:underline;">info@steamwith.us!</a>
+				</p>
+			</div>
+		</article>
+	</section> -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#fixed-nav-bar a').on('click', function(e) {
+    e.preventDefault();
+  });
+  var bottomOfSketch = $('#sketch').height();
+
+  $(window).on('scroll',function() {
+    var scrolltop = $(this).scrollTop();
+
+    if(scrolltop >= bottomOfSketch) {
+      // $('#fixed-nav-bar').fadeIn(250);
+      $("#fixed-nav-bar").show()
+    }
+    
+    else if(scrolltop <= bottomOfSketch) {
+      // $('#fixed-nav-bar').fadeOut(250);
+      $("#fixed-nav-bar").hide()
+    }
+  });
+});
+
+// $(document).ready( function() {
+//     $("#fixed-nav-bar").hide(); //hide the nav bar initially
+//     var topOfOthDiv = $("#othdiv").offset().top;
+//     $(window).scroll(function() {
+//         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+//             $("#dvid").show(); //reached the desired point -- show div
+//         }
+//     });
+// });
+</script>
 </body>
 </html>
