@@ -22,6 +22,7 @@ var paused;
 
 function setup() {
 	var canvas = createCanvas(windowWidth, windowHeight, P2D);
+	// var canvas = createCanvas(window.innerWidth, window.innerHeight, P2D);
 	canvas.parent('sketch');
 	frameRate(FPS);
 	noSmooth();
@@ -34,7 +35,6 @@ function setup() {
 		// nodes[i] = new Node(random(width), random(height), random(SPEED/4, SPEED));
 		nodes[i] = new Node(random(windowWidth), random(windowHeight), random(SPEED/4, SPEED));
 	}
-
 	// // Text
 	// text = createP('');
 	// //var text = createElement('h2', 'blah');
@@ -44,7 +44,7 @@ function setup() {
 
 // TODO: this can probably be done cleaner. without so many if statements
 function draw() {
-	background(BACKGROUND);  
+	background(BACKGROUND); 
 	// if not paused
 	// paused = true;
 	if (paused != true){
@@ -73,7 +73,6 @@ function draw() {
 		var string = 'paused';
 		var log = text(string, 15, 15);
 	}
-
 }
 
 // window.onresize = function(){
@@ -110,7 +109,11 @@ function compare(n1, n2){
 
 function mousePressed(){
 	// reverse paused state
-	paused = !paused
+	paused = !paused;
+}
+
+function windowResized() {
+	setup();
 }
 
 // Node Class
