@@ -5,7 +5,7 @@
 		[
 			[
 				"border-top",
-				"border-top-width"
+				"border-top-color"
 			],
 			[
 				"list-style",
@@ -19,15 +19,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 17268,
+				"buffer_size": 15428,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "style.css",
+			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 11826,
+				"buffer_size": 13564,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +35,31 @@
 			"file": "processing/sketch.js",
 			"settings":
 			{
-				"buffer_size": 3610,
+				"buffer_size": 3613,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/bootstrap.css",
+			"settings":
+			{
+				"buffer_size": 89603,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/kenjiendo/Desktop/Science Center/prototype/index.html",
+			"settings":
+			{
+				"buffer_size": 79534,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/kenjiendo/Desktop/Science Center/prototype/css/index.css",
+			"settings":
+			{
+				"buffer_size": 5950,
 				"line_ending": "Unix"
 			}
 		}
@@ -76,6 +100,9 @@
 	},
 	"file_history":
 	[
+		"/Users/kenjiendo/Desktop/Science Center/prototype/css/bootstrap.min.css",
+		"/Users/kenjiendo/Desktop/Science Center/prototype/css/index.css",
+		"/Users/kenjiendo/Desktop/steam-catalogue-5/style.css",
 		"/Users/kenjiendo/Desktop/steam-catalogue-5/processing/index.html",
 		"/Users/kenjiendo/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/kenjiendo/Library/Application Support/Sublime Text 2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
@@ -113,6 +140,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"risd",
+			"strong",
+			".full",
+			"pull-right",
+			"section.full",
+			"section {",
+			"bold",
+			"strong",
+			"section",
+			".full",
+			"section",
+			"hidden",
+			"splash",
 			"container",
 			"canvas",
 			"section",
@@ -227,20 +267,7 @@
 			"victoria wu",
 			"videowra",
 			"videowrapper",
-			"vimeo",
-			"\n            ",
-			"fourteen1",
-			"fifteen2",
-			"image_hold",
-			"vimeo",
-			"minsoo",
-			"allison chen",
-			"da vin",
-			"research",
-			"freshman",
-			"whistle",
-			"freshman",
-			"whistle"
+			"vimeo"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -258,7 +285,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -266,15 +293,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 17268,
+						"buffer_size": 15428,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2548,
-								2548
+								1428,
+								1392
 							]
 						],
 						"settings":
@@ -291,28 +318,27 @@
 				},
 				{
 					"buffer": 1,
-					"file": "style.css",
+					"file": "css/style.css",
 					"settings":
 					{
-						"buffer_size": 11826,
+						"buffer_size": 13564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								675,
-								675
+								3367,
+								3367
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 3.0,
+						"translation.y": 1517.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -322,20 +348,102 @@
 					"file": "processing/sketch.js",
 					"settings":
 					{
-						"buffer_size": 3610,
+						"buffer_size": 3613,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1160,
-								1160
+								1161,
+								1161
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 334.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/bootstrap.css",
+					"settings":
+					{
+						"buffer_size": 89603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85261,
+								85271
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1.0,
+						"translation.y": 59963.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/kenjiendo/Desktop/Science Center/prototype/index.html",
+					"settings":
+					{
+						"buffer_size": 79534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								660,
+								660
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 785.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/kenjiendo/Desktop/Science Center/prototype/css/index.css",
+					"settings":
+					{
+						"buffer_size": 5950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4846,
+								4855
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
