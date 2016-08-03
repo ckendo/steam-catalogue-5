@@ -200,6 +200,10 @@ dd {
 	padding-top: 30px;*/
 	/*margin: 0 auto;*/
 	/*padding: 0px 3px;*/
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #000000;
 }
 
 #fixed-nav li {}
@@ -207,10 +211,10 @@ dd {
 #fixed-nav li a{
 	display: block;
 	float: left;
-	font-size: 12px;
+/*	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 600;
-	color: #000000;
+	color: #000000;*/
 	text-decoration: none;
 	padding: 0px 30px;
 	-webkit-transition: all 0.2s linear;
