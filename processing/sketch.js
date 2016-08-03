@@ -42,34 +42,35 @@ function initNodes(num){
 // TODO: this can probably be done cleaner. without so many if statements
 function draw() {
 	background(BACKGROUND); 
+	if (window.pageYOffset <= windowHeight){
+		// if not paused
+		// paused = true;
+		if (paused != true){
+			nodes.sort(compare);
+			maxDist = map(mouseY, windowHeight, 0, MAX_DIST/5, MAX_DIST);
+			connections = 0;
 
-	// if not paused
-	// paused = true;
-	if (paused != true){
-		nodes.sort(compare);
-		maxDist = map(mouseY, windowHeight, 0, MAX_DIST/5, MAX_DIST);
-		connections = 0;
-
-		for (var i = 0; i < NUM; i++){
-			var n = nodes[i];
-			n.drawPoint();
-			n.update();	
-			nearestNeighbors(n, i, maxDist);
-		} 
-		// Log
-		out = Math.round(frameRate());
-		var string = 'fps ' + out + ' | maxDist ' + Math.round(maxDist) + ' | nodes ' + NUM + ' | connections ' + connections;
-		var log = text(string, 15, 15);
-	// else just draw static points
-	}else{
-		for (var i = 0; i < NUM; i++){
-			var n = nodes[i];
-			n.drawPoint();
-			nearestNeighbors(n, i, maxDist);
-		} 
-		// Log paused
-		var string = 'paused';
-		var log = text(string, 15, 15);
+			for (var i = 0; i < NUM; i++){
+				var n = nodes[i];
+				n.drawPoint();
+				n.update();	
+				nearestNeighbors(n, i, maxDist);
+			} 
+			// Log
+			out = Math.round(frameRate());
+			var string = 'fps ' + out + ' | maxDist ' + Math.round(maxDist) + ' | nodes ' + NUM + ' | connections ' + connections;
+			var log = text(string, 15, 15);
+		// else just draw static points
+		}else{
+			for (var i = 0; i < NUM; i++){
+				var n = nodes[i];
+				n.drawPoint();
+				nearestNeighbors(n, i, maxDist);
+			} 
+			// Log paused
+			var string = 'paused';
+			var log = text(string, 15, 15);
+		}
 	}
 }
 
@@ -109,17 +110,6 @@ function windowResized() {
 	NUM = Math.round(windowWidth/4);
 	initNodes(NUM);
 }
-
-// window.onscroll = function() { 
-// 	if (mouseY > 300){
-// 		background(255);
-// 		paused = true;
-// 	}else{
-// 		initCanvas();
-// 		NUM = Math.round(windowWidth/4);
-// 		initNodes(NUM);
-// 	}
-// }
 
 // Node Class
 function Node(xInit, yInit, speed){
