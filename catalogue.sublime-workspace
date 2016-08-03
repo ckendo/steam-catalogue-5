@@ -35,7 +35,7 @@
 			"file": "processing/sketch.js",
 			"settings":
 			{
-				"buffer_size": 3613,
+				"buffer_size": 3563,
 				"line_ending": "Unix"
 			}
 		},
@@ -130,7 +130,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 		]
@@ -140,6 +140,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_height",
+			"_width",
+			"_height",
+			"_width",
 			"risd",
 			"strong",
 			".full",
@@ -263,11 +267,7 @@
 			"lukas",
 			"pneuhaus",
 			"han",
-			"hanar",
-			"victoria wu",
-			"videowra",
-			"videowrapper",
-			"vimeo"
+			"hanar"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -275,6 +275,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"windowHeight",
+			"windowWidth",
+			"windowHeight",
+			"windowWidth"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -285,7 +289,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -300,8 +304,8 @@
 						"selection":
 						[
 							[
-								1428,
-								1392
+								15155,
+								15142
 							]
 						],
 						"settings":
@@ -311,7 +315,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6120.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -337,8 +341,8 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 3.0,
-						"translation.y": 1517.0,
+						"translation.x": 0.0,
+						"translation.y": 18.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -348,15 +352,15 @@
 					"file": "processing/sketch.js",
 					"settings":
 					{
-						"buffer_size": 3613,
+						"buffer_size": 3563,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1161,
-								1161
+								2323,
+								2323
 							]
 						],
 						"settings":
@@ -365,7 +369,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 334.0,
+						"translation.y": 1307.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -393,7 +397,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 1.0,
-						"translation.y": 59963.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -496,7 +500,7 @@
 	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":

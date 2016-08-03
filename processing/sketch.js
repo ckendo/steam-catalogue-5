@@ -3,48 +3,46 @@ var WEIGHT = 1;
 var OPACITY = 80; // out of 255
 var FOREGROUND = 0;
 var BACKGROUND = 255;
-// var GFX = P2D;
 
 var SPEED = 0.75;
-var NUM = 300;
 var MAX_DIST = 125;
-// Node[] nodes; 
+// var NUM; // 300
+
 var nodes; 
 var connections = 0;
 var maxDist = MAX_DIST;
 var text;
 var paused;
 
-// TODO: Resize window working, rescatter points
-// Make MAX_DIST function of canvas size
-// Button to pause
-// Print output of number of connections
-
 function setup() {
+	// Init variables based on window size
+	NUM = Math.round(windowWidth/4);
+	initCanvas()
+	initNodes(NUM);
+}
+
+function initCanvas(){
 	var canvas = createCanvas(windowWidth, windowHeight, P2D);
-	// var canvas = createCanvas(window.innerWidth, window.innerHeight, P2D);
 	canvas.parent('sketch');
 	frameRate(FPS);
 	noSmooth();
 	strokeWeight(WEIGHT);
 	stroke(FOREGROUND, OPACITY);
 	paused = false;
+}
 
+function initNodes(num){
 	nodes = Array(NUM);
 	for (var i = 0; i < NUM; i++){
 		// nodes[i] = new Node(random(width), random(height), random(SPEED/4, SPEED));
 		nodes[i] = new Node(random(windowWidth), random(windowHeight), random(SPEED/4, SPEED));
 	}
-	// // Text
-	// text = createP('');
-	// //var text = createElement('h2', 'blah');
-	// text.position(15, 15);
-	// text.style("font-size", "12px");
 }
 
 // TODO: this can probably be done cleaner. without so many if statements
 function draw() {
 	background(BACKGROUND); 
+
 	// if not paused
 	// paused = true;
 	if (paused != true){
@@ -74,12 +72,6 @@ function draw() {
 		var log = text(string, 15, 15);
 	}
 }
-
-// window.onresize = function(){
-// 	canvas.size(windowWidth, windowHeight);
-// 	// And maybe update global width, height functions
-// 	// Make max dist function of size
-// }
 
 function nearestNeighbors(n1, i, maxDist){
 	var maxDistSquare = maxDist * maxDist;
@@ -113,8 +105,21 @@ function mousePressed(){
 }
 
 function windowResized() {
-	setup();
+	initCanvas();
+	NUM = Math.round(windowWidth/4);
+	initNodes(NUM);
 }
+
+// window.onscroll = function() { 
+// 	if (mouseY > 300){
+// 		background(255);
+// 		paused = true;
+// 	}else{
+// 		initCanvas();
+// 		NUM = Math.round(windowWidth/4);
+// 		initNodes(NUM);
+// 	}
+// }
 
 // Node Class
 function Node(xInit, yInit, speed){
