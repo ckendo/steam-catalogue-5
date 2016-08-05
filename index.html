@@ -424,48 +424,7 @@
 			}
 		});
 	});
-	// $(document).on('mouseover', 'div', function(e) {
-	// 	console.log($(e.target).attr('class'));
-	// });
-	function getObjectInfo(){
-		// Get just <section class ="full"> elements
-		var sections = document.getElementsByClassName("full")
-		console.log(sections)
-		console.log(typeof(sections))
-		var array = Array.prototype.slice.call(sections)
-		console.log(array)
-		console.log(typeof(array))
-		console.log(array.length)
-		var objectInfo = []
-		for (var i = 0; i < array.length; i++){
-			var currName = array[i].id.replace('-', ' ')
-			var currTop = Math.round(array[i].getBoundingClientRect().top)
-			console.log('now', currName)
-			console.log('currTop:', currTop)
-			var object = {name: currName, top: currTop}
-			objectInfo.push(object)
-			// tupled.push((array[i].id, array[i].getBoundingClientRect().top, array[i].getBoundingClientRect().bottom))
-		}
-		// Ensure sorted by increasing y value
-		objectInfo = objectInfo.sort(function(a, b){
-			return a.top - b.top
-		})
-		return objectInfo
-	}
-
-	window.onscroll = function showSectionName(objectInfo){
-		var objectInfo = getObjectInfo()
-		var curr = window.pageYOffset
-		// No need to binary search, probably fast enough
-		console.log('received info:', objectInfo)
-		for (var i = 0; i < objectInfo.length; i++){
-			console.log('top:', objectInfo[i].top)
-			if ((curr > objectInfo[i].top) && (curr <= (objectInfo[i].top + window.innerHeight))){
-				console.log('existing:', typeof(document.getElementById("updateText").innerHTML))
-				document.getElementById("updateText").innerHTML = objectInfo[i].name
-			}
-		}	
-	}
 	</script>
+	<script src="js/script.js"></script>
 </body>
 </html>
