@@ -9,7 +9,10 @@ function getObjectInfo(){
 	console.log(array.length)
 	var objectInfo = []
 	for (var i = 0; i < array.length; i++){
-		var currName = array[i].id.replace('-', ' ')
+		console.log('orig:', array[i].id)
+		// var currName = array[i].id.replace('-', ' ')
+		var currName = replaceAll(array[i].id, '-', ' ')
+		console.log('replaced:', currName)
 		var currTop = Math.round(array[i].getBoundingClientRect().top)
 		var object = {name: currName, top: currTop, orig: array[i].id}
 		objectInfo.push(object)
@@ -19,6 +22,18 @@ function getObjectInfo(){
 		return a.top - b.top
 	})
 	return objectInfo
+}
+
+function replaceAll(str, find, replace) {
+	return str.replace(new RegExp(find, 'g'), replace);
+}
+
+function escapeRegExp(str) {
+	return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+}
+
+function replaceAll(str, find, replace) {
+	return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
 }
 
 var objectInfo = getObjectInfo()

@@ -57,13 +57,14 @@ h1 {
 	font-size: 36px;
 	font-size: 3.6rem; /* =36px */
 }
+/* Styles for xs (phone) screens. Overwritten by media queries*/
 h2 { 
-	font-size: 24px;
-	font-size: 2.4rem; /* =24px */
+	font-size: 20px;
+	font-size: 2.0rem; /* =24px */
 }
 h3 { 
-	font-size: 16px;
-	font-size: 1.6rem; /* =16px */
+	font-size: 14px;
+	font-size: 1.4rem; /* =16px */
 	font-height: 100%;
 }
 
@@ -142,7 +143,7 @@ dd {
 	min-width: 100%;
 	min-width: 100vw;
 	margin: 0;
-	padding: 30px;
+	padding: 50px;
 /*	border-color: red;
 	border-style: solid;
 	border-width: 2px;*/
@@ -255,6 +256,27 @@ dd {
 	border: 0;
 	font-size: 100%;
 	font: inherit;	
+}
+
+/* Article styles */
+.big-number {
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	position: absolute;
+	left: -10px;
+}
+/*#element1 {float:left;}
+#element2 {padding-left : 20px; float:left;}*/
+
+/*#element1 {display:inline-block;margin-right:10px;} 
+#element2 {display:inline-block;} */
+.headline{
+	display: inline-block;
+	/*padding: 0 0 10px 10px;*/
+	/*max-width: 220px;*/
+	/*float: left;*/
+	/*padding-bottom: 10px;*/
 }
 
 .RISD:hover {
@@ -381,6 +403,10 @@ dd {
 	-webkit-text-stroke: 1.5px #404040;
 }
 
+.header{
+	line-height: 3.6rem;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -431,6 +457,22 @@ dd {
 		1px 1px 0 #404040;*/
 		-webkit-text-stroke: 1.5px #404040;
 	}
+	.full{
+		margin: 0;
+		padding: 0;
+	}
+	h2 { 
+		font-size: 24px;
+		font-size: 2.4rem; /* =24px */
+	}
+	h3 { 
+		font-size: 16px;
+		font-size: 1.6rem; /* =16px */
+		font-height: 100%;
+	}
+	.big-number {
+		left: -15px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -477,6 +519,22 @@ dd {
 		1px 1px 0 #404040;*/
 		-webkit-text-stroke: 1.5px #404040;
 	}
+	.full{
+		margin: 0;
+		padding: 0;
+	}
+	h2 { 
+		font-size: 24px;
+		font-size: 2.4rem; /* =24px */
+	}
+	h3 { 
+		font-size: 16px;
+		font-size: 1.6rem; /* =16px */
+		font-height: 100%;
+	}
+	.big-number {
+		left: -20px;
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -522,6 +580,22 @@ dd {
 		-1px 1px 0 #404040,
 		1px 1px 0 #404040;*/
 		-webkit-text-stroke: 1.5px #404040;
+	}
+	.full{
+		margin: 0;
+		padding: 0;
+	}
+	h2 { 
+		font-size: 24px;
+		font-size: 2.4rem; /* =24px */
+	}
+	h3 { 
+		font-size: 16px;
+		font-size: 1.6rem; /* =16px */
+		font-height: 100%;
+	}
+	.big-number {
+		left: -25px;
 	}
 }
 
