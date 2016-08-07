@@ -95,17 +95,21 @@ p {
 }
 
 dt {
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	text-align: right;
-	/*font-size: 18px;*/
 	font-weight: 700;
-	/*line-height: 130%;*/
-	/*padding-right:10px;*/
 }
+/*#element1 {float:left;}
+#element2 {padding-left : 20px; float:left;}*/
 
+/*#element1 {display:inline-block;margin-right:10px;} 
+#element2 {display:inline-block;} */
 dd {
-	float: left;
+	display: inline-block;
 	padding: 0 0 10px 10px;
+	/*float: left;*/
+	max-width: 180px;
 	/*padding-bottom: 10px;*/
 }
 
@@ -369,7 +373,7 @@ dd {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
+@media (min-width: 768px) {
 	.row {
 		position: relative;
 	}
@@ -379,20 +383,43 @@ dd {
 		bottom: 0;
 		right: 0;
 	}
+/*	body{
+		background-color: blue !important;
+	}*/
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
+@media (min-width: 992px) {
 	.container {
 		width: 970px;
+	}
+/*	body{
+		background-color: yellow !important;
+	}*/
+	dd {
+		display: inline-block;
+		padding: 0 0 10px 10px;
+		/*float: left;*/
+		max-width: 180px;
+		/*padding-bottom: 10px;*/
 	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
+@media (min-width: 1200px) {
 	.container {
 		width: 1170px;
 	}	
+/*	body{
+		background-color: gray !important;
+	}*/
+	dd {
+		display: inline-block;
+		padding: 0 0 10px 10px;
+		/*float: left;*/
+		max-width: 240px;
+		/*padding-bottom: 10px;*/
+	}
 }
 
 /*@media (min-width: 768px ) {
