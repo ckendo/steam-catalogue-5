@@ -348,7 +348,7 @@ dd {
 	1px -1px 0 #404040,
 	-1px 1px 0 #404040,
 	1px 1px 0 #404040;*/
-	-webkit-text-stroke: 3px #404040;
+	-webkit-text-stroke: 2px #404040;
 }
 
 #schools{
@@ -369,7 +369,7 @@ dd {
 #schools h3{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 3.6rem;	
+	font-size: 3.2rem;	
 	text-align: right;
 	letter-spacing: .2rem;
 	/* Fallback for Firefox/Opera*/
