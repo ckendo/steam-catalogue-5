@@ -11,7 +11,7 @@ function getObjectInfo(){
 	for (var i = 0; i < array.length; i++){
 		var currName = array[i].id.replace('-', ' ')
 		var currTop = Math.round(array[i].getBoundingClientRect().top)
-		var object = {name: currName, top: currTop}
+		var object = {name: currName, top: currTop, orig: array[i].id}
 		objectInfo.push(object)
 	}
 	// Ensure sorted by increasing y value
@@ -30,7 +30,8 @@ window.onscroll = function showSectionName(){
 	// No need to binary search, probably fast enough
 	for (var i = 0; i < objectInfo.length; i++){
 		if (curr > objectInfo[i].top - offset){
-			document.getElementById("updateText").innerHTML = objectInfo[i].name	
+			document.getElementById("updateText").innerHTML = objectInfo[i].name
+			// document.getElementById("updateText").innerHTML = "<a href=\"" + "#" + objectInfo[i].orig + "\">" + objectInfo[i].name + "</a>"	
 		}
 	}	
 }

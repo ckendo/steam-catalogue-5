@@ -258,35 +258,43 @@ dd {
 }
 
 .RISD:hover {
-  color: #000000;
+	color: #737373;
+	text-decoration: underline;
 }
 
 .Yale:hover {
 	color: #1A76BB;
+	text-decoration: underline;
 }
 
 .MIT:hover {
 	color: #24A8B3;
+	text-decoration: underline;
 }
 
 .New-School:hover {
 	color: #f77116;
+	text-decoration: underline;
 }
 
 .Brown:hover {
 	color: #EC1C24;
+	text-decoration: underline;
 }
 
 .BU:hover {
 	color: #0ba016;
+	text-decoration: underline;
 }
 
 .Rutgers:hover {
 	color: #6048a8;
+	text-decoration: underline;
 }
 
 .Harvard:hover {
 	color: #fcc342;
+	text-decoration: underline;
 }
 
 .hide{
