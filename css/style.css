@@ -337,12 +337,18 @@ dd {
 }
 
 #schools{
-	margin-top: -40px;
+/*	margin-top: -40px;
 	margin-top: -5vh;
 	margin-right: 40px;
 	margin-right: 3vw;
 	margin-bottom: 40px;
-	margin-bottom: 5vh;
+	margin-bottom: 5vh;*/
+	position: absolute;
+	right: 40px;
+	/*right: 4vw;*/
+	right: 5vh;
+	bottom: 40px;
+	bottom: 5vh;
 }
 
 #schools h3{
@@ -359,7 +365,37 @@ dd {
 	-webkit-text-stroke: 1.5px #404040;
 }
 
-@media (min-width: 768px ) {
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+	.row {
+		position: relative;
+	}
+
+	.bottom-align-text {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+	.container {
+		width: 970px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+	.container {
+		width: 1170px;
+	}	
+}
+
+/*@media (min-width: 768px ) {
 	.row {
 		position: relative;
 	}
@@ -380,4 +416,4 @@ dd {
 	.container {
 		width: 1170px;
 	}
-}
+}*/
