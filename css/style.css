@@ -302,9 +302,6 @@ dd a:hover{
 	padding-right: 50px;
 	width: 100%;
 }
-.img-right img{
-	padding-bottom: 10px;
-}
 
 .caption-right {
 	font-style: italic;
@@ -351,6 +348,18 @@ dd a:hover{
 .read-button{
 	font-style: italic;
 }
+
+/*button{
+	background: none;
+	border: none;
+	padding: none;
+	margin: none;
+}
+
+.read-button button:active{
+	background: none;
+	border:none;
+}*/
 
 .RISD:hover {
 	color: #737373;
@@ -669,6 +678,11 @@ dd a:hover{
 	}
 	.big-number {
 		left: -25px;
+	}
+	.img-right{
+		padding-left: 20px;
+		padding-right: 50px;
+		width: 90%;
 	}
 }
 
