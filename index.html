@@ -411,11 +411,6 @@
 				<div class="headline">
 					<h2 class="bold">Meet Me in the Middle</h2>
 					<h3><a href="mailto:jonelle_ahiligwo@brown.edu">Jonelle&nbsp;Ahiligwo</a> / <a href="http://www.ckendo.com/" target="_blank" rel="noopener noreferrer">Kenji&nbsp;Endo</a></h3>
-<!-- 					<h5> <span class="bold">Foreword</span><br/></h5>
-					<p style="font-size:18px; line-height:140%;">Patterns for Play
-					<br/><a href="http://portfolios.risd.edu/mthigpen" style="text-decoration:underline;">Minsoo Thigpen</a>
-					<br/> <span class = "italic"> Brown | RISD Dual Degree '18<br/> Painting &amp; Engineering</span> 
-					</p> -->
 					<div class="clear"></div>
 				</div>
 				</div>
@@ -427,11 +422,32 @@
 			<div class = "col-sm-2">
 			</div>
 			<div class = "col-xs-12 col-sm-6">
-				<p>This Catalogue, like the catalogue of a show, is a collection of documented work. At STEAM, this includes workshops, lectures, installations, discussions, and writing we created this spring. Our fifth installment documents the two semesters of Fall 2015 and Spring 2016.</p>
-				<p>STEAM Press, the mechanism through which Catalogue is published, accepts submissions from members of our communities, and outside contributors. Please reach out to us if you would like to add to the next issue of Catalogue.</p>
-				<p>The theme of this Catalogue is "Expansion".</p>
+				<p>As the debut event for the STEAM Pavilion, which was created in collaboration with Providence-local <a href="http://pneu.haus/" target="_blank" rel="noopener noreferrer">Pneuahus</a> and Brown STEAM over the past year, Brown STEAM led a workshop for the 2015 <a href="http://betterworldxdesign.com/" target="_blank" rel="noopener noreferrer">Better World by Design</a> conference, titled “Meet Me in the Middle.” Better World by Design is a student-organized conference held annually at Brown + RISD that facilitates collaboration between designers, educators, and innovators. The theme this year was access.</p>
+				<div class="img-center visible-xs visible-sm">
+					<img src="img/meet-me/meet-me-present.jpg"/>
+					<p class="caption-center">Jonelle Ahiligwo (Brown '16) and Kenji Endo (Brown '18) present at BWxD 2015.</p>
+				</div>
+
+				<p>Jonelle Ahiligwo ’16 and Kenji Endo ’18 led the workshop, which focused on the ways the physical structures and spaces we meet at can guide conversations we have within them. The workshop used the STEAM Pavilion to frame the conversation. The STEAM Pavilion is a 40ft by 40ft inflatable, tent-like, pentagon-shaped structure that can be entered through all five sides. The STEAM Pavilion was used as a starting point to examine the design and use of physical interdisciplinary, inclusive meeting spaces.These spaces aim to be accessible to people from different disciplines or backgrounds for exploration in a ‘middle,’ ‘neutral’ ground.</p>
+				<div id="meet-me-collapse" class="collapse">
+					<p>During the second half of the workshop, participants split into small groups to create some potential meeting spaces of their own. Half were given a hollow object (e.g. tubes, bottles, basket), and tasked to imagine what sort of function that form could take, going from Object/Space → Use. The other half were given a purpose (e.g. dancing, play, studio), and tasked to consider what potential forms could achieve that function, going from Use → Object/Space. From Form to Function, how can the form of an object lead to certain functions? For example, looking at an ice cream cone: the waffle cross-hatches can be used as aesthetic inspiration, the interior dome can be used as a communal space, the inverted ice cream cone can be used as structural support. In the other direction, Function to Form, what are some forms or needs that would satisfy the function you are given? For example, the function ‘play’ might require large spaces, room for a lot of tools, toys, and mobility. The participants were engaged and came up with various, creative solutions to their prompts, considering how a clear tube might be used as a vessel for ocean or space exploration, or what the aesthetic and spatial design of a meeting place for dancing might require.</p>
+					<p>After a share and tell of the participants’ innovative responses, we concluded the workshop with encouraging participants to challenge the existing uses of spaces and be more flexible with how we use physical structures every day. This is imperative to keep in mind as we move more and more into cross-disciplinary academia and work, and we need spaces to accommodate this innovation.</p>
+				</div>
+<!-- 				<div class="scroll-right">
+					<img src="img/meet-me/meet-me-present.jpg"/>
+					<img src="img/meet-me/meet-me-present.jpg"/>
+					<img src="img/meet-me/meet-me-present.jpg"/>
+					<img src="img/meet-me/meet-me-present.jpg"/>
+					<img src="img/meet-me/meet-me-present.jpg"/>
+				</div> -->
+			<a href="#meet-me-collapse" class="read-button" data-toggle="collapse">Read more</a>
+			<!-- <a href="#meet-me-collapse" class="btn btn-info" data-toggle="collapse">Read more.</a> -->
 			</div>
 			<div class = "col-sm-4">
+				<div class="img-right hidden-xs hidden-sm">
+					<img src="img/meet-me/meet-me-present.jpg"/>
+					<p class="caption-right">Jonelle Ahiligwo (Brown '16) and Kenji Endo (Brown '18) present at BWxD 2015.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -550,8 +566,16 @@
 			}
 		});
 	});
+	$('.read-button').on('click', function() { 
+		if ($(this).text() == 'Read more'){
+			$(this).html('Read less');
+		}else{
+			$(this).html('Read more');
+		}
+	});
 	</script>
 	<script src="js/script.js"></script>
 	<script src="js/vendor/modernizr-custom.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 </body>
 </html>
