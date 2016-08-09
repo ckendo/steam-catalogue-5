@@ -185,6 +185,11 @@ dd a:hover{
 	padding-bottom: 15vh;
 }
 
+.pull-down {
+	position: absolute;
+	bottom: 0;
+}
+
 /*.main-content{
 	position: absolute;
 	top: 0;
@@ -301,7 +306,8 @@ dd a:hover{
 	padding-left: 20px;
 	padding-right: 50px;
 	width: 100%;
-}
+/*	position: relative;
+*/}
 
 .caption-right {
 	font-style: italic;
