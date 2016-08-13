@@ -162,6 +162,25 @@ dd a:hover{
 	border-width: 2px;*/
 }
 
+/* Applied to bootstrap rows*/
+/*.match-height-row{
+	overflow: hidden;
+}*/
+
+/*.match-height-row [class*="col-"]{
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+	background-color: red;
+}*/
+
+/* Hax for getting bootstrap columns in row to be full height */
+/* Applied to the shorter column in a row. Parent div (main) must have overflow: hidden; */
+.match-height{
+/*	margin-bottom: -99999px;
+	padding-bottom: 99999px;*/
+	/*background-color: red;*/
+}
+
 .header{
 /*	min-height: 200px;
 	min-height: 30vh;*/
@@ -183,6 +202,8 @@ dd a:hover{
 	position: relative;
 	padding-bottom: 100px;
 	padding-bottom: 15vh;
+	overflow: hidden;
+	display: flex;
 }
 
 .pull-down {
@@ -190,14 +211,71 @@ dd a:hover{
 	bottom: 0;
 }
 
-/*.main-content{
-	position: absolute;
-	top: 0;
-}*/
+/* Options for distrubting vertically*/ 
 
-.spacer {
+/* Even distribution */
+.distribute-vertical{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column; 
+	flex-direction: column;
+	-webkit-justify-content: space-between;  
+	justify-content: space-between;
+}
+
+/* Custom distribution with spacers (in VH (1 vh is 1/100th of height))*/
+.spacer-tenth{
+	min-height: 60px;
+	min-height: 10vh;
+}
+
+.spacer-fifteenth{
 	min-height: 100px;
 	min-height: 15vh;
+}
+
+.spacer-fifth{
+	min-height: 120px;
+	min-height: 20vh;
+}
+
+.spacer-fourth{
+	min-height: 150px;
+	min-height: 25vh;
+}
+
+.spacer-third{
+	min-height: 200px;
+	min-height: 33.33vh;
+}
+
+/* Or, match height and pull-down with absolute position, bottom: 0px;*/
+/*<!--aka only match height for md and lg screens-->
+ <!-- <div class = "col-sm-4 match-height-md match-height-lg">	 -->
+<!-- <div class = "col-sm-4 distribute-vertical">			 -->*/
+
+/*.flex-start { -webkit-align-self: flex-start; align-self: flex-start; }
+.flex-end { -webkit-align-self: flex-end; align-self: flex-end; }
+.center { -webkit-align-self: center; align-self: center; }
+.baseline { -webkit-align-self: baseline; align-self: baseline; }
+.stretch { -webkit-align-self: stretch; align-self: stretch; }*/
+
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition-property: height, visibility;
+	-o-transition-property: height, visibility;
+	transition-property: height, visibility;
+/*	-webkit-transition-duration: 0.35s;
+	-o-transition-duration: 0.35s;
+	transition-duration: 0.35s;*/
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	-webkit-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	transition-timing-function: ease;
 }
 
 #fixed-nav-bar{
@@ -306,8 +384,10 @@ dd a:hover{
 	padding-left: 20px;
 	padding-right: 50px;
 	width: 100%;
-/*	position: relative;
-*/}
+/*	flex-shrink: 0;*/
+/*	display: inline-block;
+	position: relative;*/
+}
 
 .caption-right {
 	font-style: italic;
@@ -321,6 +401,8 @@ dd a:hover{
 	padding-bottom: 15px;
 	padding-top: 15px;
 	width: 100%;
+/*	display: flex;
+*/
 }
 .img-center img{
 	padding-bottom: 10px;
@@ -500,6 +582,14 @@ dd a:hover{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	/* Hax for getting bootstrap columns in row to be full height */
+	/* Applied to the shorter column in a row. Parent div (main) must have overflow: hidden; */
+	.match-height-sm{
+		margin-bottom: -99999px !important;
+		padding-bottom: 99999px !important;
+		background-color: red !important;
+	}
+
 	.row {
 		position: relative;
 	}
@@ -565,6 +655,14 @@ dd a:hover{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	/* Hax for getting bootstrap columns in row to be full height */
+	/* Applied to the shorter column in a row. Parent div (main) must have overflow: hidden; */
+	.match-height-md{
+		margin-bottom: -99999px !important;
+		padding-bottom: 99999px !important;
+		background-color: red !important;
+	}
+
 	.container {
 		width: 970px;
 	}
@@ -627,6 +725,14 @@ dd a:hover{
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+	/* Hax for getting bootstrap columns in row to be full height */
+	/* Applied to the shorter column in a row. Parent div (main) must have overflow: hidden; */
+	.match-height-lg{
+		margin-bottom: -99999px !important;
+		padding-bottom: 99999px !important;
+		background-color: red !important;
+	}
 	.container {
 		width: 1170px;
 	}	
@@ -691,26 +797,3 @@ dd a:hover{
 		width: 90%;
 	}
 }
-
-/*@media (min-width: 768px ) {
-	.row {
-		position: relative;
-	}
-
-	.bottom-align-text {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-	}
-}
-
-@media (min-width: 992px) {
-	.container {
-		width: 970px;
-	}
-}
-@media (min-width: 1200px) {
-	.container {
-		width: 1170px;
-	}
-}*/
