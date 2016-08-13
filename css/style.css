@@ -203,107 +203,79 @@ dd a:hover{
 	padding-bottom: 100px;
 	padding-bottom: 15vh;
 	overflow: hidden;
+	display: flex;
 }
 
 .pull-down {
 	position: absolute;
 	bottom: 0;
 }
-/*
-.flex-container {
-	-ms-box-orient: horizontal;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: flex;
-}*/
 
-/*.flex-container {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-}*/
+/* Options for distrubting vertically*/ 
 
-.flex-container {
+/* Even distribution */
+.distribute-vertical{
 	display: -webkit-flex;
 	display: flex;
-	/*align-items: flex-start;*/
-	/*flex-wrap: wrap;*/
 	-webkit-flex-direction: column; 
 	flex-direction: column;
-/*	-webkit-justify-content: space-between;  Safari 
-	justify-content: space-between;*/
-	/*flex-wrap: nowrap;*/
-	/*justify-content: space-between;*/
-	/*flex-wrap: wrap;*/
-/*	-webkit-align-items: flex-start;
-	align-items: flex-start;*/
-	/*min-height: 700px;*/
-}
-
-.distribute-vertical {
-	display: -webkit-flex;
-	display: flex;
-	/*align-items: flex-start;*/
-	/*flex-wrap: wrap;*/
-	-webkit-flex-direction: column; 
-	flex-direction: column;
-	-webkit-justify-content: space-between;  /*Safari */
+	-webkit-justify-content: space-between;  
 	justify-content: space-between;
-	/*flex-wrap: nowrap;*/
-	/*justify-content: space-between;*/
-	/*flex-wrap: wrap;*/
-/*	-webkit-align-items: flex-start;
-	align-items: flex-start;*/
-	/*min-height: 700px;*/
 }
 
-.align-top {
-	align-self: flex-start;
+/* Custom distribution with spacers (in VH (1 vh is 1/100th of height))*/
+.spacer-tenth{
+	min-height: 60px;
+	min-height: 10vh;
 }
 
-.align-bottom{
-	align-self: flex-end;
+.spacer-fifteenth{
+	min-height: 100px;
+	min-height: 15vh;
 }
 
-.flex-spacer{
-	/*min-height: 200px;*/
+.spacer-fifth{
+	min-height: 120px;
+	min-height: 20vh;
 }
 
-/*.vertical-align {
-	display: flex;
-	align-items: center;
-}*/
+.spacer-fourth{
+	min-height: 150px;
+	min-height: 25vh;
+}
 
-.flex-start { -webkit-align-self: flex-start; align-self: flex-start; }
+.spacer-third{
+	min-height: 200px;
+	min-height: 33.33vh;
+}
+
+/* Or, match height and pull-down with absolute position, bottom: 0px;*/
+/*<!--aka only match height for md and lg screens-->
+ <!-- <div class = "col-sm-4 match-height-md match-height-lg">	 -->
+<!-- <div class = "col-sm-4 distribute-vertical">			 -->*/
+
+/*.flex-start { -webkit-align-self: flex-start; align-self: flex-start; }
 .flex-end { -webkit-align-self: flex-end; align-self: flex-end; }
 .center { -webkit-align-self: center; align-self: center; }
 .baseline { -webkit-align-self: baseline; align-self: baseline; }
-.stretch { -webkit-align-self: stretch; align-self: stretch; }
+.stretch { -webkit-align-self: stretch; align-self: stretch; }*/
 
-.flex-bottom{
-	-webkit-align-self: flex-end; 
-	align-self: flex-end;	
-}
-
-/*.vertical-align-bottom {
-	display: -webkit-flex; 
-	-webkit-align-items: center;
-	display: flex;
-	align-self: flex-end;
-}
-*/
-/*.main-content{
-	position: absolute;
-	top: 0;
-}*/
-
-.spacer {
-	min-height: 100px;
-	min-height: 15vh;
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition-property: height, visibility;
+	-o-transition-property: height, visibility;
+	transition-property: height, visibility;
+/*	-webkit-transition-duration: 0.35s;
+	-o-transition-duration: 0.35s;
+	transition-duration: 0.35s;*/
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	-webkit-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	transition-timing-function: ease;
 }
 
 #fixed-nav-bar{
@@ -412,7 +384,7 @@ dd a:hover{
 	padding-left: 20px;
 	padding-right: 50px;
 	width: 100%;
-	flex-shrink: 0;
+/*	flex-shrink: 0;*/
 /*	display: inline-block;
 	position: relative;*/
 }
@@ -628,7 +600,7 @@ dd a:hover{
 		right: 0;
 	}
 	body{
-		background-color: blue !important;
+		/*background-color: blue !important;*/
 	}
 	dd {
 		display: inline-block;
@@ -695,7 +667,7 @@ dd a:hover{
 		width: 970px;
 	}
 	body{
-		background-color: yellow !important;
+		/*background-color: yellow !important;*/
 	}
 	dd {
 		display: inline-block;
@@ -765,7 +737,7 @@ dd a:hover{
 		width: 1170px;
 	}	
 	body{
-		background-color: gray !important;
+		/*background-color: gray !important;*/
 	}
 	dd {
 		display: inline-block;
@@ -825,26 +797,3 @@ dd a:hover{
 		width: 90%;
 	}
 }
-
-/*@media (min-width: 768px ) {
-	.row {
-		position: relative;
-	}
-
-	.bottom-align-text {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-	}
-}
-
-@media (min-width: 992px) {
-	.container {
-		width: 970px;
-	}
-}
-@media (min-width: 1200px) {
-	.container {
-		width: 1170px;
-	}
-}*/
