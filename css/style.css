@@ -162,6 +162,25 @@ dd a:hover{
 	border-width: 2px;*/
 }
 
+/* Applied to bootstrap rows*/
+/*.match-height-row{
+	overflow: hidden;
+}*/
+
+/*.match-height-row [class*="col-"]{
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+	background-color: red;
+}*/
+
+/* Hax for getting bootstrap columns in row to be full height */
+/* Applied to the shorter column in a row. Parent div (main) must have overflow: hidden; */
+.match-height{
+/*	margin-bottom: -99999px;
+	padding-bottom: 99999px;*/
+	/*background-color: red;*/
+}
+
 .header{
 /*	min-height: 200px;
 	min-height: 30vh;*/
@@ -183,13 +202,100 @@ dd a:hover{
 	position: relative;
 	padding-bottom: 100px;
 	padding-bottom: 15vh;
+	overflow: hidden;
 }
 
 .pull-down {
 	position: absolute;
 	bottom: 0;
 }
+/*
+.flex-container {
+	-ms-box-orient: horizontal;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+}*/
 
+/*.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}*/
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	/*align-items: flex-start;*/
+	/*flex-wrap: wrap;*/
+	-webkit-flex-direction: column; 
+	flex-direction: column;
+/*	-webkit-justify-content: space-between;  Safari 
+	justify-content: space-between;*/
+	/*flex-wrap: nowrap;*/
+	/*justify-content: space-between;*/
+	/*flex-wrap: wrap;*/
+/*	-webkit-align-items: flex-start;
+	align-items: flex-start;*/
+	/*min-height: 700px;*/
+}
+
+.distribute-vertical {
+	display: -webkit-flex;
+	display: flex;
+	/*align-items: flex-start;*/
+	/*flex-wrap: wrap;*/
+	-webkit-flex-direction: column; 
+	flex-direction: column;
+	-webkit-justify-content: space-between;  /*Safari */
+	justify-content: space-between;
+	/*flex-wrap: nowrap;*/
+	/*justify-content: space-between;*/
+	/*flex-wrap: wrap;*/
+/*	-webkit-align-items: flex-start;
+	align-items: flex-start;*/
+	/*min-height: 700px;*/
+}
+
+.align-top {
+	align-self: flex-start;
+}
+
+.align-bottom{
+	align-self: flex-end;
+}
+
+.flex-spacer{
+	/*min-height: 200px;*/
+}
+
+/*.vertical-align {
+	display: flex;
+	align-items: center;
+}*/
+
+.flex-start { -webkit-align-self: flex-start; align-self: flex-start; }
+.flex-end { -webkit-align-self: flex-end; align-self: flex-end; }
+.center { -webkit-align-self: center; align-self: center; }
+.baseline { -webkit-align-self: baseline; align-self: baseline; }
+.stretch { -webkit-align-self: stretch; align-self: stretch; }
+
+.flex-bottom{
+	-webkit-align-self: flex-end; 
+	align-self: flex-end;	
+}
+
+/*.vertical-align-bottom {
+	display: -webkit-flex; 
+	-webkit-align-items: center;
+	display: flex;
+	align-self: flex-end;
+}
+*/
 /*.main-content{
 	position: absolute;
 	top: 0;
@@ -306,8 +412,10 @@ dd a:hover{
 	padding-left: 20px;
 	padding-right: 50px;
 	width: 100%;
-/*	position: relative;
-*/}
+	flex-shrink: 0;
+/*	display: inline-block;
+	position: relative;*/
+}
 
 .caption-right {
 	font-style: italic;
@@ -321,6 +429,8 @@ dd a:hover{
 	padding-bottom: 15px;
 	padding-top: 15px;
 	width: 100%;
+/*	display: flex;
+*/
 }
 .img-center img{
 	padding-bottom: 10px;
@@ -500,6 +610,14 @@ dd a:hover{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	/* Hax for getting bootstrap columns in row to be full height */
+	/* Applied to the shorter column in a row. Parent div (main) must have overflow: hidden; */
+	.match-height-sm{
+		margin-bottom: -99999px !important;
+		padding-bottom: 99999px !important;
+		background-color: red !important;
+	}
+
 	.row {
 		position: relative;
 	}
@@ -510,7 +628,7 @@ dd a:hover{
 		right: 0;
 	}
 	body{
-		/*background-color: blue !important;*/
+		background-color: blue !important;
 	}
 	dd {
 		display: inline-block;
@@ -565,11 +683,19 @@ dd a:hover{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	/* Hax for getting bootstrap columns in row to be full height */
+	/* Applied to the shorter column in a row. Parent div (main) must have overflow: hidden; */
+	.match-height-md{
+		margin-bottom: -99999px !important;
+		padding-bottom: 99999px !important;
+		background-color: red !important;
+	}
+
 	.container {
 		width: 970px;
 	}
 	body{
-		/*background-color: yellow !important;*/
+		background-color: yellow !important;
 	}
 	dd {
 		display: inline-block;
@@ -627,11 +753,19 @@ dd a:hover{
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+	/* Hax for getting bootstrap columns in row to be full height */
+	/* Applied to the shorter column in a row. Parent div (main) must have overflow: hidden; */
+	.match-height-lg{
+		margin-bottom: -99999px !important;
+		padding-bottom: 99999px !important;
+		background-color: red !important;
+	}
 	.container {
 		width: 1170px;
 	}	
 	body{
-		/*background-color: gray !important;*/
+		background-color: gray !important;
 	}
 	dd {
 		display: inline-block;
