@@ -75,7 +75,7 @@
 	</section>
 	<!--Only first needs spacer, others' top margins are included in the bottom margin of the previous-->
 	<!--i.e. 100vh total, full section is 85 vh. Bottom margin is 15vh (also acting as top margin of next)-->
-	<section class ="spacer-fifteenth"></section>
+	<section class ="spacer-sixth"></section>
 	<section class="full" id ="Welcome">
 		<div class = "header">
 			<div class = "row">
@@ -446,12 +446,13 @@
 				</div> -->
 			<a class="read-button" role="button" data-target="#meet-me-collapse, #meet-me-collapse-right" data-toggle="collapse">Read more</a>
 			</div>
-			<div class = "col-sm-4 distribute-vertical">			
+			<div class = "col-sm-4">
 				<div class="img-right hidden-xs hidden-sm">
 					<img src="img/meet-me/meet-me-present.jpg"/>
 					<p class="caption-right">Jonelle Ahiligwo (Brown '16) and Kenji Endo (Brown '18) present at BWxD 2015.</p>
 				</div>
-<!-- 				<div class="spacer-tenth"></div>-->				
+				<div class="spacer-tenth visible-lg"></div>			
+				<div class="spacer-fifth visible-md"></div>					
 				<div id="meet-me-collapse-right" class="img-right hidden-xs hidden-sm collapse">
 					<img src="img/meet-me/meet-me-activity.jpg"/>
 					<p class="caption-right">Participants brainstorm possible Form to Function designs.</p>
@@ -551,7 +552,22 @@
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript">
+		// Makes links to articles go an offset of 100px up from the actual article
+		// The function actually applying the offset
+		function offsetAnchor() {
+			if(location.hash.length !== 0) {
+				window.scrollTo(window.scrollX, window.scrollY - 100);
+			}
+		}
+		// This will capture hash changes while on the page
+		$(window).on("hashchange",offsetAnchor);
 
+		// This is here so that when you enter the page with a hash,
+		// it can provide the offset in that case too. Having a timeout
+		// seems necessary to allow the browser to jump to the anchor first.
+		window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+	</script>
 	<!-- Refactor this mess -->
 	<script type="text/javascript">
 	$(document).ready(function(){
