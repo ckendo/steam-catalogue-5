@@ -33,27 +33,20 @@
 				<span class="icon-bar"></span>
 			</button>
 			<ul class="nav navbar-nav">
-				<li class="pull-left">STEAM Catalogue Five</li>
-				<li class="pull-left hidden-xs">Blank</li>
+				<li class="pull-left"><a href="#Home">STEAM Catalogue 5</a></li>
+				<li class="pull-left hidden-xs" style="margin-left: 15px;" id="updateText"></li>
 			</ul>
 		</div>
 		<div class="collapse navbar-collapse fixed-nav" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Content</a></li>
+				<li><a href="#We-Are">About</a></li>
+				<li><a href="#Contents">Contents</a></li>
 			</ul>
 		</div>
 	</nav>
-<!-- 	<nav id="fixed-nav-bar">
-		<ul id = "fixed-nav">
-			<li class="pull-left"><a href="#">STEAM Catalogue 5</a></li>
-			<li class="pull-left" id="updateText"><a href="#">Blank</a></li>
-			<li class="pull-right"><a href="#">Content</a></li>
-			<li class="pull-right"><a href="#">About</a></li>
-		</ul>
 	</nav> -->
-	<section class = "splash">
-		<!-- <div id = "sketch"></div> -->
+	<section class = "splash" id="Home">
+		<div id = "sketch"></div>
 		<div id = "cover">
 			<div class = "row" id = "STEAM">
 				<div class = "visible-xs">
@@ -62,8 +55,6 @@
 				<div class = "hidden-xs">
 					<h1>STEAM</h1>
 				</div>
-<!-- 				<div class = "col-md-4">
-				</div> -->
 			</div>
 			<div class = "row pull-right" id = "schools">
 				<h3>RISD</h3>
@@ -78,6 +69,7 @@
 			</div>
 		</div>
 	</section>
+
 	<!--Only first needs spacer, others' top margins are included in the bottom margin of the previous-->
 	<!--i.e. 100vh total, full section is 85 vh. Bottom margin is 15vh (also acting as top margin of next)-->
 	<section class ="spacer-sixth"></section>
@@ -489,45 +481,6 @@
 			</div>
 		</div>
 	</section>
-<!-- 	<section class="full" id ="Funding">
-		<div class = "header">
-			<div class = "row">
-				<div class = "col-sm-2">
-				</div>
-				<div class = "col-xs-12 col-sm-6">
-					<h2 class="bold">Funding and Special Thanks</h2>
-				</div>
-				<div class = "col-sm-4">
-				</div>
-			</div>
-		</div>
-		<div class = "main">
-			<row>
-				<div class = "col-sm-2">
-				</div>
-				<div class = "col-xs-12 col-sm-3">
-					<p>RISD STEAM</p>
-					<p>We are jointly funded through the RISD Center for Student Involvement and the RISD Programming Board. Special thanks to Babette Allina, Kim Almeida, John Maeda, Rachel Holcomb, Sarah Pease, Pneuhaus, Pradeep Sharma, Rosanne Somerson,  Adam Tilove, Jewish Community Day School of Rhode Island, and Carol Strohecker.</p>
-				</div>
-				<div class = "col-xs-12 col-sm-3">
-					<p>Brown STEAM</p>
-					<p>We are jointly funded through the Brown Science Center and the Brown University School of Engineering. Special thanks to Lynsey Ford, Gelonia Dent, Jennifer Casasanto, Chris Bull, Patricia Capece, Ian Gonsher.</p>
-				</div>
-				<div class = "col-sm-4">
-				</div>
-			</row>
-			<row>
-				<div class = "col-sm-2">
-				</div>
-				<div class = "col-xs-12 col-sm-3">
-				</div>
-				<div class = "col-xs-12 col-sm-3">
-				</div>
-				<div class = "col-sm-4">
-				</div>
-			</row>
-		</div>
-	</section> -->
 	<section class="full" id ="Colophon">
 		<div class = "header">
 			<div class = "row">
@@ -544,13 +497,12 @@
 			<div class = "col-sm-2">
 			</div>
 			<div class = "col-xs-12 col-sm-6">
-				<p>[TO UPDATE] Made in 2015 with Roboto Slab by Christian Robertson, Hypertext Markup Language, Cascading Style Sheets, and Ecmascript 5</p>
-                <p>Designed by <a href="http://barronwebster.com" style="text-decoration:underline;">Barron Webster</a> and <a href="http://ckendo.weebly.com/" style="text-decoration:underline;">Kenji Endo</a>, with <a href="https://brianoakes.squarespace.com/" style="text-decoration:underline;">Brian Oakes</a></p> 
-                <p>Built by <a href="http://barronwebster.com" style="text-decoration:underline;">Barron Webster</a> and <a href="http://ckendo.weebly.com/" style="text-decoration:underline;">Kenji Endo</a>
-                <p>Curated by <a href="http://portfolios.risd.edu/mthigpen" style="text-decoration:underline;">Minsoo Thigpen</a> </p> 
-                <p>Assorted graphics by <a href="http://ckendo.weebly.com/" style="text-decoration:underline;">Kenji Endo</a> and <a href="http://barronwebster.com" style="text-decoration:underline;">Barron Webster</a>
-                </p>
-                <p>Hosted on <a href="http://steamwith.us" style="text-decoration:underline;">Steamwith.us</a> with Dreamhost</p>
+				<p>Made in 2016 with Montserrat by Julieta Ulanovsky, Open Sans by Steve Matteson, Hypertext Markup Language, Cascading Style Sheets, JQuery, Bootstrap, and p5.js for Processing.</p>
+                <p>Designed by <a href="http://www.minsoothigpen.com/" style="text-decoration:underline;">Minsoo Thigpen</a> and <a href="http://ckendo.com/" style="text-decoration:underline;">Kenji Endo</a>, with <a href="http://www.skyeray.com/" style="text-decoration:underline;">Skye Ray</a> and <a href="http://www.matthewlimkewei.com/" style="text-decoration:underline;">Matthew Lim</a></p>
+                <p>Built by <a href="http://ckendo.com/" style="text-decoration:underline;">Kenji Endo</a>
+                <p>Curated by <a href="http://www.minsoothigpen.com/" style="text-decoration:underline;">Minsoo Thigpen</a></p> 
+				<!--<p>Assorted graphics by <a href="http://ckendo.weebly.com/" style="text-decoration:underline;">Kenji Endo</a> and <a href="http://barronwebster.com" style="text-decoration:underline;">Barron Webster</a></p>-->
+                <p>Hosted on <a href="http://steamwith.us" style="text-decoration:underline;">Steamwith.us</a> with GitHub Pages</p>
                 <p>Say hello at <a href="mailto:info@steamwith.us" style="text-decoration:underline;">info@steamwith.us!</a>
 			</div>
 			<div class = "col-sm-4">
@@ -558,6 +510,7 @@
 		</div>
 	</section>
 	<script type="text/javascript">
+		// Via http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
 		// Makes links to articles go an offset of 100px up from the actual article
 		// The function actually applying the offset
 		function offsetAnchor() {
@@ -571,14 +524,16 @@
 		// This is here so that when you enter the page with a hash,
 		// it can provide the offset in that case too. Having a timeout
 		// seems necessary to allow the browser to jump to the anchor first.
-		window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+		window.setTimeout(offsetAnchor, 1); 
 	</script>
 	<!-- Refactor this mess -->
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$('#fixed-nav-bar a').on('click', function(e) {
-			e.preventDefault();
-		});
+		// This is supposed to prevent showing if clicked
+		// But hidden by sketch anyways and this disables link functionality
+		// $('#fixed-nav-bar a').on('click', function(e) {
+		// 	e.preventDefault();
+		// });
 		// var bottomOfSketch = $('#sketch').height();
 		var h = window.innerHeight;
 
@@ -603,7 +558,7 @@
 		}
 	});
 	</script>
-	<!--<script src="js/script.js"></script>-->
+	<script src="js/script.js"></script>
 	<script src="js/vendor/modernizr-custom.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 </body>

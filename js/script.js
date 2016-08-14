@@ -39,7 +39,7 @@ function replaceAll(str, find, replace) {
 var objectInfo = getObjectInfo()
 
 window.onscroll = function showSectionName(){
-	var offset = window.innerHeight/6
+	var offset = window.innerHeight/4.5
 	// var objectInfo = this.getObjectInfo()
 	var curr = window.pageYOffset
 	// No need to binary search, probably fast enough

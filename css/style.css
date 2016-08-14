@@ -97,7 +97,6 @@ a:active {
 p {
 	line-height: 140%;
 	padding-bottom: 15px;
-	/*max-width: 400px;*/
 }
 
 dt {
@@ -106,17 +105,11 @@ dt {
 	text-align: right;
 	font-weight: 700;
 }
-/*#element1 {float:left;}
-#element2 {padding-left : 20px; float:left;}*/
 
-/*#element1 {display:inline-block;margin-right:10px;} 
-#element2 {display:inline-block;} */
 dd {
 	display: inline-block;
 	padding: 0 0 10px 10px;
 	max-width: 200px;
-	/*float: left;*/
-	/*padding-bottom: 10px;*/
 }
 
 dd a, dd a:visited, dd a:active{
@@ -141,26 +134,18 @@ dd a:hover{
 }
 
 .splash{
-/*	min-height: 720px;
-*/	min-height: 100vh;
+	min-height: 100vh;
 	min-width: 100vw;
 	margin: 0;
-/*	border-color: red;
-	border-style: solid;
-	border-width: 2px;*/
 }
 
 .full{
-	/*min-height: 720px;*/
 	min-height: 595px;
 	min-height: 85vh; /* Takes into account the spacer of section above */
 	min-width: 100%;
 	min-width: 100vw;
 	margin: 0;
 	padding: 40px;
-/*	border-color: red;
-	border-style: solid;
-	border-width: 2px;*/
 }
 
 /* Applied to bootstrap rows*/
@@ -216,7 +201,6 @@ dd a:hover{
 	display: flex;
 }
 
-
 /* Options for distrubting vertically*/ 
 
 /* Even distribution */
@@ -265,7 +249,7 @@ dd a:hover{
 .center { -webkit-align-self: center; align-self: center; }
 .baseline { -webkit-align-self: baseline; align-self: baseline; }
 .stretch { -webkit-align-self: stretch; align-self: stretch; }*/
-/*
+
 .collapsing {
 	position: relative;
 	height: 0;
@@ -273,16 +257,16 @@ dd a:hover{
 	-webkit-transition-property: height, visibility;
 	-o-transition-property: height, visibility;
 	transition-property: height, visibility;
-	-webkit-transition-duration: 0.35s;
-	-o-transition-duration: 0.35s;
-	transition-duration: 0.35s;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	transition-duration: 0.4s;
+	-webkit-transition-duration: .4s;
+	-o-transition-duration: .4s;
+	transition-duration: .4s;
+	-webkit-transition-duration: .4s;
+	-o-transition-duration: .4s;
+	transition-duration: .4s;
 	-webkit-transition-timing-function: ease;
 	-o-transition-timing-function: ease;
 	transition-timing-function: ease;
-}*/
+}
 .nav {
 	margin-bottom: 0;
 	padding-left: 0;
@@ -428,21 +412,6 @@ dd a:hover{
 .icon-bar{
 	background-color: #000000;
 }
-/*
-.nav {
-	margin-bottom: 0;
-	padding-left: 0;
-	list-style: none;
-}
-.nav > li {
-	position: relative;
-	display: block;
-}
-.nav > li > a {
-	position: relative;
-	display: block;
-	padding: 10px 15px;
-}*/
 
 #updateText{
 	margin: 0;
@@ -460,17 +429,9 @@ dd a:hover{
 	position: absolute;
 	left: -10px;
 }
-/*#element1 {float:left;}
-#element2 {padding-left : 20px; float:left;}*/
 
-/*#element1 {display:inline-block;margin-right:10px;} 
-#element2 {display:inline-block;} */
 .headline{
 	display: inline-block;
-	/*padding: 0 0 10px 10px;*/
-	/*max-width: 220px;*/
-	/*float: left;*/
-	/*padding-bottom: 10px;*/
 }
 
 .img-right img{
@@ -482,9 +443,6 @@ dd a:hover{
 	padding-left: 20px;
 	padding-right: 50px;
 	width: 100%;
-	/*flex-shrink: 0;*/
-	/*display: inline-block;*/
-	/*position: relative;*/
 }
 
 .caption-right {
@@ -492,16 +450,14 @@ dd a:hover{
 	font-size: 11px;
 	font-size: 1.1rem;
 	text-align: left;
-	/*margin-top: -15px;*/
 }
 
 .img-center{
 	padding-bottom: 15px;
 	padding-top: 15px;
 	width: 100%;
-/*	display: flex;
-*/
 }
+
 .img-center img{
 	padding-bottom: 10px;
 	width: 100%;
@@ -512,7 +468,6 @@ dd a:hover{
 	font-size: 11px;
 	font-size: 1.1rem;
 	text-align: left;
-	/*margin-top: -15px;*/
 }
 
 .scroll-right{
