@@ -25,30 +25,35 @@
 </head>
 
 <body>
-<!-- 	<nav class="navbar" id="fixed-nav-bar">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">STEAM Catalogue 5</a>
-			<a href="#">STEAM Catalogue 5</a>
-		</div>
-		<ul class="nav navbar-nav navbar-left">
-			<li id="updateText"><a href="#"></a></li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#">About</a></li>
-			<li><a href="#">Content</a></li>
-		</ul>
-	</nav> -->
 	<nav id="fixed-nav-bar">
-		<ul>
-			<ul id = "fixed-nav">
+		<div class="navbar-header fixed-nav">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<ul class="nav navbar-nav">
+				<li class="pull-left">STEAM Catalogue Five</li>
+				<li class="pull-left hidden-xs">Blank</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse fixed-nav" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Content</a></li>
+			</ul>
+		</div>
+	</nav>
+<!-- 	<nav id="fixed-nav-bar">
+		<ul id = "fixed-nav">
 			<li class="pull-left"><a href="#">STEAM Catalogue 5</a></li>
-			<li class="pull-left" id="updateText"><a href="#"></a></li>
+			<li class="pull-left" id="updateText"><a href="#">Blank</a></li>
 			<li class="pull-right"><a href="#">Content</a></li>
 			<li class="pull-right"><a href="#">About</a></li>
 		</ul>
-	</nav>
+	</nav> -->
 	<section class = "splash">
-		<div id = "sketch"></div>
+		<!-- <div id = "sketch"></div> -->
 		<div id = "cover">
 			<div class = "row" id = "STEAM">
 				<div class = "visible-xs">
@@ -598,7 +603,7 @@
 		}
 	});
 	</script>
-	<script src="js/script.js"></script>
+	<!--<script src="js/script.js"></script>-->
 	<script src="js/vendor/modernizr-custom.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 </body>

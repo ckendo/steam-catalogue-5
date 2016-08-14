@@ -283,25 +283,99 @@ dd a:hover{
 	-o-transition-timing-function: ease;
 	transition-timing-function: ease;
 }*/
+.nav {
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+.nav > li {
+	position: relative;
+	display: block;
+}
+.nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+	text-decoration: none;
+}
+.nav > li.disabled > a {
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+	text-decoration: none;
+	background-color: transparent;
+	cursor: not-allowed;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+	background-color: none;
+}
+
+.navbar-nav{
+	margin-left: 7.5px;
+	margin-right: 0;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+	color: black;
+	background-color: transparent;
+}
+
+.navbar-toggle {
+	position: relative;
+	float: right;
+	margin-right: 15px;
+	padding: 0;
+	/*margin-top: 8px;*/
+	/*margin-bottom: 8px;*/
+	background-color: transparent;
+}
+.navbar-toggle:focus {
+	outline: 0;
+}
+.navbar-toggle .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+
+.navbar-header{
+	margin: 0;
+	padding: 0;
+}
 
 #fixed-nav-bar{
 	display: none;
 	position: fixed;
+	margin: 0;
 	top: 0;
 	left: 0;
 	z-index: 9999;
 	width: 100%;
 	background: rgba(255, 255, 255, 0.9);
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
 	border-top-color: #000000;
 	border-top-style: solid;
 	border-top-width: 5px;
+	/*Bottom border only for xs*/
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
 }
 
-#fixed-nav{
+.fixed-nav{
 	/*display: block;*/
 /*	padding-left: 50px;
 	padding-top: 30px;*/
@@ -311,12 +385,19 @@ dd a:hover{
 	font-size: 1.2rem;
 	font-weight: 600;
 	color: #000000;
+	margin: 0;
 }
 
-#fixed-nav li {}
+.fixed-nav li {
+	/* IDK what's going on here */
+	/*padding: 8px 25px 8px 15px;*/
+	margin-left: 15px;
+	padding-left: 0px;
+	padding-right: 20px;
+}
 
-#fixed-nav li a{
-	display: block;
+.fixed-nav li a{
+	/*display: block;*/
 	/*float: left;*/
 /*	font-size: 12px;
 	font-size: 1.2rem;
@@ -326,15 +407,26 @@ dd a:hover{
 	font-size: 1.2rem;
 	font-weight: 600;
 	color: #000000;
+	padding: 0;
+	margin: 0;
 	text-decoration: none;
-	padding: 0px 30px;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
 
-#fixed-nav li a:hover{
+.fixed-nav li a:hover{
 	color: #cccccc;
+}
+
+.navbar-collapse li{
+	margin-left: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.icon-bar{
+	background-color: #000000;
 }
 /*
 .nav {
@@ -443,7 +535,7 @@ dd a:hover{
 	font-style: italic;
 }
 
-/*button{
+button{
 	background: none;
 	border: none;
 	padding: none;
@@ -453,7 +545,7 @@ dd a:hover{
 .read-button button:active{
 	background: none;
 	border:none;
-}*/
+}
 
 .RISD:hover {
 	color: #737373;
@@ -656,6 +748,21 @@ dd a:hover{
 	}
 	.big-number {
 		left: -15px;
+	}
+	.fixed-nav li {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.fixed-nav{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.navbar-collapse li{
+		margin: 0;
+	}
+	#fixed-nav-bar{
+		/* No bottom border */
+		border-bottom-style: none;
 	}
 }
 
