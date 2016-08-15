@@ -121,6 +121,10 @@ dd a:hover{
 	text-decoration: none;
 }
 
+blockquote{
+	margin-left: 30px;
+}
+
 .bold{
 	font-weight: 700;
 }
@@ -237,6 +241,26 @@ dd a:hover{
 .spacer-third{
 	min-height: 200px;
 	min-height: 33.33vh;
+}
+
+.spacer-half{
+	min-height: 300px;
+	min-height: 50vh;
+}
+
+.spacer-two-thirds{
+	min-height: 410px;
+	min-height: 66.66vh;
+}
+
+.spacer-three-fourths{
+	min-height: 465px;
+	min-height: 75vh;
+}
+
+.spacer-full{
+	min-height: 600px;
+	min-height: 100vh;
 }
 
 /* Or, match height and pull-down with absolute position, bottom: 0px;*/
@@ -427,7 +451,9 @@ dd a:hover{
 	vertical-align: top;
 	text-align: right;
 	position: absolute;
-	left: -10px;
+	left: -15px;
+	/*margin-right: 15px;*/
+	/*margin-left: -15px;*/
 }
 
 .headline{
@@ -470,6 +496,13 @@ dd a:hover{
 	text-align: left;
 }
 
+.citation{
+	font-style: italic;
+	font-size: 11px;
+	font-size: 1.1rem;
+	text-align: left;
+}
+
 .scroll-right{
 	height: 200px;
 	float: left;
@@ -500,6 +533,10 @@ button{
 .read-button button:active{
 	background: none;
 	border:none;
+}
+
+.read-button:hover{
+	color: #cccccc;
 }
 
 .RISD:hover {
