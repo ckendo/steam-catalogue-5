@@ -223,6 +223,11 @@ blockquote{
 	min-height: 10vh;
 }
 
+.spacer-eighth{
+	min-height: 75px;
+	min-height: 12vh;
+}
+
 .spacer-sixth{
 	min-height: 100px;
 	min-height: 15vh;
