@@ -50,8 +50,8 @@ body {
 	letter-spacing: .025rem;
 	overflow-x: hidden;
 
-	font-size: 12px;
-	font-size: 1.2rem; /* =12px */
+	font-size: 13px;
+	font-size: 1.3rem; /* =12px */
 }
 h1 { 
 	font-size: 36px;
@@ -473,8 +473,8 @@ blockquote{
 
 .caption-right {
 	font-style: italic;
-	font-size: 11px;
-	font-size: 1.1rem;
+	font-size: 12px;
+	font-size: 1.2rem;
 	text-align: left;
 }
 
@@ -491,8 +491,8 @@ blockquote{
 
 .caption-center {
 	font-style: italic;
-	font-size: 11px;
-	font-size: 1.1rem;
+	font-size: 12px;
+	font-size: 1.2rem;
 	text-align: left;
 }
 
