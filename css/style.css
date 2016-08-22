@@ -133,6 +133,10 @@ blockquote{
 	font-style: italic;
 }
 
+.underline{
+	text-decoration: underline;
+}
+
 .clear {
     clear: both;
 }
