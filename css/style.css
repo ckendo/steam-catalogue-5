@@ -157,9 +157,9 @@ blockquote{
 }
 
 /* Applied to bootstrap rows*/
-/*.match-height-row{
+.match-height-row{
 	overflow: hidden;
-}*/
+}
 
 /*.match-height-row [class*="col-"]{
 	margin-bottom: -99999px;
@@ -169,11 +169,11 @@ blockquote{
 
 /* Hax for getting bootstrap columns in row to be full height */
 /* Applied to the shorter column in a row. Parent div (main) must have overflow: hidden; */
-/*.match-height{
+.match-height{
 	margin-bottom: -99999px;
 	padding-bottom: 99999px;
 	background-color: red;
-}*/
+}
 
 .header{
 /*	min-height: 200px;
