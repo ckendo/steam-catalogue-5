@@ -392,6 +392,12 @@ blockquote{
 	border-bottom-width: 1px;
 }
 
+.test{
+	border-top-color: red !important;
+	border-top-style: solid;
+	border-top-width: 5px;	
+}
+
 .fixed-nav{
 	/*display: block;*/
 /*	padding-left: 50px;

@@ -77,7 +77,8 @@ window.onscroll = function showSectionName(){
 	for (var i = 0; i < objectInfo.length; i++){
 		if (curr > objectInfo[i].top - offset){
 			document.getElementById("updateText").innerHTML = objectInfo[i].name
-			// document.getElementById("updateText").innerHTML = "<a href=\"" + "#" + objectInfo[i].orig + "\">" + objectInfo[i].name + "</a>"	
+			// document.getElementById("fixed-nav-bar").classList.add("test")
+			document.getElementById("fixed-nav-bar").style.borderTopColor = "red"
 		}
 	}	
 }
