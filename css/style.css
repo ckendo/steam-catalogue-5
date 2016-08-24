@@ -1,3 +1,10 @@
+:root{
+	--color-one: #000000;
+	--color-two: #000000;
+	--color-three: #000000;
+	--color-four: #000000;
+}
+
 @font-face{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -383,19 +390,39 @@ blockquote{
 	padding-bottom: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
-	border-top-color: #000000;
+/*	border-top-color: #000000;
 	border-top-style: solid;
-	border-top-width: 5px;
+	border-top-width: 5px;*/
 	/*Bottom border only for xs*/
 	border-bottom-color: #cccccc;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-}
-
-.test{
-	border-top-color: red !important;
-	border-top-style: solid;
-	border-top-width: 5px;	
+	/* Fallback (could use .jpg/.png alternatively) */
+	/*background-color: red;*/
+	/* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background-image:
+	-webkit-linear-gradient(left,
+	var(--color-one) 0, var(--color-one) 25%, var(--color-two) 25%, var(--color-two) 50%, 
+	var(--color-three) 50%, var(--color-three) 75%, var(--color-four) 75%, var(--color-four) 100%);
+	/* Firefox 3.6 - 15 */
+	background-image:
+	-moz-linear-gradient(left,
+	var(--color-one) 0, var(--color-one) 25%, var(--color-two) 25%, var(--color-two) 50%, 
+	var(--color-three) 50%, var(--color-three) 75%, var(--color-four) 75%, var(--color-four) 100%);
+	/* Opera 11.1 - 12 */
+	background-image:
+	-o-linear-gradient(left,
+	var(--color-one) 0, var(--color-one) 25%, var(--color-two) 25%, var(--color-two) 50%, 
+	var(--color-three) 50%, var(--color-three) 75%, var(--color-four) 75%, var(--color-four) 100%);
+	/* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+/*	background-image:
+	linear-gradient(to right, var(--color-one) 12.5%, var(--color-one) 12.5%, var(--color-two) 12.5%, var(--color-two) 12.5%, var(--color-three) 12.5%, var(--color-three) 12.5%, var(--color-four) 12.5%, var(--color-four) 12.5%);*/
+	background-image:
+	linear-gradient(to right, 
+	var(--color-one) 0, var(--color-one) 25%, var(--color-two) 25%, var(--color-two) 50%, 
+	var(--color-three) 50%, var(--color-three) 75%, var(--color-four) 75%, var(--color-four) 100%);
+	background-size: 100% 6px;
+	background-repeat: no-repeat;
 }
 
 .fixed-nav{
