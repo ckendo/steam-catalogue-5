@@ -1606,7 +1606,7 @@
 					<p class="italic">Read more about the STEAM x Gingko Bioworks trip: <a href="http://www.browndailyherald.com/2016/02/19/students-tour-biotechnology-company-learn-science-of-designing-life/" target="_blank" rel="noopener noreferrer">GINGKO BIOWORKS: The Science of Designing Life.</a></p>
 					<br>
 				</div>
-			<a class="read-button" role="button" data-target="#gingko-collapse, #gingko-collapse-right" data-toggle="collapse">Read more</a>
+			<a class="read-button" role="button" data-target="#gingko-collapse, #gingko-collapse-right" data-toggle="collapse" onclick="mytest()">Read more</a>
 			</div>
 			<div class = "col-sm-4">
 				<div class="img-right hidden-xs hidden-sm">
@@ -2258,23 +2258,15 @@
 	<!-- Refactor this mess -->
 	<script type="text/javascript">
 	$(document).ready(function(){
-		// This is supposed to prevent showing if clicked
-		// But hidden by sketch anyways and this disables link functionality
-		// $('#fixed-nav-bar a').on('click', function(e) {
-		// 	e.preventDefault();
-		// });
-		// var bottomOfSketch = $('#sketch').height();
 		var h = window.innerHeight;
 
 		$(window).on('scroll',function() {
 			var scrolltop = $(this).scrollTop();
 
 			if(scrolltop >= h) {
-				// $('#fixed-nav-bar').fadeIn(250);
 				$("#fixed-nav-bar").show()
 			}
 			else if(scrolltop <= h) {
-				// $('#fixed-nav-bar').fadeOut(250);
 				$("#fixed-nav-bar").hide()
 			}
 		});

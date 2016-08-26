@@ -1,27 +1,14 @@
-// var globalObjectInfo; // = getObjectInfo()
-
-window.addEventListener("resize", myFunction)
+// Helper class for fetching and updating info on scroll/click/resize/internal link
 
 function getObjectInfo(){
 	console.log('recalculating')
 	// Get just <section class ="full"> elements
 	var sections = document.getElementsByClassName("full")
-	// console.log(sections)
-	// console.log(typeof(sections))
 	var array = Array.prototype.slice.call(sections)
-	// console.log(array)
-	// console.log(typeof(array))
-	// console.log(array.length)
 	var objectInfo = []
 	for (var i = 0; i < array.length; i++){
-		console.log('id:', array[i].id)
-		// console.log('orig:', array[i].id)
-		// var currName = array[i].id.replace('-', ' ')
 		var currName = replaceAll(array[i].id, '-', ' ')
-		// console.log('replaced:', currName)
-		// var currTop = Math.round(array[i].getBoundingClientRect().top)
 		var el = array[i]
-		console.log(typeof(el))
 		var currTop = offset(el).top
 		var object = {name: currName, top: currTop, orig: array[i].id}
 		objectInfo.push(object)
@@ -30,18 +17,19 @@ function getObjectInfo(){
 	objectInfo = objectInfo.sort(function(a, b){
 		return a.top - b.top
 	})
-	// globalObjectInfo = objectInfo
 	return objectInfo
 }
-//Initial 
-var objectInfo = getObjectInfo()
 
+// Force recalculate on resize
 window.onresize=function(){
-	objectInfo = getObjectInfo()
+	console.log('Resize')
+	showSectionName()
 }
 
+// Force recalculate on hash change (internal link)
 window.onhashchange=function(){
-	objectInfo = getObjectInfo()
+	console.log("Hash change")
+	showSectionName()
 }
 
 function offset(el) {
@@ -49,12 +37,6 @@ function offset(el) {
 	scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 	return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-}
-
-var x = 0;
-function myFunction() {
-	var txt = x += 1;
-	console.log(txt)
 }
 
 function replaceAll(str, find, replace) {
@@ -69,10 +51,13 @@ function replaceAll(str, find, replace) {
 	return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
 }
 
-window.onscroll = function showSectionName(){
+// Recalculate on scroll
+window.onscroll = function(){showSectionName()}
 
+function showSectionName(){
 	var offset = window.innerHeight/4.5
-	// var objectInfo = this.getObjectInfo()
+	// Always fetch new object info (handles Read More clicked)
+	var objectInfo = this.getObjectInfo()
 	var curr = window.pageYOffset
 	// No need to binary search, probably fast enough
 	for (var i = 0; i < objectInfo.length; i++){
@@ -92,7 +77,6 @@ function getColors(name){
 }
 
 /* Hardcoded dict unless you think of a better way */
-
 var articleDict = {
 	'Welcome': 'standard',
 	'Catalogue-Five': 'standard',
