@@ -2916,21 +2916,16 @@
 			$(this).html('Read more');
 		}
 	});
-	$('.about-button').on('click', function() { 
-		console.log('click triggered')
-		if ($('#select-text').text() == 'Select a school for club information.'){
-			$('#select-text').html('');
-		}else{
-			$('#select-text').html('Select a school for club information.');
-		}
+
+	// If any about-collapse is shown, hide text
+	$('.about-collapse').on('shown.bs.collapse', function() { 
+		console.log('show triggered')
+		$('#select-text').html('');
 	});
-	$('.about-collapse').on('shown', function() { 
+	// If any about-collapse is hidden, show text
+	$('.about-collapse').on('hidden.bs.collapse', function() { 
 		console.log('hide triggered')
-		if ($('#select-text').text() == 'Select a school for club information.'){
-			$('#select-text').html('');
-		}else{
-			$('#select-text').html('Select a school for club information.');
-		}
+		$('#select-text').html('Select a school for club information.');
 	});
 	$("[data-collapse-group='about-collapse-group']").click(function () {
 		var $this = $(this);
