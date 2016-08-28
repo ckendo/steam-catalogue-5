@@ -513,6 +513,15 @@ blockquote{
 	width: 100%;
 }
 
+.about-center{
+	/*padding-right: 50px;*/
+}
+
+.about-right{
+	padding-right: 50px;
+}
+
+
 .caption-right {
 	font-style: italic;
 	font-size: 12px;
@@ -598,7 +607,7 @@ button{
 	color: #cccccc;
 }
 
-.RISD:hover {
+.RISD:hover{
 	color: #737373;
 	text-decoration: underline;
 }
@@ -618,7 +627,7 @@ button{
 	text-decoration: underline;
 }
 
-.Brown:hover {
+.Brown:hover{
 	color: #EC1C24;
 	text-decoration: underline;
 }
