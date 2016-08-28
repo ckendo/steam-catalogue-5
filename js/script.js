@@ -1,5 +1,124 @@
-// Helper class for fetching and updating info on scroll/click/resize/internal link
+// Make links to articles go to offset
+///////////////////////////////////////////////
+// Via http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
+// Makes links to articles go an offset of 100px up from the actual article
+// The function actually applying the offset
+function offsetAnchor() {
+	if(location.hash.length !== 0) {
+		window.scrollTo(window.scrollX, window.scrollY - 100);
+	}
+}
+// This will capture hash changes while on the page
+$(window).on("hashchange",offsetAnchor);
 
+// This is here so that when you enter the page with a hash,
+// it can provide the offset in that case too. Having a timeout
+// seems necessary to allow the browser to jump to the anchor first.
+window.setTimeout(offsetAnchor, 1); 
+
+// Nav bar
+//////////////////////////
+$(document).ready(function(){
+	var h = window.innerHeight;
+
+	$(window).on('scroll',function() {
+		var scrolltop = $(this).scrollTop();
+
+		if(scrolltop >= h) {
+			$("#fixed-nav-bar").show()
+		}
+		else if(scrolltop <= h) {
+			$("#fixed-nav-bar").hide()
+		}
+	});
+});
+
+// Read More/less
+//////////////////////////
+$('.read-button').on('click', function() { 
+	if ($(this).text() == 'Read more'){
+		$(this).html('Read less');
+	}else{
+		$(this).html('Read more');
+	}
+});
+
+// We Are
+////////////////////////////////
+// If any about-collapse is shown, hide text
+$('.about-collapse').on('shown.bs.collapse', function() { 
+	$('#select-text').html('');
+	var id = this.id
+	var res = id.split('-')
+	// If a "... collapse-right" class, do nothing (don't do it twice)
+	if (res[res.length-1] != 'right'){
+		// Parse id of button
+		var button = document.getElementById(res[0]+'-button')
+		button.classList.add(res[0]+'-active')
+
+		// Set this id as curr open
+		document.getElementById('We-Are').setAttribute('curr-open', res[0])
+
+		// // Set colors to match the shown collapse if within range
+		var curr = window.pageYOffset
+		var offsetVar = window.innerHeight/4.5
+		var top = offset(document.getElementById('We-Are')).top
+		if (curr > top - offsetVar){
+			console.log('in range')
+			var htmlStyles = window.getComputedStyle(document.querySelector("html"));
+			// Parse color
+			var colorName = '--'+res[0]
+			var color = htmlStyles.getPropertyValue(colorName)
+			document.querySelector("html").style.setProperty("--color-one", color);
+			document.querySelector("html").style.setProperty("--color-two", color);
+			document.querySelector("html").style.setProperty("--color-three", color);
+			document.querySelector("html").style.setProperty("--color-four", color);
+		}
+	}
+});
+
+// If any about-collapse is hidden, show text 
+// remove active class
+$('.about-collapse').on('hidden.bs.collapse', function() { 
+	$('#select-text').html('Select a school for club information.');
+	var id = this.id
+	var res = id.split('-')
+	// If a "... collapse-right" class, do nothing (don't do it twice)
+	if (res[res.length-1] != 'right'){
+		// Parse id of button
+		var button = document.getElementById(res[0]+'-button')
+		button.classList.remove(res[0]+'-active')
+
+		// Set nothing as curr open
+		document.getElementById('We-Are').setAttribute('curr-open', 'false')
+
+		document.querySelector("html").style.setProperty("--color-one", '#000000');
+		document.querySelector("html").style.setProperty("--color-two", '#000000');
+		document.querySelector("html").style.setProperty("--color-three", '#000000');
+		document.querySelector("html").style.setProperty("--color-four", '#000000');
+	}
+});
+
+// If We-Are expanded, collapse all others and remove *-active class
+$("[data-collapse-group='about-collapse-group']").click(function () {
+	var $this = $(this);
+	// Add active-class to current 
+	var name = this.id.split('-')[0]
+	var addClassName = name+'-active'
+	$this.addClass(addClassName)
+
+	// Evaluate all others
+	$("[data-collapse-group='about-collapse-group']:not([data-target='" + $this.data("target") + "'])").each(function () {
+			// Collapse all others
+			$($(this).data("target")).removeClass("in").addClass('collapse');
+			// Make sure active is off for all others
+			var removeClassName = this.id.split('-')[0] + '-active'
+			$($(this).removeClass(removeClassName))
+	});
+});
+
+// Helper class for fetching and updating info on scroll/click/resize/internal link
+///////////////////////////////////////////////
 function getObjectInfo(){
 	console.log('recalculating')
 	// Get just <section class ="full"> elements
@@ -7,10 +126,16 @@ function getObjectInfo(){
 	var array = Array.prototype.slice.call(sections)
 	var objectInfo = []
 	for (var i = 0; i < array.length; i++){
+		var orig = array[i].id
+		// If an open We-Are section, modify this
+		if (array[i].id == 'We-Are' && array[i].getAttribute('curr-open') != 'false'){
+			var currOpen = array[i].getAttribute('curr-open')
+			orig = array[i].id+'-'+currOpen
+		}
 		var currName = replaceAll(array[i].id, '-', ' ')
 		var el = array[i]
 		var currTop = offset(el).top
-		var object = {name: currName, top: currTop, orig: array[i].id}
+		var object = {name: currName, top: currTop, orig: orig}
 		objectInfo.push(object)
 	}
 	// Ensure sorted by increasing y value
@@ -31,6 +156,11 @@ window.onhashchange=function(){
 	console.log("Hash change")
 	showSectionName()
 }
+
+$('.about-button').on('click', function(){
+	console.log("About button clicked")
+	showSectionName()
+})
 
 function offset(el) {
 	var rect = el.getBoundingClientRect(),
@@ -110,6 +240,14 @@ var articleDict = {
 	'Looking-Forward-and-Ahead': 'standard',
 	'We-Are': 'standard',
 	'Colophon': 'standard',
+	'We-Are-RISD': 'risd',
+	'We-Are-Brown': 'brown',
+	'We-Are-MIT': 'mit',
+	'We-Are-Yale': 'yale',
+	'We-Are-BU': 'bu',
+	'We-Are-Harvard': 'harvard',
+	'We-Are-Rutgers': 'rutgers',
+	'We-Are-New': 'new-school',
 }
 
 var colorDict = {

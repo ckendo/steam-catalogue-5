@@ -3,6 +3,14 @@
 	--color-two: #000000;
 	--color-three: #000000;
 	--color-four: #000000;
+	--RISD: #737373;
+	--Brown: #EC1C24;
+	--MIT: #24A8B3;
+	--Yale: #1A76BB;
+	--New: #f77116;
+	--BU: #0ba016;
+	--Rutgers: #6048a8;
+	--Harvard: #fcc342;
 }
 
 @font-face{
@@ -607,44 +615,124 @@ button{
 	color: #cccccc;
 }
 
+.RISD{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 3px solid var(--RISD);
+}
+
 .RISD:hover{
-	color: #737373;
-	text-decoration: underline;
+	color: var(--RISD);
+	text-decoration: none;
+}
+
+.RISD-active{
+	color: var(--RISD);
+}
+
+.Yale{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 3px solid var(--Yale);
 }
 
 .Yale:hover {
-	color: #1A76BB;
-	text-decoration: underline;
+	color: var(--Yale);
+	text-decoration: none;
+}
+
+.Yale-active {
+	color: var(--Yale);
+}
+
+.MIT{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 3px solid var(--MIT);
 }
 
 .MIT:hover {
-	color: #24A8B3;
-	text-decoration: underline;
+	color: var(--MIT);
+	text-decoration: none;
 }
 
-.New-School:hover {
-	color: #f77116;
-	text-decoration: underline;
+.MIT-active{
+	color: var(--MIT);
+}
+
+.New{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 3px solid var(--New);
+}
+
+.New:hover {
+	color: var(--New);
+	text-decoration: none;
+}
+
+.New-active {
+	color: var(--New);
+}
+
+.Brown{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 3px solid var(--Brown);
 }
 
 .Brown:hover{
-	color: #EC1C24;
-	text-decoration: underline;
+	color: var(--Brown);
+	text-decoration: none;
+}
+
+.Brown-active{
+	color: var(--Brown);
+}
+
+.BU{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 3px solid var(--BU);
 }
 
 .BU:hover {
-	color: #0ba016;
-	text-decoration: underline;
+	color: var(--BU);
+	text-decoration: none;
+}
+
+.BU-active{
+	color: var(--BU);
+}
+
+.Rutgers{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 3px solid var(--Rutgers);
 }
 
 .Rutgers:hover {
-	color: #6048a8;
-	text-decoration: underline;
+	color: var(--Rutgers);
+	text-decoration: none;
+}
+
+.Rutgers-active {
+	color: var(--Rutgers);
+}
+
+.Harvard{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 3px solid var(--Harvard);
 }
 
 .Harvard:hover {
-	color: #fcc342;
-	text-decoration: underline;
+	color: var(--Harvard);
+	text-decoration: none;
+}
+
+.Harvard-active {
+	color: var(--Harvard);
 }
 
 .hide{

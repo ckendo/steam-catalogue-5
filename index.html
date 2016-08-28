@@ -2184,7 +2184,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="full" id ="We-Are">
+	<section class="full" id ="We-Are" curr-open="false">
 		<div class="header">
 			<div class = "row">
 				<div class = "col-sm-2">
@@ -2194,7 +2194,7 @@
 						<!--Crazy button section-->
 						<!--But essentially target is the central and right panels-->
 						<!--data-collapse-group is a custom attribute so JS can close all already open schools (only one should be up at once)-->
-						<h2 class="bold">We&nbsp;are <a class="about-button RISD" role="button" data-target="#RISD-collapse, #RISD-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">RISD</a>, <a class="about-button Brown" role="button" data-target="#Brown-collapse, #Brown-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Brown</a>, <a class="about-button MIT" role="button" data-target="#MIT-collapse, #MIT-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">MIT</a>, <a class="about-button Yale" role="button" data-target="#Yale-collapse, #Yale-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Yale</a>, <a class="about-button Rutgers" role="button" data-target="#Rutgers-collapse, #Rutgers-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Rutgers</a>, <a class="about-button BU" role="button" data-target="#BU-collapse, #BU-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">BU</a>, <a class="about-button Harvard" role="button" data-target="#Harvard-collapse, #Harvard-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Harvard</a>, and <a class="about-button New-School" role="button" data-target="#New-collapse, #New-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">The&nbsp;New&nbsp;School</a> STEAM.</h2>
+						<h2 class="bold">We&nbsp;are <a id="RISD-button" class="about-button RISD" role="button" data-target="#RISD-collapse, #RISD-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">RISD</a>, <a id="Brown-button" class="about-button Brown" role="button" data-target="#Brown-collapse, #Brown-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Brown</a>, <a id="MIT-button" class="about-button MIT" role="button" data-target="#MIT-collapse, #MIT-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">MIT</a>, <a id="Yale-button" class="about-button Yale" role="button" data-target="#Yale-collapse, #Yale-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Yale</a>, <a id="Rutgers-button" class="about-button Rutgers" role="button" data-target="#Rutgers-collapse, #Rutgers-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Rutgers</a>, <a id="BU-button" class="about-button BU" role="button" data-target="#BU-collapse, #BU-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">BU</a>, <a id="Harvard-button" class="about-button Harvard" role="button" data-target="#Harvard-collapse, #Harvard-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Harvard</a>, and <a id="New-button" class="about-button New" role="button" data-target="#New-collapse, #New-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">The&nbsp;New&nbsp;School</a> STEAM.</h2>
 					</div>
 				</div>
 				<div class = "col-sm-4">
@@ -2874,63 +2874,8 @@
 			</div>
 		</div>
 	</section>
-	<script type="text/javascript">
-		// Via http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
-		// Makes links to articles go an offset of 100px up from the actual article
-		// The function actually applying the offset
-		function offsetAnchor() {
-			if(location.hash.length !== 0) {
-				window.scrollTo(window.scrollX, window.scrollY - 100);
-			}
-		}
-		// This will capture hash changes while on the page
-		$(window).on("hashchange",offsetAnchor);
-
-		// This is here so that when you enter the page with a hash,
-		// it can provide the offset in that case too. Having a timeout
-		// seems necessary to allow the browser to jump to the anchor first.
-		window.setTimeout(offsetAnchor, 1); 
-	</script>
 	<!-- Refactor this mess -->
 	<script type="text/javascript">
-	$(document).ready(function(){
-		var h = window.innerHeight;
-
-		$(window).on('scroll',function() {
-			var scrolltop = $(this).scrollTop();
-
-			if(scrolltop >= h) {
-				$("#fixed-nav-bar").show()
-			}
-			else if(scrolltop <= h) {
-				$("#fixed-nav-bar").hide()
-			}
-		});
-	});
-	$('.read-button').on('click', function() { 
-		if ($(this).text() == 'Read more'){
-			$(this).html('Read less');
-		}else{
-			$(this).html('Read more');
-		}
-	});
-
-	// If any about-collapse is shown, hide text
-	$('.about-collapse').on('shown.bs.collapse', function() { 
-		console.log('show triggered')
-		$('#select-text').html('');
-	});
-	// If any about-collapse is hidden, show text
-	$('.about-collapse').on('hidden.bs.collapse', function() { 
-		console.log('hide triggered')
-		$('#select-text').html('Select a school for club information.');
-	});
-	$("[data-collapse-group='about-collapse-group']").click(function () {
-		var $this = $(this);
-		$("[data-collapse-group='about-collapse-group']:not([data-target='" + $this.data("target") + "'])").each(function () {
-		$($(this).data("target")).removeClass("in").addClass('collapse');
-		});
-	});
 	</script>
 	<script src="js/script.js"></script>
 	<script src="js/vendor/modernizr-custom.js"></script>
