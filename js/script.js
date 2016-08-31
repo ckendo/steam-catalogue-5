@@ -226,7 +226,7 @@ var articleDict = {
 	'Mushroom-Hunt': 'risd-brown',
 	'Laurence-Humier': 'risd',
 	'Weather-or-Not?': 'risd-brown',
-	'GENSPACE': 'risd',
+	'GENSPACE': 'standard',
 	'Citizen-+-Virtual': 'risd-brown-mit-bu',
 	'ADAPTATION': 'standard',
 	'Gingko-Bioworks': 'risd-brown',
@@ -263,9 +263,9 @@ var colorDict = {
 	// New School
 	'new-school': ['#f77116', '#f77116', '#f77116', '#f77116'],
 	// Michigan
-	'michigan': ['#000000', '#000000', '#000000', '#000000'],
+	'michigan': ['#C60967', '#C60967', '#C60967', '#C60967'],
 	// Ottawa
-	'ottawa': ['#000000', '#000000', '#000000', '#000000'],
+	'ottawa': ['#B3C100', '#B3C100', '#B3C100', '#B3C100'],
 	// MIT
 	'mit': ['#24A8B3', '#24A8B3', '#24A8B3', '#24A8B3'], 
 	// Yale

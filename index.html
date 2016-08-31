@@ -47,7 +47,7 @@
 	<section class = "splash" id="Home">
 		<div id = "sketch"></div>
 		<div id = "cover">
-			<div class = "row" id = "STEAM">
+			<div class = "row STEAM-stroke" id = "STEAM">
 				<div class = "visible-xs">
 					<h1>STEAM</h1>
 				</div>
@@ -55,7 +55,7 @@
 					<h1>STEAM</h1>
 				</div>
 			</div>
-			<div class = "row pull-right" id = "schools">
+			<div class = "row pull-right schools-stroke" id = "schools">
 				<h3>RISD</h3>
 				<h3>Brown</h3>
 				<h3>MIT</h3>
@@ -70,7 +70,7 @@
 
 	<!--Only first needs spacer, others' top margins are included in the bottom margin of the previous-->
 	<!--i.e. 100vh total, full section is 85 vh. Bottom margin is 15vh (also acting as top margin of next)-->
-	<section class ="spacer-sixth"></section>
+	<section class ="spacer-fifth"></section>
 	<section class="full" id ="Welcome">
 		<div class = "header">
 			<div class = "row">
@@ -420,9 +420,13 @@
 				<div class="img-center visible-xs visible-sm">
 					<img src="img/minsoo.jpg"/>
 				</div>
-				<p>Let’s start with the shape of the pentagon.</p> 
-				<p>The five vertices of the pentagon stands for the five points of the STEAM: Science, Technology, Engineering, Art, and Mathematics. Going further, now that STEAM as a student-led grassroots movement is expanding nationwide, the shape of the pentagon is different for each school. This is because each school has different needs and resources on which each specific chapter was founded on. So the pentagon symbolically represents the pulling and reshaping of how the five disciplines of STEAM interact with each other in each school.</p>
-				<p>Each catalogue is the center point of the STEAM network because it is the culmination of the students’ manifestation of STEAM brought together in one place to be disseminated to educators, students, policy makers, and industry leaders. This is our story and the work we have done, are doing, and will continue to do as we diversify and expand.</p>
+				<p>Let’s start with the shape of the pentagon.</p>
+				<p>The five vertices of the pentagon stands for the five points of the STEAM: Science, Technology, Engineering, Art, and Mathematics. Going further, now that STEAM as a student-led grassroots movement is expanding nationwide, the shape of the pentagon is different for each school. Each school has different needs and resources with which each specific chapter was founded on. The pentagon symbolically represents the pulling and reshaping of how the five disciplines of STEAM interact with each other at each school.</p>
+				<div id="foreword-collapse" class="collapse">
+					<p>Each catalogue is the center point of the STEAM network, as the culmination of the students’ manifestation of the idea of STEAM, brought together in one place to be disseminated to educators, students, policy makers, and industry leaders. This is our story and the work we have done, are doing, and will continue to do as we diversify and expand. Each school will have its own story, its own way of working together to unite seemingly disparate fields of study or groups of people together, to forge new ways of learning, of growing, and of experiencing the world. Whether it is through meeting different people or creating work collaboratively with someone who sees the problem in a completely different light, there has always been a place for the sciences to co-exist and flourish alongside the arts. Our world is no longer about purism, but rather, inter-connectedness. We are the nodes bouncing around wildly, making connections with the communities around us, the resources available to us, and to other nodes that we collide with.</p>
+					<p>The pentagon assembles the different disciplines, joined together in a charged pursuit for knowledge, innovation, and new ways of seeing our world so that we may help each other get outside of our single point (of view) and together, form new areas for exploration and expansion.</p>
+				</div>
+			<a class="read-button" role="button" data-target="#foreword-collapse" data-toggle="collapse">Read more</a>
 			</div>
 			<div class = "col-sm-4">
 				<div class="hidden-xs hidden-sm" style="min-height: 30px; min-height: 5vh;"></div>
@@ -488,6 +492,9 @@
 			<div class = "col-sm-2">
 			</div>
 			<div class = "col-xs-12 col-sm-6">
+				<div class="img-center visible-xs visible-sm logo">
+					<img src="img/logos/Rutgers-STEAM.png"/>
+				</div>	
 				<p class="bold">Mission Statement</p>
 				<p>Rutgers STEAM, in New Brunswick, is a growing student-led movement to integrate traditionally-disparate fields and mindsets, broadly in the areas of the STEM fields (Science, Technology, Engineering, Mathematics) and the Arts and Humanities. We aim to develop STEAM as a tool that enables, whether it be by enabling learning, open discussions, product improvements, or new ideas and inventions. In the real world, each of us will have to work alongside those with different skillsets and thought processes, and STEAM emulates both this understanding and teamwork as well as encourages it. It seeks to open those in the STEM fields to more creative branches of thought, and those in the arts to more methodical implementations. These intersecting areas will be the hub that will drive forward innovation, manifested through discussions, workshops, projects, trips, and other events, all of which will showcase how these integrations can work alongside one another to solve problems, explore ideas, evaluate beauty in its different abstractions, and above all, make a difference.</p>
 				<div id="rutgers-collapse" class="collapse">
@@ -541,11 +548,14 @@
 			<a class="read-button" role="button" data-target="#rutgers-collapse, #rutgers-collapse-right" data-toggle="collapse">Read more</a>
 			</div>
 			<div class = "col-sm-4">
+				<div class="img-right hidden-xs hidden-sm logo">
+					<img src="img/logos/Rutgers-STEAM.png"/>
+				</div>	
 				<div id="rutgers-collapse-right" class="collapse">
 					<div class="spacer-full visible-lg visible-md"></div>
 					<div class="spacer-full visible-lg visible-md"></div>
-					<div class="spacer-half visible-lg visible-md"></div>
-					<div class="spacer-two-thirds visible-md"></div>
+					<div class="spacer-fourth visible-lg visible-md"></div>
+					<div class="spacer-half visible-md"></div>
 					<div class="img-right hidden-xs hidden-sm">
 						<img src="img/rutgers/steam1.jpg"/>
 						<p class="caption-right">Protein creatures with Dr. Peter Kahn.</p>
@@ -585,6 +595,9 @@
 			<div class = "col-sm-2">
 			</div>
 			<div class = "col-xs-12 col-sm-6">
+				<div class="img-center visible-xs visible-sm logo">
+					<img src="img/logos/BU-STEAM.png"/>
+				</div>	
 				<p class="bold">Mission Statement</p>
 				<p>BU STEAM is a student group at Boston University that strives to make accessible and illuminate the technical aspects of the STEM fields through the arts so that these fields can be more easily understood and appreciated by all. We aim to more fully integrate creative problem-solving in order to invite a unique approach to real world STEM problems that cannot simply be solved with current by-the-book methods. Additionally, BU STEAM endeavors to create works around the BU Community that use STEM as a tool to reflect artistic or philosophical questions about the world.</p>
 				<p>We inspire discussion about the inherent overlap of the Science, Technology, Engineering, Arts, and Mathematics fields and empower all generations to embrace the interconnectivity of these fields. In addition to the exchange of ideas, we conduct interdisciplinary projects that contribute both technically and aesthetically to our community, and integrate our STEAM ideals through after school programs at public schools in the greater Boston area.</p>
@@ -619,8 +632,12 @@
 			<a class="read-button" role="button" data-target="#bu-collapse, #bu-collapse-right" data-toggle="collapse">Read more</a>
 			</div>
 			<div class = "col-sm-4">
+				<div class="img-right hidden-xs hidden-sm logo">
+					<img src="img/logos/BU-STEAM.png"/>
+				</div>
 				<div id="bu-collapse-right" class="collapse">
-					<div class="spacer-full visible-lg visible-md"></div>
+					<div class="spacer-half visible-lg visible-md"></div>
+					<!-- <div class="spacer-sixth visible-lg visible-md"></div> -->
 					<div class="img-right hidden-xs hidden-sm">
 						<img src="img/bu/bu.jpg"/>
 						<p class="caption-right">Sharon Goldberg discussing her research in cybersecurity at the Citien + Virtual session at BU.</p>
@@ -650,10 +667,13 @@
 			<div class = "col-sm-2">
 			</div>
 			<div class = "col-xs-12 col-sm-6">
+				<div class="img-center visible-xs visible-sm logo">
+					<img src="img/logos/Harvard-STEAM.png"/>
+				</div>
 				<p class="bold">Mission Statement</p>
 				<p>Harvard STEAM is a student-led initiative at the Harvard Graduate School of Education (HGSE). Our team aims to explore innovative resources and learning experiences in order to foster an evolvement of education culture at large. For now, our initiative remains broad in order to mold into the relevant themes, skills and needs present within the university and education communities.</p>
 				<p>At Harvard Graduate School of Education, STEAM aims to foster trans-disciplinary dialogue to generate creative collaborations and connections. In this way, our team would like to focus on equalizing relevance in both Arts and STEM; improving the accessibility and inclusivity of STEAM initiatives; and establishing a model of adaptability within STEAM education. Harvard STEAM plans to conduct research or workshops to explore the stated focuses. Each founding team member will choose which area of focus to tackle according to his or her set of skills, ideals, and experiences to lead an idea with the Harvard community and neighboring universities.</p>
-				<div id="bu-collapse" class="collapse">
+				<div id="Harvard-collapse" class="collapse">
 					<br>
 					<p class="bold">Recap</p>
 					<p>BU STEAM had an action-packed first year on campus. In the fall, we applied to be an officially-recognized student group on campus and hosted an information meeting, during which we discussed the meaning of STEAM, and the three main pillars of the group: inspiration, innovation, and integration. This was a wonderful opportunity for us to establish ourselves as a presence on campus and spread the word about our STEAM mission.</p>
@@ -681,10 +701,13 @@
 					<p class="underline">Collaborations</p>
 					<p>In addition to all the wonderful progress we’ve been able to make this past year as well as the exciting projects we have planned for the upcoming school year, we hope to continue to foster stronger relationships with the other STEAM groups, especially with those in the Boston/Cambridge area. We are looking forward to hosting joint events and collaborating on projects in the future!</p>
 				</div>
-			<a class="read-button" role="button" data-target="#bu-collapse, #bu-collapse-right" data-toggle="collapse">Read more</a>
+			<a class="read-button" role="button" data-target="#Harvard-collapse, #Harvard-collapse-right" data-toggle="collapse">Read more</a>
 			</div>
 			<div class = "col-sm-4">
-				<div id="bu-collapse-right" class="collapse">
+				<div class="img-right hidden-xs hidden-sm logo">
+					<img src="img/logos/Harvard-STEAM.png"/>
+				</div>
+				<div id="Harvard-collapse-right" class="collapse">
 					<div class="spacer-full visible-lg visible-md"></div>
 					<div class="img-right hidden-xs hidden-sm">
 						<img src="img/bu/bu.jpg"/>
@@ -715,6 +738,9 @@
 			<div class = "col-sm-2">
 			</div>
 			<div class = "col-xs-12 col-sm-6">
+				<div class="img-center visible-xs visible-sm logo">
+					<img src="img/logos/Parsons-STEAM.png"/>
+				</div>
 				<p class="bold">Mission Statement</p>
 				<p>STEAM at The New School for Design will leverage its internal design and art expertise to further foster collaborative relationships within the NYC community in an effort to advocate for the value of the arts in education. Our mission is to elevate the work of our student body, provide exposure to innovative career paths, and foster a spirit of collaboration across the arts, and technological fields of study.</p>
 				<p>As our world becomes more complex, the methods with which we solve problems must also evolve to better address the rapid shifts across global industries. By employing methods that are human centered, art and design education facilitates an empathetic and synthesized approach to conveying complex information. STEAM at The New School will engage its multidisciplinary communities through workshops, student led projects/events, and by strengthening external partnerships.</p>
@@ -753,8 +779,11 @@
 			<a class="read-button" role="button" data-target="#new-school-collapse, #new-school-collapse-right" data-toggle="collapse">Read more</a>
 			</div>
 			<div class = "col-sm-4">
+				<div class="img-right hidden-xs hidden-sm logo">
+					<img src="img/logos/Parsons-STEAM.png"/>
+				</div>
 				<div id="new-school-collapse-right" class="collapse">
-					<div class="spacer-full visible-lg visible-md"></div>
+					<div class="spacer-half visible-lg visible-md"></div>
 					<div class="spacer-tenth visible-lg visible-md"></div>
 					<div class="spacer-third visible-md"></div>
 					<div class="img-right hidden-xs hidden-sm">
@@ -792,6 +821,9 @@
 			<div class = "col-sm-2">
 			</div>
 			<div class = "col-xs-12 col-sm-6">
+				<div class="img-center visible-xs visible-sm logo">
+					<img src="img/logos/UMichigan-STEAM.png"/>
+				</div>
 				<p class="italic">(Incoming, Summer 2016)</p>
 				<p class="bold">Mission Statement</p>
 				<p>STEAM at University of Michigan is an initiative driving collaboration between leading departments in STEM fields and art to foster an educational and professional community of civically engaged researchers spanning disciplines. Our aim is to create a community to inspire dialogue regarding the future of interdisciplinary work and accordingly implement programs to tangibly realize ways to encourage collaboration by means of seminars, gallery events, and workshops, as well as publication of work and curriculum enrichment. In addition to bringing STEAM to University of Michigan, our outreach program will work on introducing STEAM curricula and events and local secondary schools.</p>
@@ -802,6 +834,9 @@
 			<a class="read-button" role="button" data-target="#michigan-collapse, #michigan-collapse-right" data-toggle="collapse">Read more</a>
 			</div>
 			<div class = "col-sm-4">
+				<div class="img-right hidden-xs hidden-sm logo">
+					<img src="img/logos/UMichigan-STEAM.png"/>
+				</div>
 				<div id="michigan-collapse-right" class="collapse">
 <!-- 					<div class="img-right hidden-xs hidden-sm">
 						<img src="img/new-school/creative-arts-works.jpg"/>
@@ -832,6 +867,9 @@
 			<div class = "col-sm-2">
 			</div>
 			<div class = "col-xs-12 col-sm-6">
+				<div class="img-center visible-xs visible-sm logo">
+					<img src="img/logos/UOttawa-STEAM.png"/>
+				</div>
 				<p class="italic">(Incoming, Summer 2016)</p>
 				<p class="bold">Mission Statement: Why STEAM?</p>
 				<p>Why STEAM is important to me and why it’s important to uOttawa: Flashback to one year ago when I began my summer co-op work term in Vancouver at TRIUMF (Canada’s national laboratory for particle and nuclear physics research). There I, a political science and communication student, would be spending my entire summer communicating science.</p>
@@ -845,6 +883,9 @@
 			<a class="read-button" role="button" data-target="#ottawa-collapse, #ottawa-collapse-right" data-toggle="collapse">Read more</a>
 			</div>
 			<div class = "col-sm-4">
+				<div class="img-right hidden-xs hidden-sm logo">
+					<img src="img/logos/UOttawa-STEAM.png"/>
+				</div>
 				<div id="ottawa-collapse-right" class="collapse">
 <!-- 					<div class="img-right hidden-xs hidden-sm">
 						<img src="img/new-school/creative-arts-works.jpg"/>
@@ -2194,7 +2235,7 @@
 						<!--Crazy button section-->
 						<!--But essentially target is the central and right panels-->
 						<!--data-collapse-group is a custom attribute so JS can close all already open schools (only one should be up at once)-->
-						<h2 class="bold">We&nbsp;are <a id="RISD-button" class="about-button RISD" role="button" data-target="#RISD-collapse, #RISD-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">RISD</a>, <a id="Brown-button" class="about-button Brown" role="button" data-target="#Brown-collapse, #Brown-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Brown</a>, <a id="MIT-button" class="about-button MIT" role="button" data-target="#MIT-collapse, #MIT-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">MIT</a>, <a id="Yale-button" class="about-button Yale" role="button" data-target="#Yale-collapse, #Yale-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Yale</a>, <a id="Rutgers-button" class="about-button Rutgers" role="button" data-target="#Rutgers-collapse, #Rutgers-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Rutgers</a>, <a id="BU-button" class="about-button BU" role="button" data-target="#BU-collapse, #BU-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">BU</a>, <a id="Harvard-button" class="about-button Harvard" role="button" data-target="#Harvard-collapse, #Harvard-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Harvard</a>, and <a id="New-button" class="about-button New" role="button" data-target="#New-collapse, #New-collapse-right" data-toggle="collapse" data-collapse-group="about-collapse-group">The&nbsp;New&nbsp;School</a> STEAM.</h2>
+						<h2 class="bold">We&nbsp;are <a id="RISD-button" class="about-button RISD" role="button" data-target="#RISD-about, #RISD-about-right" data-toggle="collapse" data-collapse-group="about-collapse-group">RISD</a>, <a id="Brown-button" class="about-button Brown" role="button" data-target="#Brown-about, #Brown-about-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Brown</a>, <a id="MIT-button" class="about-button MIT" role="button" data-target="#MIT-about, #MIT-about-right" data-toggle="collapse" data-collapse-group="about-collapse-group">MIT</a>, <a id="Yale-button" class="about-button Yale" role="button" data-target="#Yale-about, #Yale-about-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Yale</a>, <a id="Rutgers-button" class="about-button Rutgers" role="button" data-target="#Rutgers-about, #Rutgers-about-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Rutgers</a>, <a id="BU-button" class="about-button BU" role="button" data-target="#BU-about, #BU-about-right" data-toggle="collapse" data-collapse-group="about-collapse-group">BU</a>, <a id="Harvard-button" class="about-button Harvard" role="button" data-target="#Harvard-about, #Harvard-about-right" data-toggle="collapse" data-collapse-group="about-collapse-group">Harvard</a>, and <a id="New-button" class="about-button New" role="button" data-target="#New-about, #New-about-right" data-toggle="collapse" data-collapse-group="about-collapse-group">The&nbsp;New&nbsp;School</a> STEAM.</h2>
 					</div>
 				</div>
 				<div class = "col-sm-4">
@@ -2205,7 +2246,7 @@
 			<div class = "col-sm-2">
 			</div>
 			<div class = "col-xs-12 col-sm-6">
-				<div id="RISD-collapse" class="collapse about-collapse">
+				<div id="RISD-about" class="collapse about-collapse">
 					<div class="about-center visible-xs visible-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2257,9 +2298,9 @@
 					<p>We are jointly funded through the RISD Center for Student Involvement and the RISD Programming Board. Special thanks to Babette Allina, Kim Almeida, John Maeda, Rachel Holcomb, Sarah Pease, Pneuhaus, Pradeep Sharma, Rosanne Somerson,  Adam Tilove, Jewish Community Day School of Rhode Island, and Carol Strohecker, and the many others without whom these projects would not be possible.</p>
 					<br>
 					<p class="bold">Get in Touch</p>
-					<p>Find us on <a href="https://twitter.com/risdsteam" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.facebook.com/steamwith/" target="_blank" rel="noopener noreferrer">Facebook</a>.  Sign up for the RISD/Brown STEAM <a href="http://ltwp.us7.list-manage.com/subscribe?u=bfe7bb6c704871b06a26bce8d&id=dbc0f0612b" target="_blank" rel="noopener noreferrer">newsletter</a>. Say hello at <a href="mailto:risd@steamwith.us">risd@steamwith.us</a>!</p>
+					<p>Find us on <a href="https://twitter.com/risdsteam" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.facebook.com/steamwith/" target="_blank" rel="noopener noreferrer">Facebook</a>.  Sign up for the RISD/Brown STEAM <a href="http://ltwp.us7.list-manage.com/subscribe?u=bfe7bb6c704871b06a26bce8d&id=dbc0f0612b" target="_blank" rel="noopener noreferrer">newsletter</a>. Say hello at <a href="mailto:info@steamwith.us">info@steamwith.us</a>!</p>
 				</div>
-				<div id="Brown-collapse" class="collapse about-collapse">
+				<div id="Brown-about" class="collapse about-collapse">
 					<div class="about-center visible-xs visible-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2314,7 +2355,7 @@
 					<p class="bold">Get in Touch</p>
 					<p>Find us on <a href="https://twitter.com/steamatbrown" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.facebook.com/brownuniversitysteam/" target="_blank" rel="noopener noreferrer">Facebook</a>.  Sign up for the RISD/Brown STEAM <a href="http://ltwp.us7.list-manage.com/subscribe?u=bfe7bb6c704871b06a26bce8d&id=dbc0f0612b" target="_blank" rel="noopener noreferrer">newsletter</a>. Say hello at <a href="mailto:brown@steamwith.us">brown@steamwith.us</a>!</p>
 				</div>
-				<div id="MIT-collapse" class="collapse about-collapse">
+				<div id="MIT-about" class="collapse about-collapse">
 					<div class="about-center visible-xs visible-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2347,7 +2388,7 @@
 					<p class="bold">Get in Touch</p>
 					<p>Say hello at <a href="mailto:info@steamwith.us">info@steamwith.us</a>!</p>
 				</div>
-				<div id="Yale-collapse" class="collapse about-collapse">
+				<div id="Yale-about" class="collapse about-collapse">
 					<div class="about-center visible-xs visible-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2382,12 +2423,12 @@
 					<p class="bold">Mission</p>
 					<p>Yale STEAM is a chapter of STEAM, a larger academic ideology that sees all disciplines of the arts (fine arts, digital arts, performance arts, and liberal arts) as an inseparable facet of the STEM fields. As one of the STEAM chapters, we hope to foster a campus wide interest and appreciation of the intersection between STEM (Science, Technology, Engineering, and Mathematics) and the arts through a series of STEAM workshops, forums, discussions, tours, and talks utilizing spaces around Yale where the arts and sciences intersect. Such events exist to provide a platform, resource base, and discussion group for interdisciplinary thinking and project events related to the arts and sciences. We encourage students from all disciplines across the STEM and arts spectrum as well as those in humanities to join us!</p>
 					<p class="bold">Funding and Special Thanks</p>
-					<p>We are jointly funded by the Yale Undergraduate Organizations Committee and the Yale Chapter of Sigma Xi. Special thanks to Larry Wilen, Konrad Eric Kaczmarek, and Thibault Bertrand with the CEID, Gideon Shapiro, Peter Leonard, Catherine Derose, and Monica Ong from the Digital Humanities Lab, and David Heiser, Armand Morgan, and Michael Anderson from the Peabody Museum; David Odo from the Harvard Art Museums; Edward Werner Cook from Sigma Xi; Aniko Bezur from the IPCH and Ian McClure from the art gallery for their guidance and collaboration this year. </p>
+					<p>We are jointly funded by the Yale Undergraduate Organizations Committee and the Yale Chapter of Sigma Xi. Special thanks to Larry Wilen, Konrad Eric Kaczmarek, and Thibault Bertrand with the CEID; Gideon Shapiro, Peter Leonard, Catherine Derose, and Monica Ong from the Digital Humanities Lab; David Heiser, Armand Morgan, and Michael Anderson from the Peabody Museum; David Odo from the Harvard Art Museums; Edward Werner Cook from Sigma Xi; Aniko Bezur from the IPCH and Ian McClure from the art gallery for their guidance and collaborations this year.</p>
 					<br>
 					<p class="bold">Get in Touch</p>
 					<p>Find us on <a href="https://www.facebook.com/YaleSTEAM/?fref=ts" target="_blank" rel="noopener noreferrer">Facebook</a>. Say hello at <a href="mailto:info@steamwith.us">info@steamwith.us</a>!</p>
 				</div>
-				<div id="Rutgers-collapse" class="collapse about-collapse">
+				<div id="Rutgers-about" class="collapse about-collapse">
 					<div class="about-center visible-xs visible-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2424,7 +2465,7 @@
 					<p class="bold">Get in Touch</p>
 					<p>Find us on <a href="https://www.facebook.com/RutgersSTEAM/" target="_blank" rel="noopener noreferrer">Facebook</a>. Say hello at <a href="mailto:info@steamwith.us">info@steamwith.us</a>!</p>
 				</div>
-				<div id="BU-collapse" class="collapse about-collapse">
+				<div id="BU-about" class="collapse about-collapse">
 					<div class="about-center visible-xs visible-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2457,7 +2498,7 @@
 					<p class="bold">Get in Touch</p>
 					<p>Check out the BU STEAM blog at <a href="https://busteamblog.wordpress.com/" target="_blank" rel="noopener noreferrer">busteamblog.wordpress.com</a>. Say hello at <a href="mailto:info@steamwith.us">info@steamwith.us</a>!</p>
 				</div>
-				<div id="Harvard-collapse" class="collapse about-collapse">
+				<div id="Harvard-about" class="collapse about-collapse">
 					<div class="about-center visible-xs visible-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2502,7 +2543,7 @@
 					<p class="bold">Get in Touch</p>
 					<p>Say hello at <a href="mailto:info@steamwith.us">info@steamwith.us</a>!</p>
 				</div>
-				<div id="New-collapse" class="collapse about-collapse">
+				<div id="New-about" class="collapse about-collapse">
 					<div class="about-center visible-xs visible-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2558,7 +2599,7 @@
 				<h3 id="select-text">Select a school for club information.</h3>
 			</div>
 			<div class = "col-sm-4">
-				<div id="RISD-collapse-right" class="collapse about-collapse">
+				<div id="RISD-about-right" class="collapse about-collapse">
 					<div class="about-right hidden-xs hidden-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2603,7 +2644,7 @@
 						</p>
 					</div>
 				</div>
-				<div id="Brown-collapse-right" class="collapse about-collapse">
+				<div id="Brown-about-right" class="collapse about-collapse">
 					<div class="about-right hidden-xs hidden-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2648,7 +2689,7 @@
 						</p>
 					</div>
 				</div>
-				<div id="MIT-collapse-right" class="collapse about-collapse">
+				<div id="MIT-about-right" class="collapse about-collapse">
 					<div class="about-right hidden-xs hidden-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2674,7 +2715,7 @@
 						</p>
 					</div>
 				</div>
-				<div id="Yale-collapse-right" class="collapse about-collapse">
+				<div id="Yale-about-right" class="collapse about-collapse">
 					<div class="about-right hidden-xs hidden-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2707,7 +2748,7 @@
 						</p>
 					</div>
 				</div>
-				<div id="Rutgers-collapse-right" class="collapse about-collapse">
+				<div id="Rutgers-about-right" class="collapse about-collapse">
 					<div class="about-right hidden-xs hidden-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2736,7 +2777,7 @@
 						</p>
 					</div>
 				</div>
-				<div id="BU-collapse-right" class="collapse about-collapse">
+				<div id="BU-about-right" class="collapse about-collapse">
 					<div class="about-right hidden-xs hidden-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2761,7 +2802,7 @@
 						</p>
 					</div>
 				</div>
-				<div id="Harvard-collapse-right" class="collapse about-collapse">
+				<div id="Harvard-about-right" class="collapse about-collapse">
 					<div class="about-right hidden-xs hidden-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2798,7 +2839,7 @@
 						</p>
 					</div>
 				</div>
-				<div id="New-collapse-right" class="collapse about-collapse">
+				<div id="New-about-right" class="collapse about-collapse">
 					<div class="about-right hidden-xs hidden-sm">
 						<p class="bold">Team</p>
 						<p>
@@ -2874,11 +2915,8 @@
 			</div>
 		</div>
 	</section>
-	<!-- Refactor this mess -->
-	<script type="text/javascript">
-	</script>
 	<script src="js/script.js"></script>
-	<script src="js/vendor/modernizr-custom.js"></script>
+	<!--<script src="js/vendor/modernizr-custom.js"></script>-->
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 </body>
 </html>
