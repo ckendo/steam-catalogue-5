@@ -263,9 +263,9 @@ var colorDict = {
 	// New School
 	'new-school': ['#f77116', '#f77116', '#f77116', '#f77116'],
 	// Michigan
-	'michigan': ['#C60967', '#C60967', '#C60967', '#C60967'],
+	'michigan': ['#B3C100', '#B3C100', '#B3C100', '#B3C100'],
 	// Ottawa
-	'ottawa': ['#B3C100', '#B3C100', '#B3C100', '#B3C100'],
+	'ottawa': ['#C60967', '#C60967', '#C60967', '#C60967'],
 	// MIT
 	'mit': ['#24A8B3', '#24A8B3', '#24A8B3', '#24A8B3'], 
 	// Yale
