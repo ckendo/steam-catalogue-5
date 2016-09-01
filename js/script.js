@@ -248,6 +248,7 @@ var articleDict = {
 	'We-Are-Harvard': 'harvard',
 	'We-Are-Rutgers': 'rutgers',
 	'We-Are-New': 'new-school',
+	'Tools-to-Start-a-STEAM-Chapter': 'standard',
 }
 
 var colorDict = {
