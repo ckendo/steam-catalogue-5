@@ -78,12 +78,14 @@ h1 {
 h2 { 
 	font-size: 20px;
 	font-size: 2.0rem; /* =24px */
-	/*line-height: 100%;*/
+	line-height: 28px;
+	line-height: 2.8rem;
 }
 h3 { 
 	font-size: 14px;
 	font-size: 1.4rem; /* =16px */
-	font-height: 100%;
+	line-height: 22px;
+	line-height: 2.2rem;
 }
 
 * {
@@ -205,6 +207,14 @@ blockquote{
 .header-content{
 	position: absolute;
 	bottom: 0px;
+}
+
+.header h2{
+	padding-bottom: 10px;
+}
+
+.header h3{
+	padding-bottom: 15px;
 }
 
 .main{
@@ -649,6 +659,12 @@ button{
 	color: #cccccc;
 }
 
+#we-are-list h2{
+	line-height: 32px;
+	line-height: 3.2rem;
+	/*max-width: 600px;*/
+}
+
 .RISD{
 	color: #000000;
 	text-decoration: none;
@@ -852,6 +868,7 @@ button{
 	font-size: 3.2rem;	
 	text-align: right;
 	letter-spacing: .2rem;
+	line-height: inherit;
 }
 
 .schools-stroke{
@@ -869,9 +886,9 @@ button{
 	-webkit-text-stroke: 1.5px #404040;
 }
 
-.header{
+/*.header{
 	line-height: 3.6rem;
-}
+}*/
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -896,7 +913,20 @@ button{
 		right: 0;
 	}
 	body{
-		/*background-color: blue !important;*/
+		background-color: blue !important;
+	}
+	h2 { 
+		font-size: 24px;
+		font-size: 2.4rem; /* =24px */
+		line-height: 32px;
+		line-height: 3.2rem;
+	}
+	h3 { 
+		font-size: 16px;
+		font-size: 1.6rem; /* =16px */
+		/*font-height: 100%;*/
+		line-height: 24px;
+		line-height: 2.4rem;
 	}
 	dd {
 		display: inline-block;
@@ -904,6 +934,13 @@ button{
 		/*float: left;*/
 		max-width: 190px;
 		/*padding-bottom: 10px;*/
+	}
+	#we-are-list{
+		/*max-width: 600px;*/
+	}
+	#we-are-list h2{
+		line-height: 36px;
+		line-height: 3.6rem;
 	}
 	#STEAM h1{
 		font-family: 'Montserrat', sans-serif;
@@ -923,6 +960,7 @@ button{
 		font-weight: 400;
 		font-size: 3.6rem;	
 		text-align: right;
+		line-height: inherit;
 		/* Fallback for Firefox/Opera*/
 	/*	text-shadow:
 		-1px -1px 0 #404040,  
@@ -934,15 +972,6 @@ button{
 	.full{
 		margin: 0;
 		padding: 0;
-	}
-	h2 { 
-		font-size: 24px;
-		font-size: 2.4rem; /* =24px */
-	}
-	h3 { 
-		font-size: 16px;
-		font-size: 1.6rem; /* =16px */
-		font-height: 100%;
 	}
 	.big-number {
 		left: -15px;
@@ -998,7 +1027,20 @@ button{
 		width: 970px;
 	}
 	body{
-		/*background-color: yellow !important;*/
+		background-color: yellow !important;
+	}
+	h2 { 
+		font-size: 24px;
+		font-size: 2.4rem; /* =24px */
+		line-height: 32px;
+		line-height: 3.2rem;
+	}
+	h3 { 
+		font-size: 16px;
+		font-size: 1.6rem; /* =16px */
+		/*font-height: 100%;*/
+		line-height: 24px;
+		line-height: 2.4rem;
 	}
 	dd {
 		display: inline-block;
@@ -1009,6 +1051,10 @@ button{
 	}
 	#we-are-list{
 		max-width: 600px;
+	}
+	#we-are-list h2{
+		line-height: 36px;
+		line-height: 3.6rem;
 	}
 	#STEAM h1{
 		font-family: 'Montserrat', sans-serif;
@@ -1028,6 +1074,7 @@ button{
 		font-weight: 400;
 		font-size: 3.6rem;	
 		text-align: right;
+		line-height: inherit;
 		/* Fallback for Firefox/Opera*/
 	/*	text-shadow:
 		-1px -1px 0 #404040,  
@@ -1039,15 +1086,6 @@ button{
 	.full{
 		margin: 0;
 		padding: 0;
-	}
-	h2 { 
-		font-size: 24px;
-		font-size: 2.4rem; /* =24px */
-	}
-	h3 { 
-		font-size: 16px;
-		font-size: 1.6rem; /* =16px */
-		font-height: 100%;
 	}
 	.big-number {
 		left: -20px;
@@ -1087,7 +1125,19 @@ button{
 		width: 1170px;
 	}	
 	body{
-		/*background-color: gray !important;*/
+		background-color: gray !important;
+	}
+	h2 { 
+		font-size: 24px;
+		font-size: 2.4rem; /* =24px */
+		line-height: 32px;
+		line-height: 3.2rem;
+	}
+	h3 { 
+		font-size: 16px;
+		font-size: 1.6rem; /* =16px */
+		line-height: 24px;
+		line-height: 2.4rem;
 	}
 	dd {
 		display: inline-block;
@@ -1098,6 +1148,10 @@ button{
 	}
 	#we-are-list{
 		max-width: 520px;
+	}
+	#we-are-list h2{
+		line-height: 36px;
+		line-height: 3.6rem;
 	}
 	#STEAM h1{
 		font-family: 'Montserrat', sans-serif;
@@ -1117,6 +1171,7 @@ button{
 		font-weight: 400;
 		font-size: 4rem;	
 		text-align: right;
+		line-height: inherit;
 		/* Fallback for Firefox/Opera*/
 	/*	text-shadow:
 		-1px -1px 0 #404040,  
@@ -1128,15 +1183,6 @@ button{
 	.full{
 		margin: 0;
 		padding: 0;
-	}
-	h2 { 
-		font-size: 24px;
-		font-size: 2.4rem; /* =24px */
-	}
-	h3 { 
-		font-size: 16px;
-		font-size: 1.6rem; /* =16px */
-		font-height: 100%;
 	}
 	.big-number {
 		left: -25px;
