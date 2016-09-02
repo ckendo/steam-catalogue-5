@@ -4,6 +4,10 @@
 // Makes links to articles go an offset of 100px up from the actual article
 // The function actually applying the offset
 function offsetAnchor() {
+	console.log('hashchange')
+	console.log('location.hash is', location.hash)
+	console.log('window.location.href', window.location.href)
+	console.log(window.location.href.indexOf(location.hash))
 	if(location.hash.length !== 0) {
 		window.scrollTo(window.scrollX, window.scrollY - 100);
 	}
