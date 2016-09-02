@@ -3,17 +3,27 @@
 // Via http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
 // Makes links to articles go an offset of 100px up from the actual article
 // The function actually applying the offset
-function offsetAnchor() {
-	console.log('hashchange')
-	console.log('location.hash is', location.hash)
-	console.log('window.location.href', window.location.href)
+function offsetAnchor(e) {
+	if (e){
+		/* If event, check if newURL is different than oldURL (actual has change)*/
+		console.log('hashchange')
+		console.log('event', e)
+		console.log('oldUrl', e.originalEvent.oldURL)
+		console.log('newUrl', e.originalEvent.newURL)
+	}else{
+		console.log('page load')
+	}
+	// console.log('location.hash is', location.hash)
+	// console.log('window.location.href', window.location.href)
 	console.log(window.location.href.indexOf(location.hash))
 	if(location.hash.length !== 0) {
 		window.scrollTo(window.scrollX, window.scrollY - 100);
 	}
 }
 // This will capture hash changes while on the page
-$(window).on("hashchange",offsetAnchor);
+$(window).on("hashchange", function(event){
+	offsetAnchor(event)
+});
 
 // This is here so that when you enter the page with a hash,
 // it can provide the offset in that case too. Having a timeout
