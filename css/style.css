@@ -170,7 +170,7 @@ blockquote{
 	min-width: 100%;
 	min-width: 100vw;
 	margin: 0;
-	padding: 40px;
+	padding: 45px; /*changed from 40px*/
 }
 
 /* Applied to bootstrap rows*/
@@ -510,6 +510,14 @@ blockquote{
 	left: -15px;
 	/*margin-right: 15px;*/
 	/*margin-left: -15px;*/
+}
+
+.big-number-double {
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	position: absolute;
+	left: -20px;
 }
 
 .headline{
@@ -939,6 +947,9 @@ button{
 	.big-number {
 		left: -15px;
 	}
+	.big-number-double {
+		left: -30px;
+	}
 	.fixed-nav li {
 		padding-left: 25px;
 		padding-right: 25px;
@@ -1041,6 +1052,9 @@ button{
 	.big-number {
 		left: -20px;
 	}
+	.big-number-double {
+		left: -35px;
+	}
 	.logo{
 		width: 80%;
 		margin-left: auto;
@@ -1126,6 +1140,9 @@ button{
 	}
 	.big-number {
 		left: -25px;
+	}
+	.big-number-double {
+		left: -40px;
 	}
 	.img-right{
 		padding-left: 20px;

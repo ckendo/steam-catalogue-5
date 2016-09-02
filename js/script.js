@@ -7,10 +7,13 @@ function offsetAnchor(e) {
 	if (e){
 		/* If event, check if newURL is different than oldURL (actual has change)*/
 		console.log('hashchange')
-		console.log('event', e)
-		console.log('oldUrl', e.originalEvent.oldURL)
-		console.log('newUrl', e.originalEvent.newURL)
+		// console.log('event', e)
+		// console.log('oldUrl', e.originalEvent.oldURL)
+		// console.log('newUrl', e.originalEvent.newURL)
+		// /* If url not changed, exit here*/
+		// console.log('same:', e.originalEvent.oldURL == e.originalEvent.newURL)
 	}else{
+		/* If just page load*/
 		console.log('page load')
 	}
 	// console.log('location.hash is', location.hash)
@@ -29,6 +32,24 @@ $(window).on("hashchange", function(event){
 // it can provide the offset in that case too. Having a timeout
 // seems necessary to allow the browser to jump to the anchor first.
 window.setTimeout(offsetAnchor, 1); 
+// $(document).ready(function(event){
+// 	console.log('testing ready?')
+// 	if (location.hash.length !== 0){
+// 		window.scrollTo(window.scrollX, window.scrollY-100)
+// 	}
+// })
+
+// /* Prevent jump?*/
+// $('a').click(function(e)
+// {
+// 	console.log('a type clicked')
+// 	console.log('$(this)', $(this).attr('id'))
+// 	// console.log('attribute:', $(this).attr('id'))
+// 	// var attr = this.getAttribute('id')
+// 	// console.log('attrs:', attr)
+// 	// // console.log('revent default')
+// 	// // e.preventDefault()
+// })
 
 // Nav bar
 //////////////////////////
