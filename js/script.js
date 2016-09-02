@@ -16,8 +16,6 @@ function offsetAnchor(e) {
 		/* If just page load*/
 		console.log('page load')
 	}
-	// console.log('location.hash is', location.hash)
-	// console.log('window.location.href', window.location.href)
 	console.log(window.location.href.indexOf(location.hash))
 	if(location.hash.length !== 0) {
 		window.scrollTo(window.scrollX, window.scrollY - 100);
@@ -32,24 +30,20 @@ $(window).on("hashchange", function(event){
 // it can provide the offset in that case too. Having a timeout
 // seems necessary to allow the browser to jump to the anchor first.
 window.setTimeout(offsetAnchor, 1); 
-// $(document).ready(function(event){
-// 	console.log('testing ready?')
-// 	if (location.hash.length !== 0){
-// 		window.scrollTo(window.scrollX, window.scrollY-100)
-// 	}
-// })
 
-// /* Prevent jump?*/
-// $('a').click(function(e)
-// {
-// 	console.log('a type clicked')
-// 	console.log('$(this)', $(this).attr('id'))
-// 	// console.log('attribute:', $(this).attr('id'))
-// 	// var attr = this.getAttribute('id')
-// 	// console.log('attrs:', attr)
-// 	// // console.log('revent default')
-// 	// // e.preventDefault()
-// })
+// /* If link clicked, and link dest is local section
+$('a').click(function(e)
+{
+	console.log('a type clicked')
+	var href = $(this)[0].getAttribute('href')
+	var currURL = window.location.href
+	/* If a contains href, and href starts with '#' (local)*/
+	if (href && (href.indexOf('#') === 0) && (currURL.indexOf(href) !== -1)){
+		/* If currentURL contains href, prevent default*/
+		console.log('local dest, already here, so prevent default')
+		e.preventDefault()
+	}
+})
 
 // Nav bar
 //////////////////////////
