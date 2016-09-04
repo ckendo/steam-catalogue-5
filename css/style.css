@@ -176,6 +176,11 @@ blockquote{
 	padding: 0;
 	background:url('../img/sketch-gif.gif') center center no-repeat;
 	background-size: cover;
+	image-rendering: -moz-crisp-edges;         /* Firefox */
+	image-rendering:   -o-crisp-edges;         /* Opera */
+	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 /* If webgl available, don't show gif */
@@ -187,6 +192,22 @@ blockquote{
 .webglenabled #gif{
 	background: none;
 	background-color: #FFFFFF;
+}
+
+#graphic-gif{
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	min-width: 100vw;
+	margin: 0;
+	padding: 0;
+	background:url('../img/graphic-gif.gif') center center no-repeat;
+	background-size: auto 100%;
+	image-rendering: -moz-crisp-edges;         /* Firefox */
+	image-rendering:   -o-crisp-edges;         /* Opera */
+	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 .full{
