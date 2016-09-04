@@ -221,12 +221,21 @@ function showSectionName(){
 	// No need to binary search, probably fast enough
 	for (var i = 0; i < objectInfo.length; i++){
 		if (curr > objectInfo[i].top - offset){
-			document.getElementById("updateText").innerHTML = objectInfo[i].name
-			var colorInfo = getColors(objectInfo[i].orig)
-			document.querySelector("html").style.setProperty("--color-one", colorInfo[0]);
-			document.querySelector("html").style.setProperty("--color-two", colorInfo[1]);
-			document.querySelector("html").style.setProperty("--color-three", colorInfo[2]);
-			document.querySelector("html").style.setProperty("--color-four", colorInfo[3]);
+			if (objectInfo[i].name){
+				document.getElementById("updateText").innerHTML = objectInfo[i].name
+				var colorInfo = getColors(objectInfo[i].orig)
+				document.querySelector("html").style.setProperty("--color-one", colorInfo[0]);
+				document.querySelector("html").style.setProperty("--color-two", colorInfo[1]);
+				document.querySelector("html").style.setProperty("--color-three", colorInfo[2]);
+				document.querySelector("html").style.setProperty("--color-four", colorInfo[3]);	
+			}else{
+				console.log('No name FULL section, set blank')
+				document.getElementById("updateText").innerHTML = ''
+				document.querySelector("html").style.setProperty("--color-one", '#000000');
+				document.querySelector("html").style.setProperty("--color-two", '#000000');
+				document.querySelector("html").style.setProperty("--color-three", '#000000');
+				document.querySelector("html").style.setProperty("--color-four", '#000000');	
+			}
 		}
 	}	
 }

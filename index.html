@@ -45,7 +45,7 @@
 		</div>
 	</nav>
 	<section class = "splash" id="Home">
-		<div id = "sketch"></div>
+		<div id="sketch"></div>
 		<div id = "cover">
 			<div class = "row" id = "STEAM">
 				<div class = "visible-xs">
@@ -2315,8 +2315,11 @@
 		</div>
 	</section>
 	<!-- Dividing graphic-->
-	<section class="full" id ="">
-		<div id = "sketch"></div>
+	<section class="full" id =''>
+		<!-- <div id = "sketch"></div> -->
+		<div class="centered">
+			<h1>TRANSITION GRAPHIC</h1>
+		</div>
 	</section>
 	<section class="full" id ="We-Are" curr-open="false">
 		<div class="header">
@@ -3099,35 +3102,13 @@
 		});
 
 		// WebGL for processsing
-function webgl_detect(return_context)
-{
-    if (!!window.WebGLRenderingContext) {
-        var canvas = document.createElement("canvas"),
-             names = ["webgl", "experimental-webgl", "moz-webgl", "webkit-3d"],
-           context = false;
-
-        for(var i=0;i<4;i++) {
-            try {
-                context = canvas.getContext(names[i]);
-                if (context && typeof context.getParameter == "function") {
-                    // WebGL is enabled
-                    if (return_context) {
-                        // return WebGL object if the function's argument is present
-                        return {name:names[i], gl:context};
-                    }
-                    // else, return just true
-                    return true;
-                }
-            } catch(e) {}
-        }
-
-        // WebGL is supported, but disabled
-        return false;
-    }
-
-    // WebGL not supported
-    return false;
-}
+		Modernizr.addTest('webglenabled', function() {
+			try {
+				return !!window.WebGLRenderingContext && !!document.createElement('canvas').getContext('experimental-webgl');
+			} catch(e) {
+				return false;
+			}
+		})
 	</script>
 </body>
 </html>

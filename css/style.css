@@ -167,6 +167,15 @@ blockquote{
 	margin: 0;
 }
 
+/* If webgl not available or disabled, just use render*/
+.no-webgl #sketch{
+
+}
+
+.no-webglenabled #sketch{
+
+}
+
 .full{
 	min-height: 595px;
 	min-height: 85vh; /* Takes into account the spacer of section above */
