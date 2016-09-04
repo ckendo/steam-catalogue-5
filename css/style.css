@@ -178,13 +178,15 @@ blockquote{
 	background-size: cover;
 }
 
-/* If webgl not available or disabled, just use render*/
-.no-webgl #sketch{
-
+/* If webgl available, don't show gif */
+.webgl #gif{
+	background: none;
+	background-color: #FFFFFF;
 }
 
-.no-webglenabled #sketch{
-
+.webglenabled #gif{
+	background: none;
+	background-color: #FFFFFF;
 }
 
 .full{
