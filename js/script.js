@@ -309,9 +309,3 @@ var colorDict = {
 	// RISD+Brown+MIT+BU
 	'risd-brown-mit-bu': ['#737373', '#EC1C24', '#24A8B3', '#0ba016'],
 }
-
-// Modernizr feature detection
-Modernizr.addTest('textstroke', function() {
-	var h1 = document.createElement('h1');
-	return !(!('webkitTextStroke' in h1.style) && !('textStroke' in h1.style));
-});

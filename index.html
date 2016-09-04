@@ -47,7 +47,7 @@
 	<section class = "splash" id="Home">
 		<div id = "sketch"></div>
 		<div id = "cover">
-			<div class = "row STEAM-stroke" id = "STEAM">
+			<div class = "row" id = "STEAM">
 				<div class = "visible-xs">
 					<h1>STEAM</h1>
 				</div>
@@ -55,7 +55,7 @@
 					<h1>STEAM</h1>
 				</div>
 			</div>
-			<div class = "row pull-right schools-stroke" id = "schools">
+			<div class = "row pull-right" id = "schools">
 				<h3>RISD</h3>
 				<h3>Brown</h3>
 				<h3>MIT</h3>
@@ -3071,7 +3071,63 @@
 		</div>
 	</section>
 	<script src="js/script.js"></script>
-	<script src="js/vendor/modernizr-custom.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/vendor/modernizr-custom.js"></script>
+	<script>
+		// Modernizr feature detection
+
+		// Text stroke for splash
+		Modernizr.addTest('textstroke', function() {
+			var h1 = document.createElement('h1');
+			return !(!('webkitTextStroke' in h1.style) && !('textStroke' in h1.style));
+		})
+
+		// Linear gradients
+		Modernizr.addTest('lineargradient', function () {
+			var test = document.createElement('div'),
+				prefixes = ' -webkit- -moz- -o- -ms- -khtml- '.split(' '),
+				str1 = 'background-image:',
+				str2 = 'linear-gradient(left top,#9f9, white);';
+
+			test.style.cssText =  (str1 + prefixes.join(str2 + str1)).slice(0,-str1.length);
+			return ((''+test.style.backgroundImage).indexOf( 'linear-gradient' ) !== -1);
+		});
+
+		// CSS vars for colors
+		Modernizr.addTest('colorvars', function () {
+			return (window.CSS && CSS.supports('color', 'var(--primary)'))
+		});
+
+		// WebGL for processsing
+function webgl_detect(return_context)
+{
+    if (!!window.WebGLRenderingContext) {
+        var canvas = document.createElement("canvas"),
+             names = ["webgl", "experimental-webgl", "moz-webgl", "webkit-3d"],
+           context = false;
+
+        for(var i=0;i<4;i++) {
+            try {
+                context = canvas.getContext(names[i]);
+                if (context && typeof context.getParameter == "function") {
+                    // WebGL is enabled
+                    if (return_context) {
+                        // return WebGL object if the function's argument is present
+                        return {name:names[i], gl:context};
+                    }
+                    // else, return just true
+                    return true;
+                }
+            } catch(e) {}
+        }
+
+        // WebGL is supported, but disabled
+        return false;
+    }
+
+    // WebGL not supported
+    return false;
+}
+	</script>
 </body>
 </html>

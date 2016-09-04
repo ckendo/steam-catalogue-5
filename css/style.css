@@ -3,7 +3,8 @@
 	--color-two: #000000;
 	--color-three: #000000;
 	--color-four: #000000;
-	--RISD: #737373;
+/* Don't use color vars for schools anymore, because of Safari compatability */
+/*	--RISD: #737373;
 	--Brown: #EC1C24;
 	--MIT: #24A8B3;
 	--Yale: #1A76BB;
@@ -11,7 +12,7 @@
 	--BU: #0ba016;
 	--Rutgers: #6048a8;
 	--Harvard: #fcc342;
-/*	--Ottawa: #B3C100;
+	--Ottawa: #B3C100;
 	--Michigan: #C60967;*/
 }
 
@@ -422,11 +423,10 @@ blockquote{
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	/* Fallback (could use .jpg/.png alternatively) */
-	/*background-color: red;*/
 	/* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
 	background-image:
 	-webkit-linear-gradient(left,
-	var(--color-one) 0, var(--color-one) 25%, var(--color-two) 25%, var(--color-two) 50%, 
+	-webkit-var(--color-one) 0, -webkit-var(--color-one) 25%, var(--color-two) 25%, var(--color-two) 50%, 
 	var(--color-three) 50%, var(--color-three) 75%, var(--color-four) 75%, var(--color-four) 100%);
 	/* Firefox 3.6 - 15 */
 	background-image:
@@ -439,14 +439,45 @@ blockquote{
 	var(--color-one) 0, var(--color-one) 25%, var(--color-two) 25%, var(--color-two) 50%, 
 	var(--color-three) 50%, var(--color-three) 75%, var(--color-four) 75%, var(--color-four) 100%);
 	/* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-/*	background-image:
-	linear-gradient(to right, var(--color-one) 12.5%, var(--color-one) 12.5%, var(--color-two) 12.5%, var(--color-two) 12.5%, var(--color-three) 12.5%, var(--color-three) 12.5%, var(--color-four) 12.5%, var(--color-four) 12.5%);*/
 	background-image:
 	linear-gradient(to right, 
 	var(--color-one) 0, var(--color-one) 25%, var(--color-two) 25%, var(--color-two) 50%, 
 	var(--color-three) 50%, var(--color-three) 75%, var(--color-four) 75%, var(--color-four) 100%);
+
 	background-size: 100% 6px;
 	background-repeat: no-repeat;
+}
+
+.no-colorvars #fixed-nav-bar{
+	/* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background-image:
+	-webkit-linear-gradient(left,
+	#000000 0, #000000 25%, #000000 25%, #000000 50%, 
+	#000000 50%, #000000 75%, #000000 75%, #000000 100%);
+	/* Firefox 3.6 - 15 */
+	background-image:
+	-moz-linear-gradient(left,
+	#000000 0, #000000 25%, #000000 25%, #000000 50%, 
+	#000000 50%, #000000 75%, #000000 75%, #000000 100%);
+	/* Opera 11.1 - 12 */
+	background-image:
+	-o-linear-gradient(left,
+	#000000 0, #000000 25%, #000000 25%, #000000 50%, 
+	#000000 50%, #000000 75%, #000000 75%, #000000 100%);
+	/* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+	background-image:
+	linear-gradient(to right, 
+	#000000 0, #000000 25%, #000000 25%, #000000 50%, 
+	#000000 50%, #000000 75%, #000000 75%, #000000 100%);
+
+	background-size: 100% 6px;
+	background-repeat: no-repeat;
+}
+
+.no-lineargradient #fixed-nav-bar{
+	border-top-color: red;
+	border-top-style: solid;
+	border-top-width: 6px;	
 }
 
 .fixed-nav{
@@ -668,121 +699,122 @@ button{
 .RISD{
 	color: #000000;
 	text-decoration: none;
-	border-bottom: 3px solid var(--RISD);
+	border-bottom: 3px solid #737373;
 }
 
 .RISD:hover{
-	color: var(--RISD);
+	color: #737373;
 	text-decoration: none;
 }
 
 .RISD-active{
-	color: var(--RISD);
+	color: #737373;
 }
 
 .Yale{
 	color: #000000;
 	text-decoration: none;
-	border-bottom: 3px solid var(--Yale);
+	border-bottom: 3px solid #1A76BB;
 }
 
 .Yale:hover {
-	color: var(--Yale);
+	color: #1A76BB;
 	text-decoration: none;
 }
 
 .Yale-active {
-	color: var(--Yale);
+	color: #1A76BB;
 }
 
 .MIT{
 	color: #000000;
 	text-decoration: none;
-	border-bottom: 3px solid var(--MIT);
+	border-bottom: 3px solid #24A8B3;
 }
 
 .MIT:hover {
-	color: var(--MIT);
+	color: #24A8B3;
 	text-decoration: none;
 }
 
 .MIT-active{
-	color: var(--MIT);
+	color: #24A8B3;
+	colro: -webkit-#24A8B3;
 }
 
 .New{
 	color: #000000;
 	text-decoration: none;
-	border-bottom: 3px solid var(--New);
+	border-bottom: 3px solid #f77116;
 }
 
 .New:hover {
-	color: var(--New);
+	color: #f77116;
 	text-decoration: none;
 }
 
 .New-active {
-	color: var(--New);
+	color: #f77116;
 }
 
 .Brown{
 	color: #000000;
 	text-decoration: none;
-	border-bottom: 3px solid var(--Brown);
+	border-bottom: 3px solid #EC1C24;
 }
 
 .Brown:hover{
-	color: var(--Brown);
+	color: #EC1C24;
 	text-decoration: none;
 }
 
 .Brown-active{
-	color: var(--Brown);
+	color: #EC1C24;
 }
 
 .BU{
 	color: #000000;
 	text-decoration: none;
-	border-bottom: 3px solid var(--BU);
+	border-bottom: 3px solid #0ba016;
 }
 
 .BU:hover {
-	color: var(--BU);
+	color: #0ba016;
 	text-decoration: none;
 }
 
 .BU-active{
-	color: var(--BU);
+	color: #0ba016;
 }
 
 .Rutgers{
 	color: #000000;
 	text-decoration: none;
-	border-bottom: 3px solid var(--Rutgers);
+	border-bottom: 3px solid #6048a8;
 }
 
 .Rutgers:hover {
-	color: var(--Rutgers);
+	color: #6048a8;
 	text-decoration: none;
 }
 
 .Rutgers-active {
-	color: var(--Rutgers);
+	color: #6048a8;
 }
 
 .Harvard{
 	color: #000000;
 	text-decoration: none;
-	border-bottom: 3px solid var(--Harvard);
+	border-bottom: 3px solid #fcc342;
 }
 
 .Harvard:hover {
-	color: var(--Harvard);
+	color: #fcc342;
 	text-decoration: none;
 }
 
 .Harvard-active {
-	color: var(--Harvard);
+	color: #fcc342;
 }
 
 .hide{
@@ -830,21 +862,15 @@ button{
 	font-size: 10.5rem;
 	font-size: 25vw;
 	letter-spacing: .25rem;
+	-webkit-text-stroke: 2px #404040;
 }
 
-.STEAM-stroke{
-	/*Fallback border for Firefox/Opera*/
+.no-textstroke h1{
 	text-shadow:
 	-1px -1px 0 #404040,  
 	1px -1px 0 #404040,
 	-1px 1px 0 #404040,
-	1px 1px 0 #404040;
-}
-
-/* Override for nice browsers */
-.STEAM-stroke{
-	text-shadow: none;
-	-webkit-text-stroke: 2px #404040;
+	1px 1px 0 #404040;	
 }
 
 #schools{
@@ -867,11 +893,10 @@ button{
 	font-weight: 400;
 	font-size: 3.2rem;	
 	text-align: right;
-	letter-spacing: .2rem;
 	line-height: inherit;
+	-webkit-text-stroke: 1.5px #404040;
 }
-
-.schools-stroke{
+.no-textstroke #schools h3{
 	/* Fallback for Firefox/Opera*/
 	text-shadow:
 	-1px -1px 0 #404040,  
@@ -879,16 +904,6 @@ button{
 	-1px 1px 0 #404040,
 	1px 1px 0 #404040;
 }
-
-/* Override for nice browsers*/
-.schools-stroke{
-	text-shadow: none;
-	-webkit-text-stroke: 1.5px #404040;
-}
-
-/*.header{
-	line-height: 3.6rem;
-}*/
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -946,13 +961,16 @@ button{
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		font-size: 19.0rem;
+		-webkit-text-stroke: 3px #404040;
+	}
+
+	.no-textstroke #STEAM h1{
 		/*Fallback border for Firefox/Opera*/
-	/*	text-shadow:
+		text-shadow:
 		-1px -1px 0 #404040,  
 		1px -1px 0 #404040,
 		-1px 1px 0 #404040,
-		1px 1px 0 #404040;*/
-		-webkit-text-stroke: 3px #404040;
+		1px 1px 0 #404040;
 	}
 
 	#schools h3{
@@ -961,13 +979,15 @@ button{
 		font-size: 3.6rem;	
 		text-align: right;
 		line-height: inherit;
+		-webkit-text-stroke: 1.5px #404040;
+	}
+	.no-textstroke #schools h3{
 		/* Fallback for Firefox/Opera*/
-	/*	text-shadow:
+		text-shadow:
 		-1px -1px 0 #404040,  
 		1px -1px 0 #404040,
 		-1px 1px 0 #404040,
-		1px 1px 0 #404040;*/
-		-webkit-text-stroke: 1.5px #404040;
+		1px 1px 0 #404040;
 	}
 	.full{
 		margin: 0;
@@ -1069,19 +1089,30 @@ button{
 		-webkit-text-stroke: 3px #404040;
 	}
 
+	.no-textstroke #STEAM h1{
+		/*Fallback border for Firefox/Opera*/
+		text-shadow:
+		-1px -1px 0 #404040,  
+		1px -1px 0 #404040,
+		-1px 1px 0 #404040,
+		1px 1px 0 #404040;
+	}
+
 	#schools h3{
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 400;
 		font-size: 3.6rem;	
 		text-align: right;
 		line-height: inherit;
+		-webkit-text-stroke: 1.5px #404040;
+	}
+	.no-textstroke #schools h3{
 		/* Fallback for Firefox/Opera*/
-	/*	text-shadow:
+		text-shadow:
 		-1px -1px 0 #404040,  
 		1px -1px 0 #404040,
 		-1px 1px 0 #404040,
-		1px 1px 0 #404040;*/
-		-webkit-text-stroke: 1.5px #404040;
+		1px 1px 0 #404040;
 	}
 	.full{
 		margin: 0;
@@ -1166,19 +1197,32 @@ button{
 		-webkit-text-stroke: 3px #404040;
 	}
 
+
+	.no-textstroke #STEAM h1{
+		/*Fallback border for Firefox/Opera*/
+		text-shadow:
+		-1px -1px 0 #404040,  
+		1px -1px 0 #404040,
+		-1px 1px 0 #404040,
+		1px 1px 0 #404040;
+	}
+
 	#schools h3{
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 400;
 		font-size: 4rem;	
 		text-align: right;
 		line-height: inherit;
+		-webkit-text-stroke: 1.5px #404040;
+	}
+
+	.no-textstroke #schools h3{
 		/* Fallback for Firefox/Opera*/
-	/*	text-shadow:
+		text-shadow:
 		-1px -1px 0 #404040,  
 		1px -1px 0 #404040,
 		-1px 1px 0 #404040,
-		1px 1px 0 #404040;*/
-		-webkit-text-stroke: 1.5px #404040;
+		1px 1px 0 #404040;
 	}
 	.full{
 		margin: 0;
