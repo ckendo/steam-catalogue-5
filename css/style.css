@@ -165,6 +165,7 @@ blockquote{
 	min-height: 100vh;
 	min-width: 100vw;
 	margin: 0;
+	position: relative;
 }
 
 #gif{
@@ -203,13 +204,52 @@ blockquote{
 	margin: 0;
 	padding: 0;
 	background:url('../img/graphic.gif') center center no-repeat;
-	background-size: auto 75%;
+	background-size: auto 80%;
 	background-position: center; 
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
 	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+	z-index: 10;
+}
+
+#graphic-text{
+/*	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	z-index: 20;
+}
+
+/* This will be default xs size, so tiny, overwritten for sm, md, lg*/
+#graphic-text h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 12rem;
+	/*This is just for xs*/
+	font-size: 25vw;
+	letter-spacing: .25rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* This will be default xs size, so tiny, overwritten for sm, md, lg*/
+#graphic-text h3{
+	/*margin-top: 40px;*/
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 2.6rem;	
+	/*margin-top: 100px;*/
+	text-align: center;
+	line-height: inherit;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 90vw;
 }
 
 .full{
@@ -1026,6 +1066,20 @@ button{
 		line-height: inherit;
 		-webkit-text-stroke: 1.5px #404040;
 	}
+
+	#graphic-gif{
+		background-size: auto 85%;
+	}
+
+	#graphic-text h1{
+		font-size: 15.0rem;
+	}
+
+	#graphic-text h3{
+		font-size: 3.2rem;	
+		top: 85%;
+	}
+
 	.no-textstroke #schools h3{
 		/* Fallback for Firefox/Opera*/
 		text-shadow:
@@ -1151,6 +1205,20 @@ button{
 		line-height: inherit;
 		-webkit-text-stroke: 1.5px #404040;
 	}
+
+	#graphic-text h1{
+		font-size: 17.0rem;
+	}
+
+	#graphic-text h3{
+		font-size: 3.2rem;	
+		top: 80%;
+	}
+
+	#graphic-gif{
+		background-size: auto 90%;
+	}
+
 	.no-textstroke #schools h3{
 		/* Fallback for Firefox/Opera*/
 		text-shadow:
@@ -1259,6 +1327,19 @@ button{
 		text-align: right;
 		line-height: inherit;
 		-webkit-text-stroke: 1.5px #404040;
+	}
+
+	#graphic-text h1{
+		font-size: 20.0rem;
+	}
+
+	#graphic-text h3{
+		font-size: 3.2rem;	
+		top: 90%;
+	}
+
+	#graphic-gif{
+		background-size: auto 95%;
 	}
 
 	.no-textstroke #schools h3{
