@@ -151,7 +151,8 @@ $("[data-collapse-group='about-collapse-group']").click(function () {
 function getObjectInfo(){
 	console.log('recalculating')
 	// Get just <section class ="full"> elements
-	var sections = document.getElementsByClassName("full")
+	// var sections = document.getElementsByClassName("full")
+	var sections = document.getElementsByTagName("section")
 	var array = Array.prototype.slice.call(sections)
 	var objectInfo = []
 	for (var i = 0; i < array.length; i++){
@@ -161,9 +162,19 @@ function getObjectInfo(){
 			var currOpen = array[i].getAttribute('curr-open')
 			orig = array[i].id+'-'+currOpen
 		}
-		var currName = replaceAll(array[i].id, '-', ' ')
-		var el = array[i]
-		var currTop = offset(el).top
+		var currName = false
+		var el = false
+		var currTop = false
+		/* If has id and id not empty */
+		if (array[i].id && array[i].id.length > 0){
+			currName = replaceAll(array[i].id, '-', ' ')
+			el = array[i]
+			currTop = offset(el).top
+		}
+		if (array[i].id == "Home" || array[i].id == "Graphic"){
+			currName = false
+		}
+
 		var object = {name: currName, top: currTop, orig: orig}
 		objectInfo.push(object)
 	}
@@ -198,9 +209,9 @@ function offset(el) {
 	return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 }
 
-function replaceAll(str, find, replace) {
-	return str.replace(new RegExp(find, 'g'), replace);
-}
+// function replaceAll(str, find, replace) {
+// 	return str.replace(new RegExp(find, 'g'), replace);
+// }
 
 function escapeRegExp(str) {
 	return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
@@ -222,6 +233,7 @@ function showSectionName(){
 	for (var i = 0; i < objectInfo.length; i++){
 		if (curr > objectInfo[i].top - offset){
 			if (objectInfo[i].name){
+				console.log('name evaluating:', name)
 				document.getElementById("updateText").innerHTML = objectInfo[i].name
 				var colorInfo = getColors(objectInfo[i].orig)
 				document.querySelector("html").style.setProperty("--color-one", colorInfo[0]);

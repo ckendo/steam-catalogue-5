@@ -17,13 +17,16 @@ var paused;
 function setup() {
 	// Init variables based on window size
 	NUM = Math.round(windowWidth/4);
-	if (webgl()){
-		console.log('webgl enabled for p5.js, initing')
-		initCanvas()
-		initNodes(NUM);
-	}else{
-		noLoop()
-	}
+	// if (webgl()){
+	// 	console.log('webgl enabled for p5.js, initing')
+	// 	initCanvas()
+	// 	initNodes(NUM);
+	// }else{
+	// 	noLoop()
+	// }
+	console.log('webgl enabled for p5.js, initing')
+	initCanvas()
+	initNodes(NUM);
 }
 
 function initCanvas(){
@@ -46,9 +49,9 @@ function initNodes(num){
 
 // TODO: this can probably be done cleaner. without so many if statements
 function draw() {
-	if (!webgl()){
-		return
-	}
+	// if (!webgl()){
+	// 	return
+	// }
 	background(BACKGROUND); 
 	if (window.pageYOffset <= windowHeight){
 		// if not paused
@@ -168,11 +171,11 @@ function Node(xInit, yInit, speed){
 	}
 }
 
-// Helper function to test webgl compatability
-function webgl(){
-	try {
-		return !!window.WebGLRenderingContext && !!document.createElement('canvas').getContext('experimental-webgl');
-	} catch(e) {
-		return false;
-	}	
-}
+// // Helper function to test webgl compatability
+// function webgl(){
+// 	try {
+// 		return !!window.WebGLRenderingContext && !!document.createElement('canvas').getContext('experimental-webgl');
+// 	} catch(e) {
+// 		return false;
+// 	}	
+// }
